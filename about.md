@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a recent graduate from the University of Illinois at Urbana-Champaign where I studied architecture and human-computer interaction.
 
-### More Information
+### Sorry about the mess
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+This personal site is under construction. Check back in a week or two. It'll be quite snazzy, I assure you.
