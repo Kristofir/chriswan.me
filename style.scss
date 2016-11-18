@@ -36,6 +36,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .xp1 {
   @extend .f5;
   @extend .measure-wide;
@@ -136,7 +141,8 @@ span.secondary {
 }
 
 span.inner:hover > span.secondary,
-span.inner:focus > span.secondary {
+span.inner:focus > span.secondary,
+span.inner.hover_effect > span.secondary {
   transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
   @extend .o-80;
 }
@@ -161,7 +167,8 @@ span.content > span.title {
 }
 
 span.inner:hover > span.content > span.title,
-span.inner:focus > span.content > span.title {
+span.inner:focus > span.content > span.title,
+span.inner.hover_effect > span.content > span.title {
   @extend .o-100;
   transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
@@ -178,7 +185,8 @@ span.content > span.description {
 }
 
 span.inner:hover > span.content > span.description,
-span.inner:focus > span.content > span.description {
+span.inner:focus > span.content > span.description,
+span.inner.hover_effect > span.content > span.description  {
   @extend .o-100;
   transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
@@ -197,7 +205,8 @@ span.pushdown {
 }
 
 span.inner:hover > span.content > span.pushdown,
-span.inner:focus > span.content > span.pushdown {
+span.inner:focus > span.content > span.pushdown,
+span.inner.hover_effect > span.content > span.pushdown {
   @extend .o-100;
   margin-bottom: 2rem;
   transition: opacity 300ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
