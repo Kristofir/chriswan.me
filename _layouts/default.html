@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/scripts/isotope.pkgd.min.js"></script>
+  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -12,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
   </head>
 
@@ -37,41 +40,6 @@
       </section>
     </main>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    <script src='http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script>
-    <script src='https://raw.github.com/metafizzy/isotope-masonry-horizontal/master/masonry-horizontal.js'></script>
-    <script src="scripts/isotope.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.hover').bind('touchstart touchend', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('hover_effect');
-        });
-      });
-
-      $.Isotope.prototype._masonryReset = function() {
-            // layout-specific props
-            this.masonry = {};
-            // FIXME shouldn't have to call this again
-            this._getSegments();
-            var i = 3 // e.g. use jQuery data to detect the column number;
-            this.masonry.colYs = [];
-            while (i--) {
-              this.masonry.colYs.push( 0 );
-            }
-      };
-
-      // init Isotope
-      var $grid = $('.grid').isotope({
-        // options...
-      });
-      // layout Isotope after each image loads
-      $grid.imagesLoaded().progress( function() {
-        $grid.isotope('layout');
-      });
-
-    </script>
 
     {% include analytics.html %}
   </body>
