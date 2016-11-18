@@ -36,11 +36,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hover {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
 .xp1 {
   @extend .f5;
   @extend .measure-wide;
