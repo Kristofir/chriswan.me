@@ -5,285 +5,170 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@import "tachyons";
+@import "colors";
 // Syntax highlighting @import is at the bottom of this file
+
+/****************/
+/* CUSTOM RULES */
+/****************/
+
+@mixin bg-dg-grad($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $color1, $color2); /* Standard syntax */
+}
+
+.custom-healthcare {
+  @include bg-dg-grad(#A0AfC5, #B7CEE8);
+}
 
 /**************/
 /* BASE RULES */
 /**************/
 
-html {
-  font-size: 100%;
+.xp1 {
+  @extend .f5;
+  @extend .measure-wide;
+  @extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
 }
 
-body {
-	background: $white;
-  font: 0.8em/1.6em $body;
-  color: $darkGray;
+.xp1 > img {
+  @extend .h-100;
+  @extend .w-100;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $headline;
-  color: $darkerGray;
-  font-weight: normal;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
+.xp2 {
+  @extend .f6;
+  @extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+  @extend .link;
+  @extend .bg-animate;
+  @extend .hover-dark-blue;
+  @extend .no-underline;
+  @extend .b;
+  @extend .blue;
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+.bg-22242C {
+  background-color: #22242C;
 }
 
-ul {
-  list-style-type: disc;
+
+.grid {
+  @extend .ma0;
+  @extend .pa0;
+  @extend .list;
 }
 
-ol {
-  list-style-type: decimal;
+.grid-item {
+  @extend .db;
+  @extend .w-third-l;
+  @extend .w-50-ns;
+  @extend .w-100;
+  @extend .fl;
+  height: 250px;
+  @extend .relative;
+  @extend .pa2;
 }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+.grid-item2 {
+  @extend .w-two-thirds-l;
+  @extend .w-100-ns;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
+.grid-item > a > span.inner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+  @extend .ma2;
 }
 
-em, i {
-  font-style: italic;
+span.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
 }
 
-strong, b {
-  font-weight: bold;
+li.grid-item > a > span.inner > span.primary {
+  @extend .bg-center;
+  @extend .cover;
+  @extend .w-100;
+  @extend .h-100;
+  @extend .db;
+  @extend .br2;
+  content: '';
 }
 
-img {
-  max-width: 100%;
+span.secondary {
+  @extend .br2;
+  @extend .o-0;
+  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+span.inner:hover > span.secondary {
+  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  @extend .o-90;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
-footer {
-  padding: 20px 0;
+span.content {
+  @extend .w-100;
   text-align: center;
+  @extend .db;
+  @extend .relative;
+  @extend .pa2;
+  @extend .pt4;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+span.content > span.title {
+  @extend .db;
+  @extend .near-white;
+  @extend .f6;
+  @extend .ttu;
+  @extend .tracked;
+  @extend .fw6;
+}
+
+span.content > span.description {
+  @extend .pa4;
+  @extend .db;
+  @extend .near-white;
+  @extend .f6;
+  @extend .fw1;
+  @extend .o-0;
+  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+span.inner:hover > span.content > span.description {
+  @extend .o-100;
+  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+span.pushdown {
+  @extend .db;
+  content: 'project';
+  height: 1px;
+  width: 20px;
+  margin-bottom: 0px;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1), margin-bottom 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+span.inner:hover > span.content > span.pushdown {
+  margin-bottom: 1rem;
+  transition: opacity 800ms cubic-bezier(0.19, 1, 0.22, 1), margin-bottom 800ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}

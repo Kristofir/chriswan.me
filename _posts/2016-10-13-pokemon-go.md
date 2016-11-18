@@ -2,7 +2,8 @@
 layout: post
 title: Pokemon Go
 published: true
-description: Pokemon Go became a global gaming and cultural phenomenon in the summer of 2016, acquiring a base of more than 40 million active players within only two weeks after its public launch.
+description: How can we bring players back into the fold and increase replayability?
+coverHeight: 25%;
 ---
 
 Originally conceived in 1995 by Satoshi Tajiri, the Pokemon media franchise empire today encompasses anime (Japanese-style animation) for film and television, manga (Japanese-style comics), trading cards, and video games—the franchise’s crown jewels. The franchise’s first generation video game launched in Japan as Pocket Monsters: Red and Green in 1996, later that year followed by Pocket Monsters: Blue. Two years later, in 1998, the game was introduced to North American audiences in a somewhat abbreviated form, Pokémon: Red and Blue, and touched off the original Pokemon “craze” as described by IGN cofounder Craig Harris in a 1999 game review. The rise of Pokémon coincided with the childhoods of millennials, many of whom remember—fondly—of game cartridges strewn across beds, fumbling for cables to link up GameBoys, and trading Pokémon with other children on shaky morning bus rides.
