@@ -22,14 +22,19 @@
 }
 
 .custom-healthcare {
-  @include bg-dg-grad(#A0AfC5, #B7CEE8);
+  @include bg-dg-grad(#A0AfC5, #CEE0F2);
 }
 
 /**************/
 /* BASE RULES */
 /**************/
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .xp1 {
   @extend .f5;
@@ -127,12 +132,13 @@ li.grid-item > a > span.inner > span.primary {
 span.secondary {
   @extend .br1;
   @extend .o-0;
-  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
 
-span.inner:hover > span.secondary {
-  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
-  @extend .o-60;
+span.inner:hover > span.secondary,
+span.inner:focus > span.secondary {
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+  @extend .o-80;
 }
 
 span.content {
@@ -151,34 +157,49 @@ span.content > span.title {
   @extend .ttu;
   @extend .tracked;
   @extend .fw6;
+  @extend .o-70;
+}
+
+span.inner:hover > span.content > span.title,
+span.inner:focus > span.content > span.title {
+  @extend .o-100;
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
 
 span.content > span.description {
   @extend .pa4;
   @extend .db;
-  @extend .near-white;
-  @extend .f6;
-  @extend .fw1;
+  @extend .white;
+  @extend .lh-copy;
+  @extend .f5;
+  @extend .fw4;
   @extend .o-0;
-  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
 
-span.inner:hover > span.content > span.description {
+span.inner:hover > span.content > span.description,
+span.inner:focus > span.content > span.description {
   @extend .o-100;
-  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
 
 span.pushdown {
   @extend .db;
+  @extend .w-100;
+  @extend .o-0;
+  @extend .f6;
+  @extend .fw4;
+  @extend .dark-gray;
   content: 'project';
   height: 1px;
-  width: 20px;
   margin-bottom: 0px;
-  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1), margin-bottom 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 300ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
 }
 
-span.inner:hover > span.content > span.pushdown {
-  margin-bottom: 1rem;
-  transition: opacity 800ms cubic-bezier(0.19, 1, 0.22, 1), margin-bottom 800ms cubic-bezier(0.19, 1, 0.22, 1);
+span.inner:hover > span.content > span.pushdown,
+span.inner:focus > span.content > span.pushdown {
+  @extend .o-100;
+  margin-bottom: 2rem;
+  transition: opacity 300ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
 
 }

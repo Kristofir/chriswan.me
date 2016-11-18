@@ -20,6 +20,7 @@ layout: default
               <span class="background secondary" style="background-color: {{ post.coverColor }};"></span>
               <span class="content">
                 <span class="pushdown">
+                  {{ post.date | date: "%B %e, %Y" }}
                 </span>
                 <span class="title">{{ post.title }}</span>
                 <span class="description">{{ post.description }}</span>

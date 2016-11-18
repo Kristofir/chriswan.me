@@ -2,10 +2,10 @@
 layout: project
 title: Healthcare Narrative
 published: true
-description: In a two day sprint, we designed a national winning patient health record.
+description: In a two day sprint for a national competition, we redesigned the patient health record and were one of a dozen winners nationwide.
 coverURL: health-cover.jpg
-coverColor: rgb(160, 175, 197)
-coverHeight: 40%;
+coverColor: rgb(160, 175, 197);
+height: 25rem;
 ---
 
 <section class="cf ph3 ph5-ns pb5 black-70 custom-healthcare">
