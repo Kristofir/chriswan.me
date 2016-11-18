@@ -25,6 +25,10 @@
   @include bg-dg-grad(#A0AfC5, #CEE0F2);
 }
 
+.custom-hackingedu {
+  @include bg-dg-grad(#b70078, #940080);
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -194,7 +198,7 @@ span.pushdown {
   content: 'project';
   height: 1px;
   margin-bottom: 0px;
-  transition: opacity 300ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
+  transition: opacity 100ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
 }
 
 span.inner:hover > span.content > span.pushdown,
