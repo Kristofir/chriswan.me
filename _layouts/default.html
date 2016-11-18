@@ -62,14 +62,14 @@
             }
       };
 
-      v// init Isotope
-var $grid = $('.grid').isotope({
-  // options...
-});
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        // options...
+      });
+      // layout Isotope after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+      });
 
     </script>
 
