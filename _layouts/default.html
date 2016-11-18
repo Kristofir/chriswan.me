@@ -49,6 +49,26 @@
             $(this).toggleClass('hover_effect');
         });
       });
+
+      $.Isotope.prototype._masonryReset = function() {
+            // layout-specific props
+            this.masonry = {};
+            // FIXME shouldn't have to call this again
+            this._getSegments();
+            var i = 3 // e.g. use jQuery data to detect the column number;
+            this.masonry.colYs = [];
+            while (i--) {
+              this.masonry.colYs.push( 0 );
+            }
+      };
+
+      var $grid = $('.grid').imagesLoaded( function() {
+        // init Isotope after all images have loaded
+        $grid.isotope({
+          // options...
+        });
+      });
+
     </script>
 
     {% include analytics.html %}

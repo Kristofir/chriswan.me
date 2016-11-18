@@ -13,7 +13,7 @@ layout: default
 
         {% assign first = true %}
         {% for post in site.posts %}
-        <li class="grid-item {% if first %}{% endif %}"  {% if post.height %}style="height: {{post.height}} !important"{% endif %}>
+        <li class="grid-item {% if first %}{% endif %}"  {% if post.height %}style="height: {{post.height}} !important;"{% endif %}>
           <a href="{{ site.baseurl }}{{ post.url }}">
             <span class="inner hover">
               <span class="background primary"  style="background: url(images/{{ post.coverURL }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#ccc{% endif %};"></span>

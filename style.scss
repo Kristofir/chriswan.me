@@ -83,8 +83,6 @@ a {
 
 /* clear fix */
 .grid:after {
-  content: '';
-  display: block;
   clear: both;
 }
 
