@@ -2,32 +2,21 @@
 layout: default
 ---
 
-<script>
-$('.grid').isotope({
-// options
-itemSelector: '.grid-item',
-  masonry: {
-    // use element for option
-    columnWidth: '.grid-sizer'
-  }
-});
-</script>
-
 <section class="cf ph3 ph5-ns pb5 bg-22242C black-70">
   <div class="mw9 center">
 
-    <h1 class="fl near-white w-100 mt5 f5 ttu tracked fw6" id="l1-history">Projects</h1>
+    <h1 class="fl near-white w-100 mt5 f5 ttu tracked fw6">Projects</h1>
+
+
     <div class="cf">
     <ul class="grid">
-        <li class="grid-sizer"></li>
 
-
+        {% assign first = true %}
         {% for post in site.posts %}
-
-        <li class="grid-item {% if post.title == 'Reddit' %}grid-item2{% endif %}">
+        <li class="grid-item {% if first %}{% endif %}"  {% if post.height %}style="height: {{post.height}} !important"{% endif %}>
           <a href="{{ site.baseurl }}{{ post.url }}">
             <span class="inner">
-              <span class="background primary"  style="background: url(images/{{ post.coverURL }}); background-color: {{ post.coverColor }};"></span>
+              <span class="background primary"  style="background: url(images/{{ post.coverURL }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#ccc{% endif %};"></span>
               <span class="background secondary" style="background-color: {{ post.coverColor }};"></span>
               <span class="content">
                 <span class="pushdown">
@@ -39,10 +28,14 @@ itemSelector: '.grid-item',
           </a>
         </li>
 
+        {% assign first = false %}
         {% endfor %}
 
 
-    </ul></div>
+    </ul>
+  </div>
+
+
 
   </div>
 </section>

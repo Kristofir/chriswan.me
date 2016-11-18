@@ -13,12 +13,9 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400|Open+Sans" rel="stylesheet">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <header class="w-100 pa3 ph5-ns bg-white">
       <div class="dt mw9 center w-100">
         <div class="dtc v-mid tl w-50">
@@ -38,6 +35,11 @@
           {{ content }}
       </section>
     </main>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script>
+    <script src='https://raw.github.com/metafizzy/isotope-masonry-horizontal/master/masonry-horizontal.js'></script>
+    <script src="scripts/isotope.js"></script>
 
     {% include analytics.html %}
   </body>

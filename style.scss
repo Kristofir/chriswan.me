@@ -29,6 +29,8 @@
 /* BASE RULES */
 /**************/
 
+* { box-sizing: border-box; }
+
 .xp1 {
   @extend .f5;
   @extend .measure-wide;
@@ -68,21 +70,29 @@ a {
   @extend .pa0;
   @extend .list;
 }
+/*
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}*/
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 .grid-item {
-  @extend .db;
   @extend .w-third-l;
-  @extend .w-50-ns;
   @extend .w-100;
   @extend .fl;
   height: 250px;
-  @extend .relative;
-  @extend .pa2;
 }
 
-.grid-item2 {
-  @extend .w-two-thirds-l;
-  @extend .w-100-ns;
+.grid-item-prime {
+  @extend .grid-item;
+  @extend .w-two-thirds;
 }
 
 .grid-item > a > span.inner {
@@ -93,10 +103,11 @@ a {
   right: 0;
   bottom: 0;
   overflow: visible;
-  @extend .ma2;
+  @extend .ma1;
 }
 
 span.background {
+  @extend .bg-center;
   position: absolute;
   top: 0;
   right: 0;
@@ -105,24 +116,23 @@ span.background {
 }
 
 li.grid-item > a > span.inner > span.primary {
-  @extend .bg-center;
   @extend .cover;
   @extend .w-100;
   @extend .h-100;
   @extend .db;
-  @extend .br2;
+  @extend .br1;
   content: '';
 }
 
 span.secondary {
-  @extend .br2;
+  @extend .br1;
   @extend .o-0;
   transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 span.inner:hover > span.secondary {
   transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1);
-  @extend .o-90;
+  @extend .o-60;
 }
 
 span.content {
