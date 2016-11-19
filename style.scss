@@ -173,10 +173,19 @@ span.inner.hover_effect > span.content > span.title {
   transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }
 
+span.light > span.content > span.title,
+span.light > span.content > span.description {
+  @extend .white;
+}
+
+span.dark > span.content > span.title,
+span.dark > span.content > span.description {
+  @extend .dark-gray;
+}
+
 span.content > span.description {
   @extend .pa4;
   @extend .db;
-  @extend .white;
   @extend .lh-copy;
   @extend .f5;
   @extend .fw4;

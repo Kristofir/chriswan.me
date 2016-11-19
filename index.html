@@ -29,7 +29,7 @@ layout: default
         {% for post in site.posts %}
         <li class="grid-item {% if first %}{% endif %}" {% if post.cover-height %}style="height: {{post.cover-height}} !important;"{% endif %}>
           <a href="{{ site.baseurl }}{{ post.url }}">
-            <span class="inner">
+            <span class="inner {% if post.cover-scheme %}dark{% else %}light{% endif %}">
               <span class="background primary" {% if post.cover-image or post.cover-color %}style="background: url(images/{{ post.cover-image }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#333{% endif %};"{% endif %}></span>
               <span class="background secondary" {% if post.cover-color %}style="background-color: {{ post.cover-color }};" {% endif %}></span>
               <span class="content">
