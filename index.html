@@ -2,6 +2,20 @@
 layout: default
 ---
 
+<section class="cf ph3 ph5-ns pb5 bg-near-white black-70" style="background-image: url(images/floaters.svg)" id="introduction">
+  <div class="mw9 center">
+    <div class="cf">
+
+      <h1 class="fl dark-gray w-100 mt5 f5 ttu tracked fw6">Hello</h1></div>
+
+      <h1 class="f1 lh-title mid-gray">My name is Chris and and I am a UX designer looking for work.</h1>
+
+      <p class="fl w-100 w-third-l pr3">Placeholder text! More to come.</p>
+
+      <p class="fl w-100 w-third-l pr3">Placeholder text! More to come.</p>
+  </div>
+</section>
+
 <section class="cf ph3 ph5-ns pb5 bg-22242C black-70">
   <div class="mw9 center">
 
@@ -13,11 +27,11 @@ layout: default
 
         {% assign first = true %}
         {% for post in site.posts %}
-        <li class="grid-item {% if first %}{% endif %}"  {% if post.height %}style="height: {{post.height}} !important;"{% endif %}>
+        <li class="grid-item {% if first %}{% endif %}" {% if post.cover-height %}style="height: {{post.cover-height}} !important;"{% endif %}>
           <a href="{{ site.baseurl }}{{ post.url }}">
             <span class="inner">
-              <span class="background primary"  style="background: url(images/{{ post.coverURL }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#ccc{% endif %};"></span>
-              <span class="background secondary" style="background-color: {{ post.coverColor }};"></span>
+              <span class="background primary" {% if post.cover-image or post.cover-color %}style="background: url(images/{{ post.cover-image }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#333{% endif %};"{% endif %}></span>
+              <span class="background secondary" {% if post.cover-color %}style="background-color: {{ post.cover-color }};" {% endif %}></span>
               <span class="content">
                 <span class="pushdown">
                   {{ post.date | date: "%B %e, %Y" }}

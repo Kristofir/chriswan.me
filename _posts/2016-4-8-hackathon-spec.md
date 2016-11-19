@@ -2,9 +2,9 @@
 layout: project
 title: Hackathon Banner Concept
 description: Must a banner be a lifeless placard? An events schedule banner for a hackathon provides opportunities for interaction.
-height: 45rem
-coverColor: rgb(195, 0, 117);
-coverURL: hackingedu-cover.png
+cover-height: 45rem
+cover-color: rgb(195, 0, 117);
+cover-image: hackingedu-cover.png
 ---
 <section class="cf ph3 ph5-ns pb5 black-70 custom-hackingedu" style="background-color: rgb(195, 0, 117)">
 
