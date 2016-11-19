@@ -23,8 +23,8 @@
 	background-position: center;
 	background-repeat: repeat;
   @extend .cover;
-	animation: animated-introduction-bg 120s linear infinite;
-  -webkit-animation: animated-introduction-bg 120s linear infinite;
+	animation: animated-introduction-bg 240s linear infinite;
+  -webkit-animation: animated-introduction-bg 240s linear infinite;
 }
 
 @mixin bg-dg-grad($color1, $color2) {
