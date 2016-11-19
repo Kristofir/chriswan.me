@@ -4,7 +4,7 @@ title: Healthcare Narrative
 published: true
 description: In a two day sprint for a national competition, we redesigned the patient health record and were one of a dozen winners nationwide.
 cover-image: health-cover.png
-cover-cover: rgb(160, 175, 197)
+cover-color: rgb(160, 175, 197)
 height: 25rem
 ---
 
