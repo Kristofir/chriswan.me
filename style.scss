@@ -24,6 +24,7 @@
 	background-repeat: repeat;
   @extend .cover;
 	animation: animated-introduction-bg 30s linear infinite;
+  -webkit-animation: animated-introduction-bg 30s linear infinite;
 }
 
 @mixin bg-dg-grad($color1, $color2) {
