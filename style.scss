@@ -14,7 +14,7 @@
 /****************/
 
 @keyframes animated-introduction-bg {
-	from { background-position: 0 100em; }
+	from { background-position: 0 400em; }
 	to { background-position: 0 0em; }
 }
 
@@ -23,8 +23,8 @@
 	background-position: center;
 	background-repeat: repeat;
   @extend .cover;
-	animation: animated-introduction-bg 30s linear infinite;
-  -webkit-animation: animated-introduction-bg 30s linear infinite;
+	animation: animated-introduction-bg 120s linear infinite;
+  -webkit-animation: animated-introduction-bg 120s linear infinite;
 }
 
 @mixin bg-dg-grad($color1, $color2) {
