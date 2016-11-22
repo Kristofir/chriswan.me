@@ -26,13 +26,16 @@ permalink: /about/
 
   <div class="mw9 center">
 
-    <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Placeholder text</h1>
+    <h1 class="fl w-100 mt5 mb5 f5 ttu tracked fw6">Words I Aspire To</h1>
+    <div class="cf">
+      <article class="pv2 pr3 fl w-100 w-50-l">
+        <h1 class="f4 f3-l lh-copy fw6"> “A good computer-machine interface is a piece of art and should be treated as such.” <span class="fw1">Michael Picheny, senior manager of IBM Watson Multimodal</span></h1>
+      </article>
+      <article class="pv2 fl w-100 w-50-l">
 
-    <article class="pv2 fl w-100 w-50-l" id="me">
-        <h3 class="f6 ttu fw6 mb0 mt5 bb pb2">Placeholder</h3>
-
-      <p class="xp1">Placeholder</p>
-    </article>
+        <p class="xp1">Placeholder</p>
+      </article>
+    </div>
 
 
   </div>
