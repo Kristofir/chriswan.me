@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<section class="cf ph3 ph5-ns pb5 bg-near-white black-70" style="background-image: url(images/floaters.svg)" id="introduction">
-  <div class="mw9 center">
+<section class="bg-near-white black-70" style="background-image: url(images/floaters.svg)" id="introduction">
+  <container>
     <div class="cf">
 
       <h1 class="fl dark-gray w-100 mt5 f5 ttu tracked fw6">Hello</h1></div>
@@ -13,18 +13,19 @@ layout: default
       <p class="fl w-100 w-third-l pr3">“A good computer-machine interface is a piece of art and should be treated as such.”</p>
 
       <p class="fl w-100 w-third-l pr3">Placeholder text! More to come.</p>
-  </div>
+  </container>
 </section>
 
 <section class="cf ph3 ph5-ns pb5 bg-22242C black-70">
-  <div class="mw9 center">
+  <container>
 
-    <div class="cf"><h1 class="fl near-white w-100 mt5 mb4 f5 ttu tracked fw6">Projects</h1></div>
+    <div class="cf">
+      <h1 class="fl near-white w-100 mt5 mb4 f5 ttu tracked fw6">Projects</h1>
+    </div>
 
 
     <div class="cf">
-    <ul class="grid">
-
+      <ul class="grid">
         {% assign first = true %}
         {% for post in site.posts %}
         <li class="grid-item {% if first %}{% endif %}" {% if post.cover-height %}style="height: {{post.cover-height}} !important;"{% endif %}>
@@ -45,18 +46,11 @@ layout: default
 
         {% assign first = false %}
         {% endfor %}
-
-
-    </ul>
-  </div>
-
-
-
-  </div>
+      </ul>
+    </div>
+  </container>
 </section>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/scripts/isotope.pkgd.min.js"></script>
-  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/isotope.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/imagesloaded.pkgd.min.js"></script>
 <script src="scripts/isotope.js"></script>

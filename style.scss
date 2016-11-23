@@ -14,16 +14,16 @@
 /****************/
 
 @keyframes animated-introduction-bg {
-	from { background-position: 0 200em; }
-	to { background-position: 0 0em; }
+	from { background-position: 0 240em; }
+	to { background-position: 0 0; }
 }
 
 #introduction	{
 	background-position: center;
 	background-repeat: repeat;
   @extend .cover;
-	animation: animated-introduction-bg 120s linear infinite;
-  -webkit-animation: animated-introduction-bg 120s linear infinite;
+	animation: animated-introduction-bg 90s linear infinite;
+  -webkit-animation: animated-introduction-bg 90s linear infinite;
 }
 
 @mixin bg-dg-grad($color1, $color2) {
@@ -53,6 +53,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.f7 {
+	font-size: 0.75 em;
+}
+
+.f8 {
+	font-size: 0.625 em;
+}
+
+
 .xp1 {
   @extend .f5;
   @extend .measure-wide;
@@ -72,6 +81,82 @@
   @extend .lh-copy;
   @extend .mt0;
   @extend .pv2;
+}
+
+.article-header {
+	@extend .f6;
+	@extend .ttu;
+	@extend .fw6;
+	@extend .mb0;
+	@extend .mt3;
+	@extend .bb;
+	@extend .pb2;
+}
+
+section {
+	@extend .cf;
+	@extend .ph3;
+	@extend .ph5-ns;
+	@extend .pa3;
+	@extend .w-100;
+}
+
+section > div > h1,
+section > container > h1 {
+	@extend .fl;
+	@extend .w-100;
+	@extend .mv4;
+
+	@extend .f5;
+	@extend .ttu;
+	@extend .tracked;
+	@extend .fw6;
+}
+
+section > container {
+	@extend .mw9;
+	@extend .center;
+}
+
+section > container > article.full ,
+section > container > div.cf > article.full {
+	@extend .ma0;
+	@extend .pv2;
+	@extend .fl;
+	@extend .w-100;
+}
+
+section > container > article.half ,
+section > container > div.cf > article.half,
+section > container > div.cf > figure.half {
+	@extend .ma0;
+	@extend .pv2;
+	@extend .pr2;
+	@extend .fl;
+	@extend .w-100;
+	@extend .w-50-l;
+}
+
+figure > figcaption {
+	@extend .f6;
+	@extend .fw2;
+	@extend .mid-gray;
+	@extend .mt2;
+}
+
+section > container > article.third ,
+section > container > div.cf > article.third {
+	@extend .ma0;
+	@extend .pv2;
+	@extend .pr2;
+	@extend .fl;
+	@extend .w-100;
+	@extend .w-third-l;
+}
+
+section > container > article > p,
+section > container > div.cf > article > p {
+	@extend .xp1;
 }
 
 // Default hyperlink style
@@ -131,12 +216,12 @@ li.grid-item > a > span.inner > span.primary {
   @extend .w-100;
   @extend .h-100;
   @extend .db;
-  @extend .br1;
+  //@extend .br1;
   content: '';
 }
 
 span.secondary {
-  @extend .br1;
+  //@extend .br1;
   @extend .o-0;
   transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
 }

@@ -10,53 +10,57 @@ height: 25rem
 
 <section class="cf ph3 ph5-ns pb5 black-70 custom-healthcare">
 
-  <div class="mw9 center">
+  <container>
     <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Challenge.gov</h1>
 
     <div class="cf">
-    <h3 class="f6 ttu fw6 mb0 mt5 bb pb2">Introduction</h3>
+    <h3 class="article-header">Introduction</h3>
       <article class="pv2 fl w-100 w-50-l pr2">
-        <p class="xp1">Challenge.gov's Healthcare Record Design Challenged charged us with reconsidering the following: How might we design a more accessible healthcare record? In a two day sprint, our team designed a winning entry that approached healthcare history as a narrative.</p>
+        <p>Challenge.gov's Healthcare Record Design Challenged charged us with reconsidering the following: How might we design a more accessible healthcare record? In a two day sprint, our team designed a winning entry that approached healthcare history as a narrative.</p>
       </article>
       <article class="pv2 fl w-100 w-50-l pr2">
-        <p class="xp1">
+        <p>
           <img src="{{ site.baseurl }}/images/health-1.jpg" />
         </p>
       </article>
     </div>
-  </div>
+  </container>
 
 </section>
 
-<section class="cf ph3 ph5-ns pb5 bg-near-white black-70">
+<section class="bg-near-white">
 
-  <div class="mw9 center">
+  <container>
 
     <div class="cf">
-      <h3 class="f6 ttu fw6 mb0 mt5 bb pb2">Research</h3>
-      <article class="pv2 fl w-100 w-50-l pr2">
+      <h3 class="article-header">Research</h3>
+      <article class="half">
 
-        <p class="xp1">After pouring through the sample data of the challenge, we quickly realized the lack of clarity with current text-only medical records, Although inaccessible and nearly illegible, the real problem was the layout. Our sample patient's medical history was full of past events that affected her future; a fall on the ice three winters ago led to chronic ankle pain that she experienced to the present.</p>
+        <p>After pouring through the sample data of the challenge, we quickly realized the lack of clarity with current text-only medical records, Although inaccessible and nearly illegible, the real problem was the layout. Our sample patient's medical history was full of past events that affected her future; a fall on the ice three winters ago led to chronic ankle pain that she experienced to the present.</p>
       </article>
-      <article class="pv2 fl w-100 w-50-l pr2">
-        <p class="xp1">
+      <article class="half">
+        <p>
           <img src="{{ site.baseurl }}/images/health-2.jpg" />
         </p>
       </article>
     </div>
 
     <div class="cf">
-      <h3 class="f6 ttu fw6 mb0 mt5 bb pb2">Design</h3>
-      <article class="pv2 fl w-100 w-50-l pr2">
-        <p class="xp1"> Our final prototype emphasized the cause and effect that healthcare has on our daily lives. Details with an impact include color-coding visits (planned checkups versus unexpected emergencies), plain language explanations, and a dead simple medication section that nabbed us a 3rd place medal.</p>
+      <h3 class="article-header">Design</h3>
+      <article class="half">
+        <p> Our final prototype emphasized the cause and effect that healthcare has on our daily lives. Details with an impact include color-coding visits (planned checkups versus unexpected emergencies), plain language explanations, and a dead simple medication section that nabbed us a 3rd place medal.</p>
       </article>
-      <article class="pv2 fl w-100 w-50-l pr2">
-        <p class="xp1">
+      <article class="half">
+        <p>
           <img src="{{ site.baseurl }}/images/health-3.jpg" />
         </p>
       </article>
     </div>
+  </container>
+</section>
 
-</div>
+<section class="bg-near-white pa0">
+
+  <img src="{{ site.baseurl }}/images/health-4.jpg" />
 
 </section>

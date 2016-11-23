@@ -30,11 +30,37 @@
     </header>
 
     <main class="w-100 bt b--black-10 bg-white">
-      <section class="bg-black-0125 w-100">
-          {{ content }}
-      </section>
+        {{ content }}
     </main>
-
+    <!-- Don't include until worked out
+    <footer class="w-100 pa3 ph5-ns bg-dark-gray">
+      <div class="mw9 center w-100 pb6 pt4 cf">
+        <div class="fl w-25">
+          <a href="/" class="f5 f4-ns fw6 link black-70" title="Home">
+            Chris Wan
+          </a>
+        </div>
+        <ul class="fl w-25 ma0 list">
+          <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Projects</h3>
+          {% for post in site.posts %}
+          <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="lh-copy f5 normal light-gray">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="fl w-25 ma0 list">
+          <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Posts</h3>
+          {% for post in site.posts %}
+          <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="lh-copy f5 normal light-gray">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="fl w-25 ma0 list">
+          <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Misc.</h3>
+          {% for post in site.posts %}
+          <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="lh-copy f5 normal light-gray">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </footer>
+  -->
 
     {% include analytics.html %}
   </body>
