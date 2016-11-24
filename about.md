@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About
+title: About 履歴書+プロフィール
 permalink: /about/
 ---
 
 <section class="bg-gold">
   <container>
-    <h1>Who am I?</h1>
+    <h1>Who am I? <span class="fw1">私は誰？</span></h1>
     <article class="half" id="me">
         <h2 class="f6 ttu fw6 mb0 mt5 bb pb2">Who I am.</h2>
 
@@ -18,23 +18,27 @@ permalink: /about/
 </section>
 <section class="bg-white">
   <container>
-    <h1>Words I Aspire To</h1>
+    <h1>Words I Aspire To <span class="fw1">インスピレーション</span></h1>
     <div class="cf">
-      <article class="half">
-        <h1 class="f4 f3-l lh-copy fw6"> “A good computer-machine interface is a piece of art and should be treated as such.” <span class="fw1">Michael Picheny, senior manager of IBM Watson Multimodal</span></h1>
-      </article>
-      <article class="half">
-        <p>Placeholder</p>
+      <article class="full">
+        <h1 class="f4 f3-l lh-copy fw6 hide-child">
+          <div class="child mw9 ph3 ph5-ns absolute left-0">
+            <span class="relative top--2 blue tracked fw1">「良い人間のマシンインターフェースは芸術作品であり、そのように扱うべきだ」</span>
+          </div>
+          “A good computer-machine interface is a piece of art and should be treated as such.”
+          <span class="fw1">Michael Picheny, senior manager of IBM Watson Multimodal</span>
+        </h1>
+
       </article>
     </div>
   </container>
 </section>
-<section class="bg-white bt b--black-10">
+<section class="bg-white bt b--black-100">
   <container>
-    <h1>Skills</h1>
+    <h1>Skills <span class="red">スキルセット</span></h1>
 
     <div class="cf">
-      <h3 class="article-header">General</h3>
+      <h3 class="article-header">General <span class="red">能力</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">Design Research</h3>
         <p>I methodically approach design problems, question base assumptions, and investigate possibilities.</p>
@@ -50,7 +54,7 @@ permalink: /about/
     </div>
 
     <div class="cf">
-      <h3 class="article-header">Design, Prototyping, and Drafting</h3>
+      <h3 class="article-header">Design, Prototyping, and Drafting <span class="red">デザイン、プロトタイピング、製図</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Adobe Photoshop
@@ -122,27 +126,27 @@ permalink: /about/
     </div>
 
     <div class="cf">
-      <h3 class="article-header">Languages and Frameworks</h3>
+      <h3 class="article-header">Languages and Frameworks <span class="red">プログラミング言語</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           HTML
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/html-512.png" /></span>
         </h3>
-        <p>Been using HTML for a long time — since Macromedia Dreamweaver. Yeah. That's just how long.</p>
+        <p>Total mastery: I've used HTML for a long time — since Macromedia Dreamweaver. Yeah. That's just how long.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           CSS
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/css-512.png" /></span>
         </h3>
-        <p>Known CSS as long as I've known HTML.</p>
+        <p>Total mastery: I've known CSS as long as I have for HTML.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           JQuery
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/javascript-256.png" /></span>
         </h3>
-        <p>Have high working knowledge of Javascript and JQuery.</p>
+        <p>Proficient.</p>
       </article>
     </div>
 
@@ -152,21 +156,21 @@ permalink: /about/
           Python
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/python-256.png" /></span>
         </h3>
-        <p>Have 4 years of experience with Python language. Used Python for general programming, data parsing, etc.</p>
+        <p>Proficient: I have 4 years of experience with Python language. Used Python for general programming, data parsing, etc.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           D3.js
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/d3js-256.png" /></span>
         </h3>
-        <p>Have working knowledge of Data-Driven Documents, a data visualization Javascript library.</p>
+        <p>Familiar: I have working knowledge of Data-Driven Documents, a data visualization Javascript library.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Angular 2
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/angularjs-256.png" /></span>
         </h3>
-        <p>Have limited working knowledge of Angular 2 and the MVC paradigm.</p>
+        <p>Familiar: I have limited working knowledge of Angular 2 and the MVC paradigm.</p>
       </article>
     </div>
 
@@ -177,6 +181,13 @@ permalink: /about/
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/latex-n.png" /></span>
         </h3>
         <p>Typesetting system widely used in academia. Useful for formatting highly technical documents.</p>
+      </article>
+      <article class="third">
+        <h3 class="f5 f4-ns fw6 mb0">
+          C++
+          <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/cpp-256.png" /></span>
+        </h3>
+        <p>Limited working knowledge.</p>
       </article>
     </div>
 
