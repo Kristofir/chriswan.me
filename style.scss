@@ -39,7 +39,7 @@
 }
 
 .custom-hackingedu {
-  @include bg-dg-grad(#b70078, #940080);
+  @include bg-dg-grad(rgb(195, 0, 117), #940080);
 }
 
 /**************/
@@ -117,12 +117,14 @@ section > container > div.cf > h1 {
 section > container {
 	@extend .mw9;
 	@extend .center;
+	@extend .cf;
 }
 
 section > container > article.full ,
 section > container > div.cf > article.full {
 	@extend .ma0;
-	@extend .pv2;
+	@extend .pv1;
+	@extend .pv2-l;
 	@extend .fl;
 	@extend .w-100;
 }
@@ -131,7 +133,8 @@ section > container > article.half ,
 section > container > div.cf > article.half,
 section > container > div.cf > figure.half {
 	@extend .ma0;
-	@extend .pv2;
+	@extend .pv1;
+	@extend .pv2-l;
 	@extend .pr2;
 	@extend .fl;
 	@extend .w-100;
@@ -145,10 +148,12 @@ figure > figcaption {
 	@extend .mt2;
 }
 
-section > container > article.third ,
+section > container > article.third,
+section > container > div.third,
 section > container > div.cf > article.third {
 	@extend .ma0;
-	@extend .pv2;
+	@extend .pv1;
+	@extend .pv2-l;
 	@extend .pr2;
 	@extend .fl;
 	@extend .w-100;

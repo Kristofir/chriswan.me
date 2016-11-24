@@ -34,6 +34,7 @@ permalink: /about/
     <h1>Skills</h1>
 
     <div class="cf">
+      <h3 class="article-header">General</h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">Design Research</h3>
         <p>I methodically approach design problems, question base assumptions, and investigate possibilities.</p>
@@ -49,25 +50,26 @@ permalink: /about/
     </div>
 
     <div class="cf">
+      <h3 class="article-header">Design, Prototyping, and Drafting</h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Adobe Photoshop
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/photoshop-512.png" /></span>
         </h3>
-        <p>At least 10 years of experience.</p>
+        <p>General purpose image editing and manipulation program. 10+ years of experience.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Adobe Illustrator
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/illustrator-512.png" /></span>
         </h3>
-        <p>General purpose design and illustration program. At least 10 years of experience.</p>
+        <p>General purpose design and illustration program. 10+ years of experience.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Adobe Indesign
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/indesign-512.png" /></span></h3>
-        <p>4 years of experience.</p>
+        <p>General purpose desktop publishing program. 4 years of experience.</p>
       </article>
     </div>
 
@@ -120,6 +122,7 @@ permalink: /about/
     </div>
 
     <div class="cf">
+      <h3 class="article-header">Languages and Frameworks</h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           HTML
@@ -137,9 +140,9 @@ permalink: /about/
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           JQuery
-          <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/css-512f.png" /></span>
+          <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/javascript-256.png" /></span>
         </h3>
-        <p>Have working knowledge of JQuery and Javascript.</p>
+        <p>Have high working knowledge of Javascript and JQuery.</p>
       </article>
     </div>
 
@@ -149,7 +152,7 @@ permalink: /about/
           Python
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/python-256.png" /></span>
         </h3>
-        <p>Have 4 years of experience with Python language.</p>
+        <p>Have 4 years of experience with Python language. Used Python for general programming, data parsing, etc.</p>
       </article>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
@@ -163,7 +166,17 @@ permalink: /about/
           Angular 2
           <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/angularjs-256.png" /></span>
         </h3>
-        <p>Have limited working knowledge of Angular 2 (which is very different from AngularJS One). Knowledgeable about the model-view-controller paradigm.</p>
+        <p>Have limited working knowledge of Angular 2 and the MVC paradigm.</p>
+      </article>
+    </div>
+
+    <div class="cf">  
+      <article class="third">
+        <h3 class="f5 f4-ns fw6 mb0">
+          LaTeX
+          <span class="logo-32"><img src="{{ site.baseurl }}/images/logos/latex-n.png" /></span>
+        </h3>
+        <p>Typesetting system widely used in academia. Useful for formatting highly technical documents.</p>
       </article>
     </div>
 

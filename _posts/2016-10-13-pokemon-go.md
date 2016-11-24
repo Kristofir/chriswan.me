@@ -3,7 +3,7 @@ layout: project
 title: Pokemon Go
 published: true
 description: How can we bring players back into the fold and increase replayability?
-cover-height: 25em;
+cover-height: 23em;
 cover-color: rgb(254, 213, 48)
 ---
 <section class="bg-yellow">
