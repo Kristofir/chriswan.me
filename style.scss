@@ -102,7 +102,8 @@ section {
 }
 
 section > div > h1,
-section > container > h1 {
+section > container > h1,
+section > container > div.cf > h1 {
 	@extend .fl;
 	@extend .w-100;
 	@extend .mv4;
@@ -157,6 +158,17 @@ section > container > div.cf > article.third {
 section > container > article > p,
 section > container > div.cf > article > p {
 	@extend .xp1;
+}
+
+.logo-32 {
+	@extend .absolute;
+	@extend .di;
+	@extend .mh1;
+}
+
+.logo-32 > img {
+	@extend .relative;
+	height: 20px;
 }
 
 // Default hyperlink style
