@@ -4,28 +4,24 @@ title: About 履歴書+プロフィール
 permalink: /about/
 ---
 
-<section class="bg-gold">
+<section class="bg-washed-red">
   <container>
-    <h1>Who am I? <span class="fw1">私は誰？</span></h1>
-    <article class="half" id="me">
-        <h2 class="f6 ttu fw6 mb0 mt5 bb pb2">Who I am.</h2>
-
-      <p>I'm a recent graduate from the University of Illinois at Urbana-Champaign where I studied architecture and human-computer interaction. </p>
-
-      <p>Sorry about the mess. This site is under construction. Please check back in a week or two! Thanks!</p>
+    <h1>Who am I? <span class="fw9 red">私は誰？</span></h1>
+    <article class="full">
+      <p class="f4 f3-l mw-100">I am a recent graduate from the University of Illinois at Urbana-Champaign where I studied architecture and human-computer interaction. I was a studio lead at <a target="tab" href="http://designforamerica.com">Design for America</a> where I helped students engage in design for social good and learn about design thinking and human-centered design. </p>
     </article>
   </container>
 </section>
 <section class="bg-white">
   <container>
-    <h1>Words I Aspire To <span class="fw1">インスピレーション</span></h1>
+    <h1>Words I Aspire To <span class="db di-l fw9 blue">インスピレーション</span></h1>
     <div class="cf">
       <article class="full">
         <h1 class="f4 f3-l lh-copy fw6 hide-child">
           <div class="child mw9 ph3 ph5-ns absolute left-0">
-            <span class="relative top--2 blue tracked fw1">「良い人間のマシンインターフェースは芸術作品であり、そのように扱うべきだ」</span>
+            <span class="relative top--2 blue tracked fw9">「良い人間のマシンインターフェースは芸術作品であり、そのように扱うべきだ」</span>
           </div>
-          “A good computer-machine interface is a piece of art and should be treated as such.”
+          <span class="blue">“A good computer-machine interface is a piece of art and should be treated as such.”</span>
           <span class="fw1">Michael Picheny, senior manager of IBM Watson Multimodal</span>
         </h1>
 
@@ -38,7 +34,7 @@ permalink: /about/
     <h1>Skills <span class="red">スキルセット</span></h1>
 
     <div class="cf">
-      <h3 class="article-header">General <span class="red">能力</span></h3>
+      <h3 class="article-header b--red">General <span class="red">能力</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">Design Research</h3>
         <p>I methodically approach design problems, question base assumptions, and investigate possibilities.</p>
@@ -54,7 +50,7 @@ permalink: /about/
     </div>
 
     <div class="cf">
-      <h3 class="article-header">Design, Prototyping, and Drafting <span class="red">デザイン、プロトタイピング、製図</span></h3>
+      <h3 class="article-header b--red">Design, Prototyping, and Drafting <span class="db di-l red">デザイン、プロトタイピング、製図</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           Adobe Photoshop
@@ -126,7 +122,7 @@ permalink: /about/
     </div>
 
     <div class="cf">
-      <h3 class="article-header">Languages and Frameworks <span class="red">プログラミング言語</span></h3>
+      <h3 class="article-header  b--red">Languages and Frameworks <span class="db di-l red">プログラミング言語</span></h3>
       <article class="third">
         <h3 class="f5 f4-ns fw6 mb0">
           HTML
