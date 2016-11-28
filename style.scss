@@ -42,6 +42,10 @@
   @include bg-dg-grad(rgb(195, 0, 117), #940080);
 }
 
+.bg-22242C {
+  background-color: #22242C;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -102,8 +106,8 @@ section {
 }
 
 section > div > h1,
-section > container > h1,
-section > container > div.cf > h1 {
+section > .container > h1,
+section > .container > div.cf > h1 {
 	@extend .fl;
 	@extend .w-100;
 	@extend .mv4;
@@ -114,14 +118,15 @@ section > container > div.cf > h1 {
 	@extend .fw6;
 }
 
-section > container {
+section > div.container {
 	@extend .mw9;
 	@extend .center;
 	@extend .cf;
 }
 
-section > container > article.full ,
-section > container > div.cf > article.full {
+section > .container > article.full,
+section > .container > div.hero,
+section > .container > div.cf > article.full {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -129,9 +134,9 @@ section > container > div.cf > article.full {
 	@extend .w-100;
 }
 
-section > container > article.half ,
-section > container > div.cf > article.half,
-section > container > div.cf > figure.half {
+section > .container > article.half ,
+section > .container > div.cf > article.half,
+section > .container > div.cf > figure.half {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -148,9 +153,9 @@ figure > figcaption {
 	@extend .mt2;
 }
 
-section > container > article.third,
-section > container > div.third,
-section > container > div.cf > article.third {
+section > .container > article.third,
+section > .container > div.third,
+section > .container > div.cf > article.third {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -160,8 +165,8 @@ section > container > div.cf > article.third {
 	@extend .w-third-l;
 }
 
-section > container > article > p,
-section > container > div.cf > article > p {
+section > .container > article > p,
+section > .container > div.cf > article > p {
 	@extend .xp1;
 }
 
@@ -179,16 +184,10 @@ section > container > div.cf > article > p {
 // Default hyperlink style
 a {
   @extend .link;
-  @extend .bg-animate;
-  @extend .hover-dark-blue;
-  @extend .no-underline;
-  @extend .b;
+  @extend .hover-red;
   @extend .blue;
 }
 
-.bg-22242C {
-  background-color: #22242C;
-}
 
 
 ul.grid {

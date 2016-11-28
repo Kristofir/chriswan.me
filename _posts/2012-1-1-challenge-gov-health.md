@@ -10,7 +10,7 @@ height: 25rem
 
 <section class="cf ph3 ph5-ns pb5 black-70 custom-healthcare">
 
-  <container>
+  <div class="container">
     <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Challenge.gov</h1>
 
     <div class="cf">
@@ -24,13 +24,13 @@ height: 25rem
         </p>
       </article>
     </div>
-  </container>
+  </div>
 
 </section>
 
 <section class="bg-near-white">
 
-  <container>
+  <div class="container">
 
     <div class="cf">
       <h3 class="article-header">Research</h3>
@@ -56,7 +56,9 @@ height: 25rem
         </p>
       </article>
     </div>
-  </container>
+    
+  </div>
+
 </section>
 
 <section class="bg-near-white pa0">

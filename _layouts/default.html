@@ -16,25 +16,27 @@
   </head>
 
   <body>
-    <header class="w-100 pa3 ph5-ns bg-white">
-      <div class="dt mw9 center w-100">
-        <div class="dtc v-mid tl w-50">
-          <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black hover-red dim" title="Home">
-            Chris Wan
-          </a>
+    <header>
+      <section class="bg-white">
+        <div class="dt container">
+          <div class="dtc v-mid tl w-50">
+            <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black hover-red dim" title="Home">
+              Chris Wan
+            </a>
+          </div>
+          <nav class="db dtc v-mid w-50 tr">
+            <a title="すべてのプロジPROJECTSェクトを見る" href="{{ site.baseurl }}/" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">Projects <span class="red">プロジェクト</span></a>
+            <a title="人物の略歴" href="{{ site.baseurl }}/about" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">About <span class="red">プロフィール</span></a>
+          </nav>
         </div>
-        <nav class="db dtc v-mid w-50 tr">
-          <a title="すべてのプロジPROJECTSェクトを見る" href="{{ site.baseurl }}/" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">Projects <span class="red">プロジェクト</span></a>
-          <a title="人物の略歴" href="{{ site.baseurl }}/about" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">About <span class="red">プロフィール</span></a>
-        </nav>
-      </div>
+      </section>
     </header>
 
 
 
 
 
-    <main class="w-100 bt b--black-10 bg-white">
+    <main class="bt b--black-10 bg-white">
         {{ content }}
     </main>
 
@@ -42,9 +44,9 @@
 
 
 
-    <footer class="w-100">
+    <footer>
       <section class="bg-near-black silver b--silver bt">
-        <container>
+        <div class="container">
           <div class="third">
             <span class="f6 fw1 ">キュウリのようにクール🥒！</span>
           </div>
@@ -53,7 +55,7 @@
               <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Projects&nbsp;<span class="fw1">プロジェクト</span></h3>
               {% for post in site.posts %}
               {% if post.layout == "project" %}
-              <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="lh-copy f5 normal silver">{{ post.title }}</a></li>
+              <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="link lh-copy f5 normal silver hover-red">{{ post.title }}</a></li>
               {% endif %}
               {% endfor %}
             </ul>
@@ -64,54 +66,10 @@
               <li class="mb1">(None yet)</li>
             </ul>
           </div>
-        </container>
+        </div>
       </section>
     </footer>
 
     {% include analytics.html %}
   </body>
 </html>
-
-<!--:***:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::.:.::.::::::::::::::.:::::::::::::::::::::::::
-****:::::::::::::::::::::::::::::::::::::::::::::::::::::..:::::::..:....::.::......:.::::...:::::..:..:..:..::.:::::::..:.:::::
-***::::::::::::::::::::::::::::::...:::::.:::..:.:..........::::::.::...:.:.:..:.....::.:.........................:::::::...::::
-**:::::I***I:::::::::::::::::::::::::::...:.::...:::....:.:.:::::...:.....:............::......:::......:...:::...:::::::.::..::
-*:::::::*I:*:::::::::::::::::::::::::::::**IV......I*:::::::::::::.::..::...:::.::::..:.........::::....::.....::.::::::.:::::::
-**::::::IF:*:::::::::::::::::::::::I:............:::*:..*...:.:::...::..:.......:............:..:.....:.::.....:....:::..:::..::
-***:*::::V.::::::::::::.........I...............:::...::I..I:::::.::..:..........................:.:..:...:::....:::::.:::::::::
-*::::*:*:*:*:::::::::.......I...............II:I:II:...:.*...:.*..:..::.....................Thanks.....:.:::::::.:::::::::::::::
-*:::I:::.:.*::::.:::::...::........*:.:...I*.:I:*IIV:.::***I:I:::.::.::::...................for.....::::::::::::::::::::::::::::
-********::*::*::::::...I.........:**:*III:IIIFVFNF:*I..**::.:*.I*:::::......................checking:..:::::::::::::::.:::::::::
-***VF*:****:*::::::::V.........**:*:.::NFFFIIFNNNNF..::*I:*.:.::::::.............:..........out:.:::::::::::::::::::::::::::::::
-***IV***I:::*:::::V..........::.::*NF*FNNFFNNVFFFNNNV:::.I.*..:.....I:.**...................the:::::::::::::::::::::::::::::::::
-*******I::****::::...........INFFN*FNNNVNNNNVFFNNVFIFV:II*::*:*..**I:*:.::..................code!....::.::::::::::::::::::::::::
-****I***********.............INFFNFNNNVNNFNVNNNNVFNNNNN:..::.:*.::..I....*:.................<3.Chris...:::::::::::::::::::::::::
-*************V:...............:FNNVFNFVFNNINNFVFNNVNNFF*...I*.*II..::..:.I.I:...............Wan..........:.:...:.....:::::::::::
-II********VI:.:....................:I::NNFFFVFFNNFNIFVF:*.:*::::.::..*:II:..:::.:.:....................................:.:.:.:.:
-FFFFFFVFV:::.:::....::I*......I...:II:VFNVNIFV:NFNFFF:......:.:*:I:..I:**I..:...............This.site.uses:....................:
-*IVV*::.:.:...::I:::I*:...:..::::V:..FNI.V*INFIFFFFF:.........:I..::*.*.::*:::..:...........*Isotope.js........................:
-:::::::::*:...:*::.:I::*I.:*.*I::II.:.:.:VFF*FFNNVFF...:...........*I****...:...............*jQuery,,,,...........:..........*..
-:::*I***I*V:*FFV*::.***:I.*:.****I:::*::.:.*I*:NNVFI:................:.:..:::::..::.........*Jekyll................:.:.....*....
-:::::*V**I*:.NFNIFNV:::*IV*.::FNVNVFIN**:I*FVFNFNFV::...:..:.::.::.::..:::.::...:...........*ImagesLoaded.js............:*.....:
-::I***::I*:*:IVFVNFVV.:I**:*...VF*:FVFIVVVVF:NFINNFI........::.....::.......................*Tachyons;CSS.v4.5.5.....:........:*
-:V****INF*:*V*V*FINNF:**I*::I:*.IIIFNFNFNVVIFNFFNNFV........:.........................::...:.............:.:.:::......I........:
-::*:IV::FNVVNNIFFFF:*IV::*VFN*II..*INNFNFFFNVVFVNNNVI::::::.:::::..:::...:....:.:...::.:........:::..:::::::::::.I..I......I*:*:
-I:*NVNV:*V*VNFFFFFVV*:FFFIFFFI*:*N**VVNFNNN**NFIINNF.V:::::::::::::.:.:.:::.::::.::.:::::::::::::::::::::::::::*:.*I.......:.VV*
-I::::::I:I**VFFI*NIFF*FVNVV:FNFFVIFFFFFVN*......*VFFNFF:::*::::::::::::::::::::::::::::::::::*:::***********IIFFI*......II*::VVN
-**::*II:::..*:IINNFFFFFFVFFNFFFNFVVFF*FF:...........N*NVI*I************.************************IIIIIIIIII*FVVFI.........I..IFFF
-****I*:I*:*I**I:*IVINFFFFNVFFNFVFVFIIF...............IVNFIII:IIII**IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIVVVIIIIIFV*FV.......**:F:VFVFFF
-*I****I:::I*V*:F:I:**IIVIVFN*IFNVVIF........I:.......***FFFVIVIIVVVIVIVVIIIVVVIII:*IIIIIIIVIVVVVVVVVVVVFFVVV....*.:.:VIFFFFFNNN*
-***NNNVNF*NFIII*I**I:I::I*I*::*VF*.........***I:.......:..*NFIIVVVVVVVVVVVVVVVV.....IIIVVVVVVVVVVVVIVVII:*...*:.:..VFVFFFFF::::.
-:::FNVFVNIVFFFI*II*I**IIFFF*F:..........:**I:*..........::.....VVVVVVVVIVVVVI......:..*VVVVVVVVVFF*::*I........VVFINFFF:.:VF....
-:::FFNFNFFFFNIFI*:I*V*::V:.........:::.I:.*:I*.**..:....:*.V:.:.VVVVVVVV**:*IFFN.IFFVI.:VFF*:*::*V...**.I*.VI*IVV:.:.:VVV..:.::
-:::::::*FFNFVI:..........:..........I:..:**.I...::*..:::....II*.....IFNNNNNNNN*VVVVVFVVFVVFFVV:.....**VVVVVV*..:....*VV:.:::::::
-:::.:::::..:....::......:V::::..II.I*II::::.I:I..*.*:VV.::..IIVF.:VI:.*...*:.:*II***::.......*I.FIF***..:::::.:VFFVII.::::::IVFF
-::::*****:......I::.....:*I::::..::::*:......:::..FVVF*F*:*F..IVFV:V**:FF*::.........:............:::..FFFFFFFFFFF..:::::FFVVFFV
-::::::I***I*.I.*:::.I..*I*:.*.I.......*.I*:..*::..*:F*:*I:*:V...*FFIFFFV*FFV::.....:..::...*.:..::**:.VVVFVVVVVI....:IFNNNNNNFI*
-:::::::::.**::::::.*NV.I:.I*:*:..:V.:::::..::I.**..FNFVNI**FFV:V...*FNNFFIINFF::::.:I*::.:::::VFVVVVI*:*VNNFF*..:::::::::*VVFFFN
-::::::*V:I*VF*IFV*NVFFI:**::.VI::::*.::I.:*.:.I:*:..FNFFFFV*IIV:*FVVIV.INFFFIFFNFI::..FFFFI::VNNFFI:*IIVFFV..:::::::VNNNNFVFNV**
-::::FVVFF*NNFFNNNNFFV::I::.I*I::.....:*::VF.FF*::*:..:VNFFNFF***III:II:*V*::IFNFFNNFFF*:.IFNFFFFFFFFFFVI......:.:::*I::..:VFFFFF
-:::NNVFVFNNFNFNFVV::*V*F.FNVN:I:::*IV:::.IFFNVIVI.:::..NNFFFNVN*II**IIVIVIV***********IIIV:FVIF*VFIV.....:*VFFFFFFFFFNNNFFFFFFFF
-::NFVNFVIN*VFN*NNIIFINVFNNINVNN:.::..........FNN:VVF.....:NFFFNNVF*I:::::*IIIIIV***********:**I*...::::**I:IFNNFNNNNNNF*::IIVFNN
-::NVFFNVNFNVNNVNNNVNNIFNFVNFNN**:::IVNN.I.FN*IIINIVNNI:V:...VNNFNFNFNV**::::::::::::::*II*....:FNFFNNNFFFNNNNNF:.......:::::::..
-.:NINNVFFFNIFNVNFNVNFVNNNVNVNNF:::IN:*V**NI:V::VFIFNNNFV***I:...:VFFFNNFFFNNNNNNNV:.......:::......::::....:::::::::YRREBRAP*-->

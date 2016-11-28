@@ -8,7 +8,7 @@ cover-image: hackingedu-cover.png
 ---
 <section class="custom-hackingedu" style="background-color: rgb(195, 0, 117)">
 
-  <container>
+  <div class="container">
 
     <h1 class="purple" id="l1-introduction">Introduction <span class="fw1">序文</span></h1>
 
@@ -33,10 +33,10 @@ cover-image: hackingedu-cover.png
         <p class="white">Placeholder text</p>
       </article>
     </div>
-  </container>
+  </div>
 </section>
 <section class="bg-white">
-  <container>
+  <div class="container">
     <img src="{{ site.url }}/images/hackingedu-spec.png" />
-  </container>
+  </div>
 </section>

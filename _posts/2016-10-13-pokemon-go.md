@@ -6,8 +6,8 @@ description: How can we bring players back into the fold and increase replayabil
 cover-height: 23em;
 cover-color: rgb(254, 213, 48)
 ---
-<section class="bg-yellow">
-  <container>
+<section class="bg-white">
+  <div class="container">
     <h1 id="l1-pre-research">History <span class="fw1">歴史</span></h1>
     <div class="cf">
       <h3 class="article-header" id="l2-history-of-the-game">History of the Game</h3>
@@ -372,11 +372,11 @@ cover-color: rgb(254, 213, 48)
 
       </article>
     </div>
-  </container>
+  </div>
 </section>
 
 <section class="bg-washed-green">
-  <container>
+  <div class="container">
     <h1 id="l1-history">Gameplay <span class="fw1">ゲームプレイ</span></h1>
     <div class="cf">
       <h3 class="f4 f2-ns fw6 mb2 pt3">Pokestops</h3>
@@ -438,14 +438,14 @@ cover-color: rgb(254, 213, 48)
       <figcaption>Placeholder caption</figcaption>
       </figure>
     </div>
-  </container>
+  </div>
 
 </section>
 
 
 <section class="bg-white">
 
-  <container>
+  <div class="container">
 
     <h1 id="l1-history">User Research <span class="fw1">ユーザーリサーチ</span></h1>
 
@@ -602,15 +602,17 @@ cover-color: rgb(254, 213, 48)
       </article>
     </div>
 
-  </container>
+  </div>
 
 </section>
 
 
 <section class="bg-navy white">
 
-  <container>
+  <div class="container">
+
     <h1 id="l1-problem-definition">Problem Definition</h1>
+
     <div class="cf">
       <h2 class="article-header" id="l2-demographics">Problem Domains</h2>
       <article class="full">
@@ -618,5 +620,7 @@ cover-color: rgb(254, 213, 48)
         <p>User Experience = Player Experience + Business Experience</p>
       </article>
     </div>
-  </container>
+
+  </div>
+
 </section>
