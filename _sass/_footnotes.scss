@@ -1,0 +1,30 @@
+
+body {
+  counter-reset: footnotes;
+}
+
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes;
+  text-decoration: none;
+}
+
+a[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']';
+  vertical-align: super;
+  font-size: 0.5em;
+  margin-left: 2px;
+  color: blue;
+  @extend .hover-red;
+}
+
+[aria-label="Back to content"] {
+  font-size: 0.8em;
+}
+
+.citations {
+  @extend .lh-copy;
+}
+
+.citations :target {
+  background: yellow;
+}

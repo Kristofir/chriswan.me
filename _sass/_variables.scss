@@ -4,30 +4,6 @@
 //
 
 // Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lighterGray: #ccc;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
-
-$body: 'Noto Sans', serif;
-$headline: 'Noto Serif', sans-serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+$reddit-orange: #ff4500;
+$reddit-dark-blue: #5f99cf;
+$reddit-light-blue: #cee3f8;

@@ -7,6 +7,8 @@
 
 @import "tachyons";
 @import "colors";
+@import "variables";
+@import "footnotes";
 // Syntax highlighting @import is at the bottom of this file
 
 /****************/
@@ -46,6 +48,20 @@
   background-color: #22242C;
 }
 
+.reddit-orange {
+	color: $reddit-orange;
+}
+
+.reddit-light-blue {
+	color: $reddit-light-blue;
+}
+
+.reddit-dark-blue {
+	color: $reddit-dark-blue;
+}
+
+
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -67,12 +83,6 @@
 
 
 .xp1 {
-  @extend .f5;
-  @extend .measure-wide;
-  @extend .lh-copy;
-  @extend .mt0;
-  @extend .pv2;
-  @extend .mr3;
 }
 
 .xp1 > img {
@@ -146,6 +156,18 @@ section > .container > div.cf > figure.half {
 	@extend .w-50-l;
 }
 
+section > .container > article.halfpre ,
+section > .container > div.cf > article.halfpre,
+section > .container > div.cf > figure.halfpre {
+	@extend .ma0;
+	@extend .pv1;
+	@extend .pv2-l;
+	@extend .pr2;
+	@extend .fr;
+	@extend .w-100;
+	@extend .w-50-l;
+}
+
 figure > figcaption {
 	@extend .f6;
 	@extend .fw2;
@@ -167,7 +189,22 @@ section > .container > div.cf > article.third {
 
 section > .container > article > p,
 section > .container > div.cf > article > p {
-	@extend .xp1;
+  @extend .f5;
+  @extend .measure-wide;
+  @extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
+  @extend .mr3;
+}
+
+article > span.pull {
+	@extend .fw8;
+	@extend .f3;
+	@extend .f2-l;
+	@extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
+  @extend .mr3;
 }
 
 .logo-32 {
