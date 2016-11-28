@@ -107,7 +107,7 @@
 	@extend .pb2;
 }
 
-section {
+div.section {
 	@extend .cf;
 	@extend .ph3;
 	@extend .ph5-ns;
@@ -115,9 +115,7 @@ section {
 	@extend .w-100;
 }
 
-section > div > h1,
-section > .container > h1,
-section > .container > div.cf > h1 {
+.section-header {
 	@extend .fl;
 	@extend .w-100;
 	@extend .mv4;
@@ -128,15 +126,14 @@ section > .container > div.cf > h1 {
 	@extend .fw6;
 }
 
-section > div.container {
+div.container {
 	@extend .mw9;
 	@extend .center;
 	@extend .cf;
 }
 
-section > .container > article.full,
-section > .container > div.hero,
-section > .container > div.cf > article.full {
+.full,
+.hero {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -144,9 +141,7 @@ section > .container > div.cf > article.full {
 	@extend .w-100;
 }
 
-section > .container > article.half ,
-section > .container > div.cf > article.half,
-section > .container > div.cf > figure.half {
+.half {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -156,9 +151,7 @@ section > .container > div.cf > figure.half {
 	@extend .w-50-l;
 }
 
-section > .container > article.halfpre ,
-section > .container > div.cf > article.halfpre,
-section > .container > div.cf > figure.halfpre {
+.halfpre {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -175,9 +168,7 @@ figure > figcaption {
 	@extend .mt2;
 }
 
-section > .container > article.third,
-section > .container > div.third,
-section > .container > div.cf > article.third {
+.third {
 	@extend .ma0;
 	@extend .pv1;
 	@extend .pv2-l;
@@ -187,8 +178,7 @@ section > .container > div.cf > article.third {
 	@extend .w-third-l;
 }
 
-section > .container > article > p,
-section > .container > div.cf > article > p {
+p {
   @extend .f5;
   @extend .measure-wide;
   @extend .lh-copy;
@@ -197,7 +187,7 @@ section > .container > div.cf > article > p {
   @extend .mr3;
 }
 
-article > span.pull {
+.pull {
 	@extend .fw8;
 	@extend .f3;
 	@extend .f2-l;

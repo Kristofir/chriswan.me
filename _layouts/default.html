@@ -17,26 +17,26 @@
 
   <body>
     <header>
-      <section class="bg-white">
-        <div class="dt container">
-          <div class="dtc v-mid tl w-50">
+      <div class="section bg-white">
+        <div class="container">
+          <div class="half">
             <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black hover-red dim" title="Home">
               Chris Wan
             </a>
           </div>
-          <nav class="db dtc v-mid w-50 tr">
+          <div class="half tr">
             <a title="すべてのプロジPROJECTSェクトを見る" href="{{ site.baseurl }}/" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">Projects <span class="red">プロジェクト</span></a>
             <a title="人物の略歴" href="{{ site.baseurl }}/about" class="f6 fw6 link hover-red black mr1 mr3-m mr4-l dib">About <span class="red">プロフィール</span></a>
-          </nav>
+          </div>
         </div>
-      </section>
+      </div>
     </header>
 
 
 
 
 
-    <main class="bt b--black-10 bg-white">
+    <main>
         {{ content }}
     </main>
 
@@ -45,7 +45,7 @@
 
 
     <footer>
-      <section class="bg-near-black silver b--silver bt">
+      <div class="section bg-near-black silver b--silver bt">
         <div class="container">
           <div class="third">
             <span class="f6 fw1 ">キュウリのようにクール🥒！</span>
@@ -67,7 +67,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
 
     {% include analytics.html %}

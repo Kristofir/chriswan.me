@@ -23,6 +23,7 @@ a[aria-describedby="footnote-label"]::after {
 
 .citations {
   @extend .lh-copy;
+  @extend .cf;
 }
 
 .citations :target {
