@@ -8,7 +8,7 @@ cover-color: rgb(160, 175, 197)
 height: 25rem
 ---
 
-<section class="cf ph3 ph5-ns pb5 black-70 custom-healthcare">
+<div class="section black-70 custom-healthcare">
 
   <div class="container">
     <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Challenge.gov</h1>
@@ -26,9 +26,9 @@ height: 25rem
     </div>
   </div>
 
-</section>
+</div>
 
-<section class="bg-near-white">
+<div class="section">
 
   <div class="container">
 
@@ -56,13 +56,13 @@ height: 25rem
         </p>
       </article>
     </div>
-    
+
   </div>
 
-</section>
+</div>
 
-<section class="bg-near-white pa0">
+<div class="section pa0">
 
   <img src="{{ site.baseurl }}/images/health-4.jpg" />
 
-</section>
+</div>
