@@ -10,7 +10,7 @@ cover-image: hackingedu-cover.png
 
   <div class="container">
 
-    <h1 class="purple" id="l1-introduction">Introduction <span class="fw1">序文</span></h1>
+    <h1 class="section-header purple">Introduction <span class="fw1">序文</span></h1>
 
 
     <div class="cf">

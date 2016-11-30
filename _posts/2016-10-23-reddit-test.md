@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Reddit
-published: true
+published: false
 description: How can we improve the Reddit community experience?
 
 cover-height: 20em

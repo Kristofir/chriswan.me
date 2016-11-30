@@ -107,7 +107,8 @@
 	@extend .pb2;
 }
 
-div.section {
+div.section,
+section {
 	@extend .cf;
 	@extend .ph3;
 	@extend .ph5-ns;
@@ -213,6 +214,7 @@ a {
   @extend .link;
   @extend .hover-red;
   @extend .blue;
+	@extend .underline;
 }
 
 ul.grid {

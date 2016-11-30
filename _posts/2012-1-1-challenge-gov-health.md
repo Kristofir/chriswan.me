@@ -5,13 +5,13 @@ published: true
 description: In a two day sprint for a national competition, we redesigned the patient health record and were one of a dozen winners nationwide.
 cover-image: health-cover.png
 cover-color: rgb(160, 175, 197)
-height: 25rem
+cover-height: 25rem
 ---
 
-<div class="section black-70 custom-healthcare">
+<section class="black-70 custom-healthcare">
 
   <div class="container">
-    <h1 class="fl w-100 mt5 f5 ttu tracked fw6">Challenge.gov</h1>
+    <h1 class="section-header">Challenge.gov</h1>
 
     <div class="cf">
     <h3 class="article-header">Introduction</h3>
@@ -26,9 +26,9 @@ height: 25rem
     </div>
   </div>
 
-</div>
+</section>
 
-<div class="section">
+<section>
 
   <div class="container">
 
@@ -59,10 +59,10 @@ height: 25rem
 
   </div>
 
-</div>
+</section>
 
-<div class="section pa0">
+<section class="pa0">
 
   <img src="{{ site.baseurl }}/images/health-4.jpg" />
 
-</div>
+</section>

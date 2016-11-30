@@ -4,18 +4,18 @@ title: About 履歴書+プロフィール
 permalink: /about/
 ---
 
-<div class="section bg-washed-red">
+<section class="bg-washed-red">
   <div class="container">
-    <h2>Who am I? <span class="fw9 red">私は誰？</span></h2>
+    <h2 class="section-header">Who am I? <span class="fw9 red">私は誰？</span></h2>
     <div class="hero">
       <p class="f4 f3-l mw-100 w-100">I am a recent graduate from the University of Illinois at Urbana-Champaign where I studied architecture and human-computer interaction. I was a studio lead at <a target="tab" href="http://designforamerica.com">Design for America</a> where I helped students engage in design for social good and learn about design thinking and human-centered design. </p>
       <p class="f4 f3-l mw-100 w-100">Currently, I'm looking for work. You can reach out to me at <a target="tab" href ="mailto:hello@chriswan.me">hello@chriswan.me</a>.</p>
     </div>
   </div>
-</div>
-<div class="section bg-white">
+</section>
+<section>
   <div class="container">
-    <h2>Words I Aspire To <span class="db di-l fw9 blue">インスピレーション</span></h2>
+    <h2 class="section-header">Words I Aspire To <span class="db di-l fw9 blue">インスピレーション</span></h2>
     <div class="cf">
       <div class="full">
         <h1 class="f4 f3-l lh-copy fw6 hide-child">
@@ -29,10 +29,10 @@ permalink: /about/
       </div>
     </div>
   </div>
-</div>
-<div class="bg-white bt b--black-100">
+</section>
+<section class="bt b--black-100">
   <div class="container">
-    <h2>Skills <span class="red">スキルセット</span></h2>
+    <h2 class="section-header">Skills <span class="red">スキルセット</span></h2>
 
     <div class="cf">
       <h3 class="article-header b--red">General <span class="red">能力</span></h3>

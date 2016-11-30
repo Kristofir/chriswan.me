@@ -8,7 +8,7 @@ cover-color: rgb(254, 213, 48)
 ---
 <section class="bg-white">
   <div class="container">
-    <h1 id="l1-pre-research">History <span class="fw1">歴史</span></h1>
+    <h2 class="section-header">History <span class="fw1">歴史</span></h2>
     <div class="cf">
       <h3 class="article-header" id="l2-history-of-the-game">History of the Game</h3>
       <article class="half">
@@ -31,7 +31,7 @@ cover-color: rgb(254, 213, 48)
 
 <section class="bg-washed-green">
   <div class="container">
-    <h1 id="l1-history">Gameplay <span class="fw1">ゲームプレイ</span></h1>
+    <h2 class="section-header">Gameplay <span class="fw1">ゲームプレイ</span></h2>
     <div class="cf">
       <h3 class="f4 f2-ns fw6 mb2 pt3">Pokestops</h3>
       <article class="half">
@@ -101,7 +101,7 @@ cover-color: rgb(254, 213, 48)
 
   <div class="container">
 
-    <h1 id="l1-history">User Research <span class="fw1">ユーザーリサーチ</span></h1>
+    <h1 class="section-header">User Research <span class="fw1">ユーザーリサーチ</span></h1>
 
     <div class="cf">
       <h3 class="article-header" id="l2-demographics">Demographics</h3>
@@ -265,7 +265,7 @@ cover-color: rgb(254, 213, 48)
 
   <div class="container">
 
-    <h1 id="l1-problem-definition">Problem Definition</h1>
+    <h2 class="section-header">Problem Definition</h2>
 
     <div class="cf">
       <h2 class="article-header" id="l2-demographics">Problem Domains</h2>
