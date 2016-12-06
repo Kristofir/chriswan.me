@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<section class="bg-near-white" style="background-image: url(images/floaters.svg)" id="introduction">
+  <div class="container">
+    <h1 class="section-header">Hello <span class="fw1">こんにちは</span></h1>
+    <div class="hero">
+      <h1 class="f2-l f3-ns f4 lh-copy blue">I'm Chris, and I'm a UX designer who believes in designing for the human behind the screen.</h1>
+    </div>
+  </div>
+</section>
+
+<section class="bg-22242C">
+  <div class="container pb5">
+    <div class="cf">
+      <h1 class="fl near-white w-100 mt5 mb4 f5 ttu tracked fw6">Projects <span class="fw1">プロジェクト</span></h1>
+    </div>
+    <div class="cf">
+      <ul class="grid">
+        {% assign first = true %}
+        {% for post in site.posts %}
+        <li class="grid-item {% if first %}{% endif %}" {% if post.cover-height %}style="height: {{post.cover-height}} !important;"{% endif %}>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <span class="inner {% if post.cover-scheme %}dark{% else %}light{% endif %}">
+              <span class="background primary" {% if post.cover-image or post.cover-color %}style="background: url(images/{{ post.cover-image }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#333{% endif %};"{% endif %}></span>
+              <span class="background secondary" {% if post.cover-color %}style="background-color: {{ post.cover-color }};" {% endif %}></span>
+              <span class="content">
+                <span class="pushdown">
+                  {{ post.date | date: "%B %e, %Y" }}
+                </span>
+                <span class="title">{{ post.title }}</span>
+                <span class="description">{{ post.description }}</span>
+              </span>
+            </span>
+          </a>
+        </li>
+
+        {% assign first = false %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/isotope.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="scripts/isotope.js"></script>

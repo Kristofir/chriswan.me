@@ -5,9 +5,10 @@
 // IMPORTS
 //
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "variables";
 @import "tachyons";
 @import "colors";
-@import "variables";
 @import "footnotes";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -16,7 +17,7 @@
 /****************/
 
 @keyframes animated-introduction-bg {
-	from { background-position: 0 240em; }
+	from { background-position: 0 400%; }
 	to { background-position: 0 0; }
 }
 
@@ -24,8 +25,8 @@
 	background-position: center;
 	background-repeat: repeat;
   @extend .cover;
-	animation: animated-introduction-bg 90s linear infinite;
-  -webkit-animation: animated-introduction-bg 90s linear infinite;
+	animation: animated-introduction-bg 180s linear infinite;
+  -webkit-animation: animated-introduction-bg 180s linear infinite;
 }
 
 @mixin bg-dg-grad($color1, $color2) {
@@ -229,6 +230,7 @@ ul.grid:after {
 
 li.grid-item {
   @extend .w-third-l;
+	@extend .w-50-m;
   @extend .w-100;
   @extend .fl;
   height: 250px;
