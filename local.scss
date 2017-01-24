@@ -38,7 +38,9 @@
 .subsection-description {
   -webkit-font-smoothing: antialiased;
   font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
+  @extend .f4-l;
+  @extend .f5-m;
+  @extend .f6;
   font-style: normal;
   font-synthesis: none;
   font-weight: normal;
@@ -47,7 +49,6 @@
   @extend .center;
   @extend .lh-copy;
   width: 80%;
-  min-width: 400px;
   max-width: 950px;
 }
 
