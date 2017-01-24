@@ -9,3 +9,39 @@ $main-font: Neue Helvetica,Helvetica, Arial, Roboto, sans-serif;
 $reddit-orange: #ff4500;
 $reddit-dark-blue: #5f99cf;
 $reddit-light-blue: #cee3f8;
+
+$small: 768px;
+$medium: 1068px;
+$large: 1440px;
+
+@mixin huge_2x {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx),
+  only screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+@mixin large_2x {
+  @media screen and (max-width: #{large}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width:  #{large}) and (min-resolution: 1.5dppx),
+  only screen and (max-width:  #{large}) and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+@mixin medium_2x {
+  @media screen and (max-width: #{medium}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width:  #{medium}) and (min-resolution: 1.5dppx),
+  only screen and (max-width:  #{medium}) and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+@mixin small_2x {
+  @media screen and (max-width: #{small}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width:  #{small}) and (min-resolution: 1.5dppx),
+  only screen and (max-width:  #{small}) and (min-resolution: 144dpi) {
+    @content;
+  }
+}
