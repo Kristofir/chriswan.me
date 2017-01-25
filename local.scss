@@ -2,40 +2,65 @@
 ---
 
 
-@import "tachyons";
 @import "variables";
+
+.hero-white-iphone {
+  background: url("../images/receipts/iphone.png") center no-repeat;
+  background-size: 396px 774px;
+
+  padding: 120px 48px 120px 48px;
+  width: 396px;
+  height: 774px;
+}
+
+@include largedesktop {
+  .hero-iphone {
+    background-size: 495px 968px;
+    padding: 150px 60px 150px 60px;
+    width: 495px;
+    height: 968px;
+  }
+}
+
+.screen-in-white-iphone {
+  background: url("../images/receipts/iphone.png") top center no-repeat;
+  background-size: 352px 688px;
+  padding: 107px 43px 0px 43px;
+  width: 352px;
+  height: 583px;
+}
+
+.divider {
+  border-bottom: 1px solid #d6d6d6;
+}
 
 .section {
   width: 100%;
-  @extend .ph0!;
-  @extend .mh0!;
+  @extend .ph0;
+  @extend .mh0;
 }
 
 .section-content {
   width: 100%;
-  @extend .mh0!;
+  @extend .mh0;
+  @extend .pv4;
 }
 
-.hero-section-content {
-  @extend .aspect-ratio;
-  @extend .aspect-ratio--4x3;
-  @extend .aspect-ratio--6x4-ns;
-  @extend .aspect-ratio--16x9-l;
-}
 .hero-icon {
   width: 85px;
   height: 85px;
 }
 
-.subsection-headline {
+.section-headline {
   font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   @extend .f1-l;
   @extend .f2-m;
   @extend .f3;
-  @extend .fw1;
+  @extend .fw2;
+  @extend .fw1-l;
 }
 
-.subsection-description {
+.section-description {
   -webkit-font-smoothing: antialiased;
   font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   @extend .f4-l;
@@ -46,16 +71,35 @@
   font-weight: normal;
   text-rendering: optimizelegibility;
   line-height: 26px;
-  @extend .center;
-  @extend .lh-copy;
+  line-height: 1.5;
   width: 80%;
   max-width: 950px;
+}
+
+.subsection-headline {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @extend .f3-l;
+  @extend .f4-m;
+  @extend .f5;
+  @extend .fw3;
+  @extend .fw2-l;
+}
+
+.subsection-description {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @extend .f5-l;
+  @extend .f6;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  line-height: 1.67;
 }
 
 .items {
   @extend .flex;
   @extend .justify-center;
-  @extend .items-center;
   @extend .flex-wrap;
   @extend .flex-row-l;
   @extend .flex-column-m;
@@ -88,25 +132,27 @@
 
 
 
-.image {
+  .image {
   width: 1268px;
-}
+  }
 
-.hero-image {
+  .hero-image {
   width: 100%;
   height: 1152px;
   padding-top: 921px;
   background: url("images/receipts/san-francisco-huge.png") no-repeat bottom center;
   background-size: cover;
-}
+  }
 
-@include large_2x {
+
+@include largedesktop_2x {
   .hero-image {
     background: url("images/receipts/san-francisco-huge@2x.png") no-repeat bottom center;
+    background-size: cover;
   }
 }
 
-@media screen and ( max-width: $large ) {
+@include desktop {
   .image {
     width: 1068px;
   }
@@ -118,12 +164,16 @@
   }
 }
 
-@include large_2x {
+@include desktop_2x {
   .hero-image {
     background: url("images/receipts/san-francisco-large@2x.png") no-repeat bottom center;
+    height: 810px;
+    padding-top: 648px;
+    background-size: 1440px 806px;
   }
 }
-@media screen and ( max-width: $medium ) {
+
+@include tablet {
   .image {
     width: 768px;
   }
@@ -135,26 +185,41 @@
   }
 }
 
-@include medium_2x {
+@include tablet_2x {
   .hero-image {
-    background: url("images/receipts/san-francisco-mediuml@2x.png") no-repeat bottom center;
+    background: url("images/receipts/san-francisco-medium@2x.png") no-repeat bottom center;
+    height: 600px;
+    padding-top: 480px;
+    background-size: 1068px 601px;
   }
 }
 
-@media screen and ( max-width: $small ) {
+@include mobile {
   .image {
     width: 100%;
   }
   .hero-image {
     background: url("images/receipts/san-francisco-small.png") no-repeat bottom center;
     background-color: #f5ab76;
-    height: 600px;
-    padding-top: 480px;
+    background-size: 768px 432px;
+    height: 500px;
+    padding-top: 400px;
   }
 }
 
-@include small_2x {
+@include mobile_2x {
   .hero-image {
     background: url("images/receipts/san-francisco-small@2x.png") no-repeat bottom center;
+
+    background-color: #f5ab76;
+    background-size: 768px 432px;
+    height: 500px;
+    padding-top: 400px;
   }
 }
+
+.half {
+  flex: 0 1 450px;
+}
+
+@import "tachyons";

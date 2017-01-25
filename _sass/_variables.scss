@@ -10,38 +10,63 @@ $reddit-orange: #ff4500;
 $reddit-dark-blue: #5f99cf;
 $reddit-light-blue: #cee3f8;
 
-$small: 768px;
-$medium: 1068px;
-$large: 1440px;
+$mobile: 468px;
+$tablet: 768px;
+$desktop: 1468px;
+$largedesktop: 1968px;
 
-@mixin huge_2x {
-  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-resolution: 1.5dppx),
-  only screen and (min-resolution: 144dpi) {
+@mixin largedesktop {
+  @media screen and (min-width: #{$desktop}) {
     @content;
   }
 }
 
-@mixin large_2x {
-  @media screen and (max-width: #{large}) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width:  #{large}) and (min-resolution: 1.5dppx),
-  only screen and (max-width:  #{large}) and (min-resolution: 144dpi) {
+@mixin largedesktop_2x {
+  @media screen and (min-width: #{$desktop}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-width: #{$desktop}) and (min-resolution: 1.5dppx),
+  only screen and (min-width: #{$desktop}) and (min-resolution: 144dpi) {
     @content;
   }
 }
 
-@mixin medium_2x {
-  @media screen and (max-width: #{medium}) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width:  #{medium}) and (min-resolution: 1.5dppx),
-  only screen and (max-width:  #{medium}) and (min-resolution: 144dpi) {
+@mixin desktop {
+  @media screen and (max-width: #{$desktop}) {
     @content;
   }
 }
 
-@mixin small_2x {
-  @media screen and (max-width: #{small}) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width:  #{small}) and (min-resolution: 1.5dppx),
-  only screen and (max-width:  #{small}) and (min-resolution: 144dpi) {
+@mixin desktop_2x {
+  @media screen and (min-width: #{$tablet}) and (max-width: #{$desktop}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-width: #{$tablet}) and (max-width:  #{$desktop}) and (min-resolution: 1.5dppx),
+  only screen and (min-width: #{$tablet}) and (max-width:  #{$desktop}) and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet_2x {
+  @media screen and (min-width: #{$mobile}) and (max-width: #{$tablet}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-width: #{$mobile}) and (max-width:  #{$tablet}) and (min-resolution: 1.5dppx),
+  only screen and (min-width: #{$mobile}) and (max-width:  #{$tablet}) and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile_2x {
+  @media screen and (max-width: #{$mobile}) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width:  #{$mobile}) and (min-resolution: 1.5dppx),
+  only screen and (max-width:  #{$mobile}) and (min-resolution: 144dpi) {
     @content;
   }
 }
