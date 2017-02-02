@@ -112,7 +112,7 @@ cover-height: 25rem
   <div class="section-content flex flex-column items-center">
 
     <div class="subsection flex-auto" style="max-width: 700px;">
-      <h2 class="subsection-headline">Introduction</h2>
+      <h2 class="subsection-headline" id="introduction">Introduction</h2>
       <p>The design project was motivated by my frustration over my disorganized receipts. Many laid in piles or folders. Others hid in my emails or text messages. In an era of smartphones, the balkanized state of receipts seemed overdue for modernization.</p>
 
       <p>The research and design project phases were not monolithic and did not happen in perfect sequence. I weaved between them as research yielded new answers and design raised new questions.</p>
@@ -123,7 +123,7 @@ cover-height: 25rem
     </div>
 
     <div class="subsection flex-auto" style="max-width: 700px;">
-      <h2 class="subsection-headline">User Research</h2>
+      <h2 class="subsection-headline" id="user-research">User Research</h2>
 
       <p>I started by interviewing a dozen individuals. From these interviews, I learned several key insights that I have summarized below.</p>
 
@@ -143,9 +143,13 @@ cover-height: 25rem
       My takeaways:
       <ul>
         <li>Because people develop their own unique ways of organizing receipts, the design solution should provide organizational flexibility to users so they can organize however they will!</li>
+
         <li>Because people have their own unique ways of finding receipts, the design solution should have many different ways to search for a specific receipt. All roads lead to Rome—er, no, that one receipt!</li>
+
         <li>Because people aren't uniformly organized or disorganized, the design solution should make it always easy for users maintain a good organizational baseline!</li>
+
         <li>Because people remember few details or features about their receipts, the design solution should support users to effectively search with incomplete or partially incorrect information!</li>
+
         <li>Because receipts can hold sentimental value when they're associated with a significant memory, the design solution should be mindful about what a receipt can signify and be open-minded about what users want to do with their own receipts!</li>
       </ul>
       </p>
@@ -155,7 +159,7 @@ cover-height: 25rem
     <img class="image" src="https://a.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/12/3022182-poster-cafe-overhead.png" />
 
     <div class="subsection flex-auto" style="max-width: 700px;">
-      <h2 class="subsection-headline">Business Research</h2>
+      <h2 class="subsection-headline" id="business-research">Business Research</h2>
       <p>Electronic point of sale, or POS, systems originated in the 1970s and have undergone tremendous development and changed since then. Today, they are divided in two categories: traditional and cloud-based.</p>
 
       <p><strong>Traditional POS systems</strong> comprise of equipment often from different manufacturers: cash drawers, scanners, receipt printers, cashier-facing and customer-facing POS terminal displays, and payment terminals are interoperable because they share manufacturer-neutral APIs. Connected to switch networks, POS systems back up transaction information to store or company servers. Whether or not a traditional POS system supports newer payment methods like NFC is determined by its payment terminal.</p>
