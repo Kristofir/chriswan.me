@@ -8,6 +8,7 @@ cover-color: rgb(160, 175, 197)
 cover-height: 25rem
 ---
 
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/local.css" />
 <section class="black-70 custom-healthcare">
 
   <div class="container">
