@@ -24,7 +24,7 @@ cover-height: 25rem
 
 <div class="section">
   <div class="section-content tc">
-    <img class="hero-icon" src="../images/receipts/icon.png" />
+    <img class="hero-icon" src="../images/receipts/receipts-icon.png" />
 
     <h1 class="dark-gray section-headline">Receipts live here.</h1>
 
