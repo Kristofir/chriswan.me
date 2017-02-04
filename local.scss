@@ -116,6 +116,17 @@ div.section {
   max-width: 100%;
 }
 
+.subsection-subtitle {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #999;
+  @extend .tracked;
+  @extend .f5-l;
+  @extend .f5-m;
+  @extend .f6;
+  @extend .fw6;
+  text-transform: uppercase;
+}
+
 .subsection li {
   @extend .f4-l;
   @extend .f5-m;
@@ -221,7 +232,7 @@ div.section {
 }
 
 .half {
-  flex: 0 1 450px;
+  flex: 0 1 350px;
 }
 
 @import "tachyons";
