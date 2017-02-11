@@ -4,7 +4,7 @@ var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   percentPosition: true,
   masonry: {
-    columnWidth: '.grid-item'
+    columnWidth: '.tile-1x1'
   }
 });
 

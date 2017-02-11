@@ -2,46 +2,130 @@
 layout: default
 ---
 
-<section class="bg-near-white" style="background-image: url(images/floaters.svg)" id="introduction">
-  <div class="container">
-    <h1 class="section-header">Hello <span class="fw1">こんにちは</span></h1>
-    <div class="hero">
-      <h1 class="f2-l f3-ns f4 lh-copy blue">I'm Chris, and I'm a UX designer who believes in designing for the human behind the screen.</h1>
+<section>
+
+<div class="grid">
+
+  <div class="grid-item tile-2x2">
+    <a href="/receipts-app/">
+    <div class="project-container receipts-app">
+      <div class="project-info">
+        <div class="project-title">How can we make receipts smarter?</div>
+        <div class="project-subtitle">By introducing contactless digital receipts. Learn more.</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Project</span>
+        <span class="project-date">2017</span>
+      </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="grid-item tile-1x1">
+    <div class="project-container receipts-icon">
+      <div class="project-info">
+        <div class="project-title">Designing an app icon for Receipts</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Project</span>
+        <span class="project-date">2017</span>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="bg-22242C">
-  <div class="container pb5">
-    <div class="cf">
-      <h1 class="fl near-white w-100 mt5 mb4 f5 ttu tracked fw6">Projects <span class="fw1">プロジェクト</span></h1>
-    </div>
-    <div class="cf">
-      <ul class="grid">
-        {% assign first = true %}
-        {% for post in site.posts %}
-        <li class="grid-item {% if first %}{% endif %}" {% if post.cover-height %}style="height: {{post.cover-height}} !important;"{% endif %}>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            <span class="inner {% if post.cover-scheme %}dark{% else %}light{% endif %}">
-              <span class="background primary" {% if post.cover-image or post.cover-color %}style="background: url(images/{{ post.cover-image }}); background-repeat: no-repeat; background-color: {% if post.coverColor %}{{ post.coverColor }}{% else %}#333{% endif %};"{% endif %}></span>
-              <span class="background secondary" {% if post.cover-color %}style="background-color: {{ post.cover-color }};" {% endif %}></span>
-              <span class="content">
-                <span class="pushdown">
-                  {{ post.date | date: "%B %e, %Y" }}
-                </span>
-                <span class="title">{{ post.title }}</span>
-                <span class="description">{{ post.description }}</span>
-              </span>
-            </span>
-          </a>
-        </li>
-
-        {% assign first = false %}
-        {% endfor %}
-      </ul>
+  <div class="grid-item tile-1x1">
+    <div class="project-container receipts-design">
+      <div class="project-info">
+        <div class="project-title">Designing the Receipts app</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Design Process</span>
+        <span class="project-date">2017</span>
+      </div>
     </div>
   </div>
+
+  <div class="grid-item tile-2x2">
+    <div class="project-container health-cover">
+      <div class="project-info">
+        <div class="project-title">How can we create a better patient health record?</div>
+        <div class="project-subtitle">By viewing personal health as a narrative. Learn more.</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Project</span>
+        <span class="project-date">2012</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-item tile-1x1">
+    <div class="project-container program-diagram">
+      <div class="project-info">
+        <div class="project-title">Activity diagrams</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Illustration</span>
+        <span class="project-date">2016</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-item tile-1x1">
+    <div class="project-container dfa-kris">
+      <div class="project-info">
+        <div class="project-title">How can we promote human-centered design?</div>
+        <div class="project-subtitle">By engaging students on university campuses. Learn more.</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Society</span>
+        <span class="project-date">Since 2011</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-item tile-1x1">
+    <div class="project-container hide-child hackingedu-cover">
+      <div class="project-info">
+        <div class="project-title">How can we make a hackathon schedule banner more engaging?</div>
+        <div class="project-subtitle">By making it interactive. Learn more.</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Project</span>
+        <span class="project-date">2016</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-item tile-1x1">
+    <div class="project-container hide-child reddit-cover">
+      <div class=" project-info">
+        <div class="project-title">How can we fight trolls and promote community on Reddit?</div>
+        <div class="project-subtitle">By applying social and behavioral design. Learn more.</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Project</span>
+        <span class="project-date">2015</span>
+      </div>
+  </div>
+  </div>
+
+  <div class="grid-item tile-1x1 illustrations">
+    <div class="project-container illustrations">
+      <div class="project-info">
+        <div class="project-title">Illustrations</div>
+      </div>
+      <div class="project-meta">
+        <span class="project-type">Illustration</span>
+        <span class="project-date">Since 2011</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
 </section>
+
 <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/scripts/isotope.pkgd.min.js"></script>
 <script src="{{ site.baseurl }}/scripts/imagesloaded.pkgd.min.js"></script>

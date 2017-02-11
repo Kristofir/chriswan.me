@@ -1,0 +1,354 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "variables";
+@import "tachyons";
+@import "colors";
+@import "footnotes";
+// Syntax highlighting @import is at the bottom of this file
+
+/****************/
+/* CUSTOM RULES */
+/****************/
+
+@keyframes animated-introduction-bg {
+	from { background-position: 0 400%; }
+	to { background-position: 0 0; }
+}
+
+#introduction	{
+	background-position: center;
+	background-repeat: repeat;
+  @extend .cover;
+	animation: animated-introduction-bg 180s linear infinite;
+  -webkit-animation: animated-introduction-bg 180s linear infinite;
+}
+
+@mixin bg-dg-grad($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $color1, $color2); /* Standard syntax */
+}
+
+.custom-healthcare {
+  @include bg-dg-grad(#A0AfC5, #CEE0F2);
+}
+
+.custom-hackingedu {
+  @include bg-dg-grad(rgb(195, 0, 117), #940080);
+}
+
+.bg-22242C {
+  background-color: #22242C;
+}
+
+.reddit-orange {
+	color: $reddit-orange;
+}
+
+.reddit-light-blue {
+	color: $reddit-light-blue;
+}
+
+.reddit-dark-blue {
+	color: $reddit-dark-blue;
+}
+
+
+
+/**************/
+/* BASE RULES */
+/**************/
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.f7 {
+	font-size: 0.75 em;
+}
+
+.f8 {
+	font-size: 0.625 em;
+}
+
+
+.xp1 {
+}
+
+.xp1 > img {
+  @extend .h-100;
+  @extend .w-100;
+}
+
+.xp2 {
+  @extend .f6;
+  @extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
+}
+
+.article-header {
+	@extend .f6;
+	@extend .ttu;
+	@extend .fw6;
+	@extend .mb0;
+	@extend .mt3;
+	@extend .bb;
+	@extend .pb2;
+}
+
+div.section,
+section {
+	@extend .cf;
+	@extend .ph3;
+	@extend .ph5-ns;
+	@extend .pa3;
+	@extend .w-100;
+}
+
+.section-header {
+	@extend .fl;
+	@extend .w-100;
+	@extend .mv4;
+
+	@extend .f5;
+	@extend .ttu;
+	@extend .tracked;
+	@extend .fw6;
+}
+
+div.container {
+	@extend .mw9;
+	@extend .center;
+	@extend .cf;
+}
+
+.full,
+.hero {
+	@extend .ma0;
+	@extend .pv1;
+	@extend .pv2-l;
+	@extend .fl;
+	@extend .w-100;
+}
+
+.half {
+	@extend .ma0;
+	@extend .pv1;
+	@extend .pv2-l;
+	@extend .pr2;
+	@extend .fl;
+	@extend .w-100;
+	@extend .w-50-l;
+}
+
+.halfpre {
+	@extend .ma0;
+	@extend .pv1;
+	@extend .pv2-l;
+	@extend .pr2;
+	@extend .fr;
+	@extend .w-100;
+	@extend .w-50-l;
+}
+
+figure > figcaption {
+	@extend .f6;
+	@extend .fw2;
+	@extend .mid-gray;
+	@extend .mt2;
+}
+
+.third {
+	@extend .ma0;
+	@extend .pv1;
+	@extend .pv2-l;
+	@extend .pr2;
+	@extend .fl;
+	@extend .w-100;
+	@extend .w-third-l;
+}
+
+p {
+  @extend .f5;
+  @extend .measure-wide;
+  @extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
+  @extend .mr3;
+}
+
+.pull {
+	@extend .fw8;
+	@extend .f3;
+	@extend .f2-l;
+	@extend .lh-copy;
+  @extend .mt0;
+  @extend .pv2;
+  @extend .mr3;
+}
+
+.logo-32 {
+	@extend .absolute;
+	@extend .di;
+	@extend .mh1;
+}
+
+.logo-32 > img {
+	@extend .relative;
+	height: 20px;
+}
+
+// Default hyperlink style
+a {
+  @extend .link;
+  @extend .hover-red;
+  @extend .blue;
+	@extend .underline;
+}
+
+ul.grid {
+  @extend .ma0;
+  @extend .pa0;
+  @extend .list;
+}
+
+ul.grid:after {
+  clear: both;
+}
+
+li.grid-item {
+  @extend .w-third-l;
+	@extend .w-50-m;
+  @extend .w-100;
+  @extend .fl;
+  height: 250px;
+}
+
+li.grid-item > a > span.inner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+  @extend .ma1;
+}
+
+span.background {
+  @extend .bg-center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+li.grid-item > a > span.inner > span.primary {
+  @extend .cover;
+  @extend .w-100;
+  @extend .h-100;
+  @extend .db;
+  //@extend .br1;
+  content: '';
+}
+
+span.secondary {
+  //@extend .br1;
+  @extend .o-0;
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+}
+
+span.inner:hover > span.secondary,
+span.inner:focus > span.secondary,
+span.inner.hover_effect > span.secondary {
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+  @extend .o-80;
+}
+
+span.content {
+  @extend .w-100;
+  text-align: center;
+  @extend .db;
+  @extend .relative;
+  @extend .pa2;
+  @extend .pt4;
+}
+
+span.content > span.title {
+  @extend .db;
+  @extend .near-white;
+  @extend .f6;
+  @extend .ttu;
+  @extend .tracked;
+  @extend .fw6;
+  @extend .o-70;
+}
+
+span.inner:hover > span.content > span.title,
+span.inner:focus > span.content > span.title,
+span.inner.hover_effect > span.content > span.title {
+  @extend .o-100;
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+}
+
+span.light > span.content > span.title,
+span.light > span.content > span.description {
+  @extend .white;
+}
+
+span.dark > span.content > span.title,
+span.dark > span.content > span.description {
+  @extend .dark-gray;
+}
+
+span.content > span.description {
+  @extend .pa4;
+  @extend .db;
+  @extend .lh-copy;
+  @extend .f5;
+  @extend .fw4;
+  @extend .o-0;
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+}
+
+span.inner:hover > span.content > span.description,
+span.inner:focus > span.content > span.description,
+span.inner.hover_effect > span.content > span.description  {
+  @extend .o-100;
+  transition: opacity 300ms cubic-bezier(.57,0,.37,.83);
+}
+
+span.pushdown {
+  @extend .db;
+  @extend .w-100;
+  @extend .o-0;
+  @extend .f6;
+  @extend .fw4;
+  @extend .dark-gray;
+  content: 'project';
+  height: 1px;
+  margin-bottom: 0px;
+  transition: opacity 100ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
+}
+
+span.inner:hover > span.content > span.pushdown,
+span.inner:focus > span.content > span.pushdown,
+span.inner.hover_effect > span.content > span.pushdown {
+  @extend .o-100;
+  margin-bottom: 2rem;
+  transition: opacity 300ms cubic-bezier(.57,0,1,.62), margin-bottom 300ms cubic-bezier(.57,0,.37,.83);
+
+}

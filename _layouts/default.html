@@ -16,6 +16,8 @@
   </head>
 
   <body>
+
+    <!--
     <header>
       <div class="section">
         <div class="container">
@@ -31,9 +33,15 @@
         </div>
       </div>
     </header>
+  -->
 
-
-
+    <header>
+      <div class="name">Chris</div>
+      <nav>
+        <a title="すべてのプロジPROJECTSェクトを見る" href="{{ site.baseurl }}/">Projects</a>
+        <a title="人物の略歴" href="{{ site.baseurl }}/about">About</a>
+      </nav>
+    </header>
 
 
     <main>
@@ -45,29 +53,7 @@
 
 
     <footer>
-      <div class="section bg-near-black silver b--silver bt">
-        <div class="container">
-          <div class="third">
-            <span class="f6 fw1 ">キュウリのようにクール🥒！</span>
-          </div>
-          <div class="third">
-            <ul class="ma0 pa1 list">
-              <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Projects&nbsp;<span class="fw1">プロジェクト</span></h3>
-              {% for post in site.posts %}
-              {% if post.layout == "project" %}
-              <li class="mb1"><a href="{{ site.baseurl }}{{ post.url }}" class="link lh-copy f5 normal silver hover-red">{{ post.title }}</a></li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="third">
-            <ul class="ma0 pa1 list">
-              <h3 class="f6 ttu fw6 mt0 bb pb2 mb2">Posts&nbsp;<span class="fw1">ブログ記事</span></h3>
-              <li class="mb1">(None yet)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
     </footer>
 
     {% include analytics.html %}

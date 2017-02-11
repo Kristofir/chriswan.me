@@ -1,0 +1,73 @@
+
+
+.illustrations {
+  background-image: url("../images/gallery/illustration.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+    @extend .dark-theme;
+}
+
+.hackingedu-cover {
+  background-image: url("../images/gallery/hackingedu-cover.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @extend .light-theme;
+}
+
+.reddit-cover {
+  background-image: url("../images/gallery/reddit-cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @extend .dark-theme;
+}
+
+.health-cover {
+  background-image: url("../images/gallery/health-cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @extend .light-theme;
+}
+
+.dfa-kris {
+  background-image: url("../images/gallery/dfa-kris.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  @extend .dark-theme;
+}
+
+.program-diagram {
+  background-image: url("../images/gallery/program-diagram.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 66%;
+  background-color: #EFEFEF;
+  @extend .dark-theme;
+}
+
+.receipts-design {
+  @extend .bg-blue;
+  @extend .light-theme;
+}
+
+.receipts-icon {
+  background-image: url("../images/gallery/receipts-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 33%;
+  background-color: #000;
+  @extend .light-theme;
+}
+
+.receipts-app {
+  background-image: url("../images/gallery/receipts-app2.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto 85%;
+  background-color: #FFF;
+  @extend .dark-theme;
+}
