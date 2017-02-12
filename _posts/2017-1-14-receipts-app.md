@@ -9,7 +9,6 @@ cover-height: 25rem
 ---
 
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/local.css" />
 <link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Myriad+Set+Pro&v=2" type="text/css" media="all">
 
 <div class="section">

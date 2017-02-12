@@ -68,6 +68,6 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: auto 85%;
-  background-color: #FFF;
+  @extend .bg-near-white;
   @extend .dark-theme;
 }

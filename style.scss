@@ -5,21 +5,66 @@
 // IMPORTS
 //
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Vampiro+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
 @import "reset";
 @import "variables";
 @import "tachyons";
+@import "local";
 @import "colors";
-@import "footnotes";
 // Syntax highlighting @import is at the bottom of this file
 
 /****************/
 /* CUSTOM RULES */
 /****************/
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.body-container {
+  max-width: 1268px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.email:after {
+  vertical-align: bottom;
+  display: inline-block;;
+  content: " ";
+  background-image: url(../images/icon_email.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 28px;
+  height: 34px;
+  margin-left: 4px;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animated {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
 
 * {
   box-sizing: border-box;
@@ -39,28 +84,54 @@ header {
   -moz-box-flex-direction: row;
   -webkit-flex-direction: row;
   flex-direction: row;
+
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 
+  width: 100%;
   height: 5vw;
-  padding: 16px;
 
-  font-family: "Open Sans", sans-serif;
   letter-spacing: 0;
-  font-size: 16px;
+  font-size: 20px;
 
   .name {
-    align-self: center;
+    float: left;
     font-weight: 700;
-  }
-  nav {
-    align-self: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+
+    height: 20px;
+    overflow: hidden;
+
     a {
-      font-weight: 700;
+      display: inline;
       @extend .link;
       @extend .hover-red;
       @extend .black;
-      margin-left: 16px;
+      transition: 0.3s;
+      span {
+        display: block;
+      }
+      .first {
+        transition: 0.3s;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .name:hover .first {
+    margin-top: -20px;
+  }
+
+  .navigation {
+    float: right;
+    a {
+      display: inline;
+      font-weight: 400;
+      @extend .link;
+      @extend .hover-red;
+      @extend .black;
     }
   }
 }
@@ -77,7 +148,7 @@ header {
 }
 
 .dark-theme {
-  color: #000;
+  color: #333;
   .project-meta {
     color: #555555;
   }
@@ -114,17 +185,14 @@ header {
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 
     .project-title {
-      font-size: 16px;
-      text-rendering: geometricPrecision;
       font-weight: 400;
       line-height: 1.4;
     }
 
     .project-subtitle {
-      font-size: 16px;
       color: #EFEFEF;
       @extend .bg-red;
       font-weight: 400;
@@ -141,7 +209,6 @@ header {
   .project-meta {
     align-self: flex-end;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     @media screen and (max-width: 768px) {
       font-size: 16px;
@@ -159,6 +226,7 @@ header {
   }
 }
 
+
 .tile {
 
 }
@@ -171,17 +239,17 @@ header {
   @extend .tile !optional;
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 768px) {
   .tile-2x2 {
-  	width: 40%;
-    height: 40vw;
+  	width: 66.666%;
+    height: 800px;
   }
   .tile-1x1, .grid-sizer {
-  	width: 20%;
-    height: 20vw;
+  	width: 33.333%;
+    height: 400px;
   }
 }
-
+/*
 @media screen and (min-width: 768px) and (max-width: 1028px) {
   .tile-2x2 {
     width: 50%;
@@ -192,7 +260,7 @@ header {
     height: 25vw;
   }
 }
-
+*/
 @media screen and (max-width: 768px) {
   .tile-2x2 {
     width: 100%;
