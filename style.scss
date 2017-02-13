@@ -13,6 +13,8 @@
 @import "tachyons";
 @import "local";
 @import "colors";
+
+@import "gallery";
 // Syntax highlighting @import is at the bottom of this file
 
 /****************/
@@ -26,7 +28,23 @@ body {
 .body-container {
   max-width: 1268px;
   margin: 0 auto;
-  padding: 0 14px;
+  padding: 0 10px;
+}
+
+.page-info {
+
+  .page-title {
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 1;
+    margin: 0 0 16px 0;
+  }
+
+  .page-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+  }
 }
 
 .email:after {
@@ -73,8 +91,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import "gallery";
-
 header {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -109,13 +125,14 @@ header {
       @extend .link;
       @extend .hover-red;
       @extend .black;
-      transition: 0.3s;
+
       span {
         display: block;
       }
       .first {
-        transition: 0.3s;
         margin-top: 0px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
       }
     }
   }

@@ -1,10 +1,10 @@
 ---
 layout: project
-title: Receipts App
+title: Receipts App Icon
 published: true
 
 
-description: A concept for a receipts app in a cashless, paperless world
+description: Graphically capturing the Receipts app's purpose
 cover-image:
 cover-color: rgb(255, 255, 255)
 cover-height: 25rem
@@ -14,9 +14,9 @@ cover-height: 25rem
 <link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Myriad+Set+Pro&v=2" type="text/css" media="all">
 
 <div class="section">
-  <div class="section-content">
-    <div class="subsection flex-auto" style="max-width: 700px;">
-      <h2 class="subsection-subheadline" id="designing-the-icon">Designing the Icon</h2>
+  <div class="section-content flex flex-column items-center">
+    <img src="../images/receipts/receipts-icon-hero.png" />
+    <div class="subsection" style="max-width: 700px; margin 0 auto;">
 
       <p>An iOS app icon is a super-elliptical square, or “squircle”. A receipt is a long and narrow rectangle. The representation of a full receipt within the app icon results in an unevenly balanced composition:</p>
 

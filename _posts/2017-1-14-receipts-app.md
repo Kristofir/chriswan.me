@@ -9,14 +9,12 @@ cover-height: 25rem
 ---
 
 
-<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Myriad+Set+Pro&v=2" type="text/css" media="all">
-
 <div class="section">
-  <div class="section-content">
+  <div class="section-content z-0">
+    <div class="absolute tc z-1">
+      <h1 class="white section-headline">Life happens everywhere.</h1>
+    </div>
     <div class="hero-image">
-      <div class="w-100 tc">
-        <h1 class="white section-headline">Life happens everywhere.</h1>
-      </div>
     </div>
   </div>
 </div>
@@ -27,8 +25,7 @@ cover-height: 25rem
 
     <h1 class="dark-gray section-headline">Receipts live here.</h1>
 
-    <p class="center dark-gray section-description">Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics. Meet Receipts, a concept internal iOS app for contactlessly receiving, securely storing, and finding your digital receipts.
-</p>
+    <p class="center dark-gray section-description">Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics. Meet Receipts, a concept internal iOS app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
   </div>
 </div>
 

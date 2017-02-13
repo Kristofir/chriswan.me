@@ -32,7 +32,7 @@
 div.section {
   width: 100%;
   padding: 0!important;
-  margin: 0;
+  margin: 16px 0;
 }
 
 .section-content {
@@ -47,17 +47,22 @@ div.section {
 }
 
 .section-headline {
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  @extend .f1-l;
-  @extend .f2-m;
-  @extend .f3;
-  @extend .fw2;
-  @extend .fw1-l;
+  font-family: "Roboto", sans-serif;
+  @extend .f1-ns;
+  @extend .f2;
+  @extend .fw3;
+}
+
+.section-subheadline {
+  font-family: "Roboto", sans-serif;
+  @extend .f3-ns;
+  @extend .f4;
+  @extend .fw3;
 }
 
 .section-description {
   -webkit-font-smoothing: antialiased;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   @extend .f4-l;
   @extend .f5-m;
   @extend .f6;
@@ -69,6 +74,10 @@ div.section {
   line-height: 1.5;
   width: 80%;
   max-width: 950px;
+}
+
+.subsection {
+  margin: 16px 0;
 }
 
 .subsection-headline {
@@ -93,14 +102,12 @@ div.section {
 }
 
 .subsection p {
-  @extend .f4-l;
-  @extend .f5-m;
-  @extend .f6;
-  @extend .fw2-l;
+  font-size: 20px;
   @extend .fw4;
   @extend .lh-copy;
   width: 100%;
   max-width: 100%;
+  margin: 16px 0;
 }
 
 .subsection-subtitle {
@@ -138,86 +145,14 @@ div.section {
 }
 
 .hero-image {
+  content: " ";
   width: 100%;
-  height: 1152px;
-  padding-top: 921px;
-  background: url("images/receipts/san-francisco-huge.png") no-repeat bottom center;
+  padding-bottom: 56.25%;
+  background: url("images/receipts/san-francisco.png") no-repeat bottom center;
   background-size: cover;
 }
 
 
-@include largedesktop_2x {
-  .hero-image {
-    background: url("images/receipts/san-francisco-huge@2x.png") no-repeat bottom center;
-    background-size: cover;
-  }
-}
-
-@include desktop {
-  .image {
-    width: 1068px;
-  }
-  .hero-image {
-    background: url("images/receipts/san-francisco-large.png") no-repeat bottom center;
-    height: 810px;
-    padding-top: 648px;
-    background-size: 1440px 806px;
-  }
-}
-
-@include desktop_2x {
-  .hero-image {
-    background: url("images/receipts/san-francisco-large@2x.png") no-repeat bottom center;
-    height: 810px;
-    padding-top: 648px;
-    background-size: 1440px 806px;
-  }
-}
-
-@include tablet {
-  .image {
-    width: 768px;
-  }
-  .hero-image {
-    background: url("images/receipts/san-francisco-medium.png") no-repeat bottom center;
-    height: 600px;
-    padding-top: 480px;
-    background-size: 1068px 601px;
-  }
-}
-
-@include tablet_2x {
-  .hero-image {
-    background: url("images/receipts/san-francisco-medium@2x.png") no-repeat bottom center;
-    height: 600px;
-    padding-top: 480px;
-    background-size: 1068px 601px;
-  }
-}
-
-@include mobile {
-  .image {
-    width: 100%;
-  }
-  .hero-image {
-    background: url("images/receipts/san-francisco-small.png") no-repeat bottom center;
-    background-color: #f5ab76;
-    background-size: 768px 432px;
-    height: 500px;
-    padding-top: 400px;
-  }
-}
-
-@include mobile_2x {
-  .hero-image {
-    background: url("images/receipts/san-francisco-small@2x.png") no-repeat bottom center;
-
-    background-color: #f5ab76;
-    background-size: 768px 432px;
-    height: 500px;
-    padding-top: 400px;
-  }
-}
 
 .half {
   flex: 0 1 350px;

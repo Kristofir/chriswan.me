@@ -1,0 +1,231 @@
+
+.hero-white-iphone {
+  background: url("../images/receipts/iphone.png") center no-repeat;
+  background-size: 396px 774px;
+
+  padding: 120px 48px 120px 48px;
+  width: 396px;
+  height: 774px;
+}
+
+@include largedesktop {
+  .hero-iphone {
+    background-size: 495px 968px;
+    padding: 150px 60px 150px 60px;
+    width: 495px;
+    height: 968px;
+  }
+}
+
+.screen-in-white-iphone {
+  background: url("../images/receipts/iphone.png") top center no-repeat;
+  background-size: 352px 688px;
+  padding: 107px 43px 0px 43px;
+  width: 352px;
+  height: 583px;
+}
+
+.divider {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+div.section {
+  width: 100%;
+  padding: 0!important;
+  margin: 16px 0;
+}
+
+.section-content {
+  width: 100%;
+  @extend .mh0;
+  @extend .pb4;
+}
+
+.hero-icon {
+  width: 85px;
+  height: 85px;
+}
+
+.section-headline {
+  font-family: "Roboto", sans-serif;
+  @extend .f1-ns;
+  @extend .f2;
+  @extend .fw3;
+}
+
+.section-subheadline {
+  font-family: "Roboto", sans-serif;
+  @extend .f3-ns;
+  @extend .f4;
+  @extend .fw3;
+}
+
+.section-description {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  @extend .f4-l;
+  @extend .f5-m;
+  @extend .f6;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  line-height: 26px;
+  line-height: 1.5;
+  width: 80%;
+  max-width: 950px;
+}
+
+.subsection {
+  margin: 16px 0;
+}
+
+.subsection-headline {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @extend .f3-l;
+  @extend .f4-m;
+  @extend .f5;
+  @extend .fw5;
+  @extend .fw4-l;
+}
+
+.subsection-description {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @extend .f5-l;
+  @extend .f6;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  line-height: 1.67;
+}
+
+.subsection p {
+  font-size: 20px;
+  @extend .fw4;
+  @extend .lh-copy;
+  width: 100%;
+  max-width: 100%;
+  margin: 16px 0;
+}
+
+.subsection-subtitle {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #999;
+  @extend .tracked;
+  @extend .f5-l;
+  @extend .f5-m;
+  @extend .f6;
+  @extend .fw6;
+  text-transform: uppercase;
+}
+
+.subsection li {
+  @extend .f4-l;
+  @extend .f5-m;
+  @extend .f6;
+  @extend .fw2-l;
+  @extend .fw4;
+  @extend .lh-copy;
+  width: 100%;
+  max-width: 100%;
+  @extend .mb3;
+}
+
+.diagram {
+
+  margin: 0 auto;
+  width: auto;
+  max-width: auto;
+}
+
+.image {
+  width: 1268px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 1152px;
+  padding-top: 921px;
+  background: url("images/receipts/san-francisco-huge.png") no-repeat bottom center;
+  background-size: cover;
+}
+
+
+@include largedesktop_2x {
+  .hero-image {
+    background: url("images/receipts/san-francisco-huge@2x.png") no-repeat bottom center;
+    background-size: cover;
+  }
+}
+
+@include desktop {
+  .image {
+    width: 1068px;
+  }
+  .hero-image {
+    background: url("images/receipts/san-francisco-large.png") no-repeat bottom center;
+    height: 810px;
+    padding-top: 648px;
+    background-size: 1440px 806px;
+  }
+}
+
+@include desktop_2x {
+  .hero-image {
+    background: url("images/receipts/san-francisco-large@2x.png") no-repeat bottom center;
+    height: 810px;
+    padding-top: 648px;
+    background-size: 1440px 806px;
+  }
+}
+
+@include tablet {
+  .image {
+    width: 768px;
+  }
+  .hero-image {
+    background: url("images/receipts/san-francisco-medium.png") no-repeat bottom center;
+    height: 600px;
+    padding-top: 480px;
+    background-size: 1068px 601px;
+  }
+}
+
+@include tablet_2x {
+  .hero-image {
+    background: url("images/receipts/san-francisco-medium@2x.png") no-repeat bottom center;
+    height: 600px;
+    padding-top: 480px;
+    background-size: 1068px 601px;
+  }
+}
+
+@include mobile {
+  .image {
+    width: 100%;
+  }
+  .hero-image {
+    background: url("images/receipts/san-francisco-small.png") no-repeat bottom center;
+    background-color: #f5ab76;
+    background-size: 768px 432px;
+    height: 500px;
+    padding-top: 400px;
+  }
+}
+
+@include mobile_2x {
+  .hero-image {
+    background: url("images/receipts/san-francisco-small@2x.png") no-repeat bottom center;
+
+    background-color: #f5ab76;
+    background-size: 768px 432px;
+    height: 500px;
+    padding-top: 400px;
+  }
+}
+
+.half {
+  flex: 0 1 350px;
+}

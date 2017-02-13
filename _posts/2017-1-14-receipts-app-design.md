@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Receipts App
+title: Receipts App Design
 published: true
-description: A concept for a receipts app in a cashless, paperless world
+description: A lengthy and laborious research and design process
 cover-image:
 cover-color: rgb(255, 255, 255)
 cover-height: 25rem
