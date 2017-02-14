@@ -164,6 +164,11 @@ header {
   }
 }
 
+.photo-collage img {
+  width: 33.333%;
+  float: left;
+}
+
 .dark-theme {
   color: #333;
   .project-meta {
@@ -202,7 +207,7 @@ header {
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 16px;
 
     .project-title {
       font-weight: 400;

@@ -11,9 +11,7 @@ permalink: /about/
 
       <p class="black f4 fw3 lh-copy mb4">My passion for design is rooted in an upbringing spent between continents and cities that fostered a fascination of how people shape and are shaped in turn by their environments — natural or artificial, physical or virtual. I strongly believe that design at its core is about the human condition and contriving ways to improve it.</p>
 
-      <p class="black f4 fw3 lh-copy mb4">[]</p>
-
-      <p class="black f4 fw3 lh-copy mb4">In my personal time, I enjoy sketching and history as hobbies.</p>
+      <p class="black f4 fw3 lh-copy mb4">In university, I developed a broad multidisciplinary design skillset that allows me to work across the design spectrum. I became studio lead for Design For America and promoted human-centered design on campus.</p>
     </div>
 
     <div class=" w-third fl">
