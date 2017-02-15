@@ -1,40 +1,27 @@
 ---
 layout: project
 title: Hackathon Itinerary
-description: Graphic material that invites interaction and curiosity
-
+description: A visual invitation to interact
+theme: dark-theme
 ---
-<section class="custom-hackingedu" style="background-color: rgb(195, 0, 117)">
 
-  <div class="container">
+<div class="section">
+  <div class="section-content">
 
-    <h1 class="section-header purple">Introduction <span class="fw1">序文</span></h1>
-
-
-    <div class="cf">
-      <h2 class="article-header purple">Interactive Banner</h2>
-      <article class="w-100">
-        <p class="white">In early 2016, I did spec work for a hackathon event. I designed  The schedule banner is 36 inches (3 feet) wide by 72 inches (6 feet) tall.</p>
-      </article>
-
-      <article class="third">
-        <h2 class="f4 f2-ns fw6 mb2 purple">Interactivity</h2>
-        <p class="white">I can't remember the last time I looked at an event banner or saw someone looking at one. Event banners are usually inoffensive but uninteresting. Often sporting the name or slogan of its organization on a generic graphic backdrop, the banners themselves fall into the environmental backdrop.</p>
-        <p class="white">An events schedule banner is slightly more interesting because it offers useful information and not just corporate thematic language. </p>
-      </article>
-      <article class="third">
-        <h2 class="f4 f2-ns fw6 mb2 purple">Continuity</h2>
-        <p class="white">Placeholder text</p>
-      </article>
-      <article class="third">
-        <h2 class="f4 f2-ns fw6 mb2 purple">Novelty</h2>
-        <p class="white">Placeholder text</p>
-      </article>
+    <div class="subsection mv3">
+      <img class="" src="../images/hackathon/art-cover.png" />
     </div>
+
+    <div class="subsection mv3">
+      <div class="w-50 fl">
+        <p>In 2016, I did a spec design for a student hackathon event schedule banner. Most event banners are passively graphic objects that stand unnoticed. This one was designed to be engaging and information-rich.</p>
+        <p>The banner is 6 feet tall and 3 feet wide. Like any schedule, the itinerary of breaks, workshops, and times are listed. QR codes serve as striking visual elements and provide an additional layer of detailed but nonessential information about events that can be scanned by interested viewers.</p>
+      </div>
+
+      <div class="w-50 fr">
+        <img src="../images/hackathon/banner.png" />
+      </div>
+    </div>
+
   </div>
-</section>
-<section class="bg-white">
-  <div class="container">
-    <img src="{{ site.url }}/images/hackingedu-spec.png" />
-  </div>
-</section>
+</div>

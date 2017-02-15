@@ -5,7 +5,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-    @extend .dark-theme;
+    @extend .dark-labels;
 }
 
 .hackingedu-cover {
@@ -13,7 +13,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  @extend .light-theme;
+  @extend .light-labels;
 }
 
 .reddit-cover {
@@ -21,7 +21,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @extend .dark-theme;
+  @extend .dark-labels;
 }
 
 .health-cover {
@@ -29,7 +29,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @extend .light-theme;
+  @extend .light-labels;
 }
 
 .dfa-kris {
@@ -37,7 +37,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  @extend .dark-theme;
+  @extend .dark-labels;
 }
 
 .program-diagram {
@@ -46,12 +46,12 @@
   background-repeat: no-repeat;
   background-size: auto 66%;
   background-color: #EFEFEF;
-  @extend .dark-theme;
+  @extend .dark-labels;
 }
 
 .receipts-design {
   @extend .bg-blue;
-  @extend .light-theme;
+  @extend .light-labels;
 }
 
 .receipts-icon {
@@ -60,7 +60,7 @@
   background-repeat: no-repeat;
   background-size: auto 33%;
   background-color: #000;
-  @extend .light-theme;
+  @extend .light-labels;
 }
 
 .receipts-app {
@@ -69,5 +69,5 @@
   background-repeat: no-repeat;
   background-size: auto 85%;
   @extend .bg-near-white;
-  @extend .dark-theme;
+  @extend .dark-labels;
 }

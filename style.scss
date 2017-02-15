@@ -1,28 +1,32 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=VT323');
-
 @import "reset";
 @import "variables";
 @import "tachyons";
 @import "local";
-@import "colors";
-
 @import "gallery";
-// Syntax highlighting @import is at the bottom of this file
-
-/****************/
-/* CUSTOM RULES */
-/****************/
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.dark-theme {
+  background-color: #111;
+  color: #FFF;
+  .name .first, .name .last, .navigation a {
+    @extend .white;
+    @extend .hover-red;
+  }
+}
+
+.light-theme {
+  color: #333;
+  .name .first, .name .last, .navigation a {
+    @extend .black;
+    @extend .hover-red;
+  }
 }
 
 .body-container {
@@ -124,7 +128,6 @@ header {
       display: inline;
       @extend .link;
       @extend .hover-red;
-      @extend .black;
 
       span {
         display: block;
@@ -164,132 +167,4 @@ header {
   }
 }
 
-.photo-collage img {
-  width: 33.333%;
-  float: left;
-}
-
-.dark-theme {
-  color: #333;
-  .project-meta {
-    color: #555555;
-  }
-}
-
-.light-theme {
-  color: #FFF;
-  .project-meta {
-    color: #FFF;
-  }
-}
-
-.project-container {
-  // Flexbox configuration
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  -webkit-box-flex-direction: column;
-  -moz-box-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  justify-content: space-between;
-
-  // Box dimensions
-  margin: 0px;
-  padding: 8px;
-  height: calc(100% - 0px);
-  width: calc(100% - 0px);
-  @extend .hide-child;
-
-  // Flexitems configurations
-  .project-info {
-    align-self: flex-start;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-
-    .project-title {
-      font-weight: 400;
-      line-height: 1.4;
-    }
-
-    .project-subtitle {
-      color: #EFEFEF;
-      @extend .bg-red;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 4px 12px 4px 10px;
-      margin-top: 4px;
-      @extend .child;
-
-      position: relative;
-      left: -8px;
-    }
-  }
-
-  .project-meta {
-    align-self: flex-end;
-    text-transform: uppercase;
-    font-size: 12px;
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
-    }
-
-    .project-type {
-      font-weight: 700;
-    }
-    .project-date:before {
-      content: "| ";
-    }
-    .project-date {
-      font-weight: 700px;
-    }
-  }
-}
-
-
-.tile {
-
-}
-
-.tile-2x2 {
-  @extend .tile !optional;
-}
-
-.tile-1x1 {
-  @extend .tile !optional;
-}
-
-@media screen and (min-width: 768px) {
-  .tile-2x2 {
-  	width: 66.666%;
-    height: 800px;
-  }
-  .tile-1x1, .grid-sizer {
-  	width: 33.333%;
-    height: 400px;
-  }
-}
-/*
-@media screen and (min-width: 768px) and (max-width: 1028px) {
-  .tile-2x2 {
-    width: 50%;
-    height: 50vw;
-  }
-  .tile-1x1, .grid-sizer {
-    width: 25%;
-    height: 25vw;
-  }
-}
-*/
-@media screen and (max-width: 768px) {
-  .tile-2x2 {
-    width: 100%;
-    height: 100vw;
-  }
-  .tile-1x1, .grid-sizer {
-    width: 100%;
-    height: 100vw;
-  }
-}
+@import "frontpage";
