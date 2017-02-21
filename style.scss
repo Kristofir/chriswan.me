@@ -167,4 +167,27 @@ header {
   }
 }
 
+
+.show-content {
+    background-color: #eee;
+    border-radius: 4px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.hide-content {
+    background-color: #ccc;
+    border-radius: 4px;
+    color: #333;
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: auto;
+}
+
+
+
+
 @import "frontpage";

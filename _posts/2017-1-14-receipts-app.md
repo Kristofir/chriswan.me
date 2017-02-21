@@ -20,24 +20,24 @@ cover-height: 25rem
 </div>
 
 <div class="section">
-  <div class="section-content tc">
-    <img class="hero-icon" src="../images/receipts/receipts-icon.png" />
+  <div class="section-content flex items-center">
 
-    <h1 class="dark-gray section-headline">Receipts live here.</h1>
-
-    <p class="center dark-gray section-description">Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics. Meet Receipts, a concept internal iOS app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-content">
-  <div class="relative tc">
-    <div class="center hero-white-iphone">
-      <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
-        <source src="{{ site.baseurl }}/images/receipts_wt.mp4">
-      </video>
+    <div class="w-50">
+      <div class="center hero-white-iphone">
+        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
+          <source src="{{ site.baseurl }}/images/receipts_wt.mp4">
+        </video>
+      </div>
     </div>
+    <div class="w-50">
+      <img class="hero-icon center" src="../images/receipts/receipts-icon.png" />
 
+      <h1 class="dark-gray section-headline">Receipts live here.</h1>
+
+      <p class="dark-gray section-description mb3">Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics.</p>
+
+      <p class="dark-gray section-description">Meet Receipts, a concept iOS system app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
+    </div>
   </div>
 </div>
 
@@ -100,5 +100,15 @@ cover-height: 25rem
     <p class="subsection-description">For convenient and quick access, your most recent receipts can be found in your Wallet app, much like your paper receipts are in your physical wallet.</p>
   </div>
 
+  </div>
+</div>
+
+<div class="section">
+  <div class="section content flex justify-center">
+    <a href="{{ site.baseurl }}/receipts-app-design/">
+      <div class="subsection bg-blue pv4 ph5">
+        <span class="f2 white">See how Receipts was designed</span>
+      </div>
+    </a>
   </div>
 </div>

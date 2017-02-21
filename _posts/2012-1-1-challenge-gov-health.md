@@ -17,7 +17,7 @@ description: A friendlier, more readable patient health record
 
       <p>After pouring through the sample data of the challenge, we quickly realized the lack of clarity with current text-only medical records, Although inaccessible and nearly illegible, the real problem was the layout. Our sample patient's medical history was full of past events that affected her future; a fall on the ice three winters ago led to chronic ankle pain that she experienced to the present.</p>
 
-      <p>Our final prototype emphasized the cause and effect that healthcare has on our daily lives. Details with an impact include color-coding visits (planned checkups versus unexpected emergencies), plain language explanations, and a dead simple medication section that nabbed us a 3rd place medal. You can see our entry (titled Blue Button Narrative), and others, at the <a href="http://healthdesignchallenge.com" target="\_blank">d.collab website</a>.</p>
+      <p>Our final prototype emphasized the cause and effect that healthcare has on our daily lives. Details with an impact include color-coding visits (planned checkups versus unexpected emergencies), plain language explanations, and a dead simple medication section that <strong>nabbed us a 3rd place medal</strong>. You can see our entry (titled Blue Button Narrative), and others, at the <a href="http://healthdesignchallenge.com" target="\_blank">d.collab website</a>.</p>
     </div>
 
     <div class="subsection mv3">
