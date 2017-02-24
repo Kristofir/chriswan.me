@@ -29,10 +29,43 @@
   border-bottom: 1px solid #d6d6d6;
 }
 
-div.section {
+.section {
   width: 100%;
-  padding: 0!important;
-  margin: 16px 0;
+  padding: 0;
+  margin: 0;
+
+  .image-subsection {
+    width: auto;
+    max-width: 1240px;
+    margin: 30px 0;
+  }
+
+  .text-subsection {
+    max-width: 630px;
+    margin: 30px 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    width: auto;
+
+    margin-bottom: 30px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: circle;
+
+    li {
+      font-size: 18px;
+      line-height: 30px;
+      margin-left: 30px;
+    }
+  }
 }
 
 .section-content {
@@ -77,21 +110,17 @@ div.section {
 }
 
 .subsection {
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
 .subsection-headline {
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  @extend .f3-l;
-  @extend .f4-m;
-  @extend .f5;
-  @extend .fw5;
-  @extend .fw4-l;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 200;
 }
 
 .subsection-description {
   -webkit-font-smoothing: antialiased;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   @extend .f5-l;
   @extend .f6;
   font-style: normal;
@@ -135,9 +164,9 @@ div.section {
 
 .diagram {
 
-  margin: 0 auto;
+  margin-bottom: 20px;
   width: auto;
-  max-width: auto;
+  max-width: 630px;
 }
 
 .image {

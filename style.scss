@@ -168,7 +168,8 @@ header {
 }
 
 
-.show-content {
+
+.clickme {
     background-color: #eee;
     border-radius: 4px;
     color: #666;
@@ -178,7 +179,11 @@ header {
     text-decoration: none;
 }
 
-.hide-content {
+.clickme:hover {
+    text-decoration: underline;
+}
+
+.box {
     background-color: #ccc;
     border-radius: 4px;
     color: #333;
@@ -186,7 +191,6 @@ header {
     padding: 5px 10px;
     width: auto;
 }
-
 
 
 
