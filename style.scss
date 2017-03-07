@@ -1,15 +1,17 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:100,300,400,500,700');
+
 @import "reset";
-@import "variables";
 @import "tachyons";
-@import "local";
 @import "gallery";
 
+
+$base: 16px;
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .dark-theme {
@@ -38,30 +40,17 @@ body {
 .page-info {
 
   .page-title {
-    font-size: 48px;
-    font-weight: 200;
-    line-height: 1;
-    margin: 0 0 16px 0;
+    font-family: "Roboto", serif;
+    font-size: $base * 2;
+    font-weight: 100;
+    line-height: $base * 1.5;
   }
 
   .page-subtitle {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1;
+    font-size: $base ;
+    font-weight: 400;
+    line-height: $base * 1.5;
   }
-}
-
-.email:after {
-  vertical-align: bottom;
-  display: inline-block;;
-  content: " ";
-  background-image: url(../images/icon_email.svg);
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  width: 28px;
-  height: 34px;
-  margin-left: 4px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -111,6 +100,7 @@ header {
   width: 100%;
   height: 5vw;
 
+  font-family: "Roboto",sans-serif;
   letter-spacing: 0;
   font-size: 20px;
 
@@ -169,29 +159,173 @@ header {
 
 
 
-.clickme {
-    background-color: #eee;
-    border-radius: 4px;
-    color: #666;
-    display: block;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    text-decoration: none;
+.expand {
+  text-decoration: none;
 }
 
-.clickme:hover {
-    text-decoration: underline;
+.expand:hover {
+    cursor: pointer;
 }
 
-.box {
-    background-color: #ccc;
-    border-radius: 4px;
-    color: #333;
-    margin: 5px 0;
-    padding: 5px 10px;
-    width: auto;
+.collapsible {
 }
-
-
 
 @import "frontpage";
+
+.hero-white-iphone {
+  background: url("../images/receipts/iphone.png") center no-repeat;
+  background-size: 396px 774px;
+
+  padding: 120px 48px 120px 48px;
+  width: 396px;
+  height: 774px;
+}
+
+.screen-in-white-iphone {
+  background: url("../images/receipts/iphone.png") top center no-repeat;
+  background-size: 352px 688px;
+  padding: 107px 43px 0px 43px;
+  width: 352px;
+  height: 583px;
+}
+
+.divider {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.section {
+  width: 100%;
+  .image-subsection {
+    margin: ($base * 3) 0;
+    width: auto;
+    max-width: 1248px;
+    figure {
+      margin: 0;
+      image {
+        padding: 0;
+        margin: 0;
+      }
+      figcaption {
+        font-size: $base;
+        line-height: calc($base * 1.5);
+        font-weight: 500;
+
+        margin: 0;
+        margin-top: -3px;
+        padding: 4px;
+        color: #999;
+        background-color: #F9F9F9;
+      }
+    }
+  }
+
+  .text-subsection {
+    max-width: 624px;
+    margin: ($base * 3) 0;
+    padding: 0px 8px;
+
+    .subsection-headline {
+      color: #999;
+      font-family: "Roboto", sans-serif ;
+      font-weight: 300;
+
+      font-size: $base * 1.5;
+      line-height: $base * 1.5;
+
+      margin-bottom: $base * 1.5;
+    }
+  }
+
+  p {
+    color: #000;
+
+    font-size: $base;
+    line-height: $base * 1.5;
+    font-weight: 400;
+    width: auto;
+
+    margin-bottom: $base * 1.5;
+  }
+  p.summary {
+    font-size: $base;
+    line-height: $base * 1.5;
+    font-weight: 400;
+  }
+  ul, ol {
+    margin-bottom: $base * 1.5;
+    li {
+      font-size: $base;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-left: $base * 2;
+      width: auto;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    list-style: circle;
+  }
+  ol {
+    list-style: decimal-leading-zero;
+  }
+  a {
+    @extend .link;
+    @extend .red;
+    @extend .hover-dark-red;
+  }
+}
+
+.section-content {
+  width: 100%;
+  @extend .mh0;
+  @extend .pb4;
+}
+
+.hero-icon {
+  width: 85px;
+  height: 85px;
+}
+
+.section-headline {
+  font-family: "Roboto", sans-serif ;
+  font-size: $base;
+  font-weight: 300;
+  line-height: $base * 1.5;
+}
+
+.section-subheadline {
+  font-family: "Roboto", sans-serif;
+  font-size: $base;
+  font-weight: 300;
+  line-height: $base * 1.5;
+}
+
+.subsection {
+  margin: 20px 0;
+}
+
+.subsection-subtitle {
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  font-size: $base;
+  line-height: $base * 1.5;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.diagram {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.image {
+  width: 1268px;
+}
+
+.half {
+  flex: 1 1 calc(624px - 16px);
+  padding: 8px;
+}

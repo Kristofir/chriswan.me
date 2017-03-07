@@ -1,3 +1,4 @@
+$base: 18px;
 
 .hero-white-iphone {
   background: url("../images/receipts/iphone.png") center no-repeat;
@@ -31,39 +32,71 @@
 
 .section {
   width: 100%;
-  padding: 0;
   margin: 0;
 
   .image-subsection {
     width: auto;
-    max-width: 1240px;
-    margin: 30px 0;
+    max-width: 1248px;
+    figure {
+      margin: 0;
+      image {
+        padding: 0;
+        margin: 0;
+      }
+      figcaption {
+        font-size: $base;
+        line-height: calc($base * 1.5);
+        font-weight: 500;
+
+        margin: 0;
+        margin-top: -3px;
+        padding: 4px;
+        color: #EEE;
+        background-color: #666;
+      }
+    }
   }
 
   .text-subsection {
-    max-width: 630px;
-    margin: 30px 0;
+    max-width: 624px;
+    margin: 0;
+    padding: 0px 8px;
+
+    .subsection-headline {
+      color: #666;
+      font-family: "Roboto", sans-serif ;
+      font-weight: 500;
+
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 
   p {
-    font-size: 18px;
-    line-height: 30px;
+    color: #222;
+
+    font-size: $base;
+    line-height: $base * 1.5;
+    font-weight: 300;
     width: auto;
 
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  p.summary {
+    font-size: $base;
+    line-height: $base * 1.5;
+    font-weight: 500;
   }
 
   ul {
     list-style: circle;
 
     li {
-      font-size: 18px;
-      line-height: 30px;
-      margin-left: 30px;
+      font-size: $base;
+      line-height: $base * 1.5;
+      font-weight: inherit;
+      margin-left: 18px;
     }
   }
 }
@@ -80,43 +113,21 @@
 }
 
 .section-headline {
-  font-family: "Roboto", sans-serif;
-  @extend .f1-ns;
-  @extend .f2;
-  @extend .fw3;
+  font-family: "Roboto", sans-serif ;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 60px;
 }
 
 .section-subheadline {
   font-family: "Roboto", sans-serif;
-  @extend .f3-ns;
-  @extend .f4;
-  @extend .fw3;
-}
-
-.section-description {
-  -webkit-font-smoothing: antialiased;
-  font-family: "Roboto", sans-serif;
-  @extend .f4-l;
-  @extend .f5-m;
-  @extend .f6;
-  font-style: normal;
-  font-synthesis: none;
-  font-weight: normal;
-  text-rendering: optimizelegibility;
-  line-height: 26px;
-  line-height: 1.5;
-  width: 80%;
-  max-width: 950px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 60px;
 }
 
 .subsection {
   margin: 20px 0;
-}
-
-.subsection-headline {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 200;
 }
 
 .subsection-description {
@@ -140,7 +151,6 @@
 }
 
 .subsection-subtitle {
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #999;
   @extend .tracked;
   @extend .f5-l;
@@ -165,24 +175,14 @@
 .diagram {
 
   margin-bottom: 20px;
-  width: auto;
-  max-width: 630px;
+  width: 100%;
 }
 
 .image {
   width: 1268px;
 }
 
-.hero-image {
-  content: " ";
-  width: 100%;
-  padding-bottom: 56.25%;
-  background: url("images/receipts/san-francisco.png") no-repeat bottom center;
-  background-size: cover;
-}
-
-
-
 .half {
-  flex: 0 1 350px;
+  flex: 1 1 calc(624px - 16px);
+  padding: 8px;
 }
