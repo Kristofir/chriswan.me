@@ -8,148 +8,65 @@ cover-color: rgb(255, 255, 255)
 cover-height: 25rem
 ---
 
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
 <div class="section">
-  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-  <div class='embed-container'><iframe src="https://player.vimeo.com/video/206012454" width="640" height="359" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+  <div class="embed-container flex-auto"><iframe src="https://player.vimeo.com/video/206012454" width="640" height="359" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
 </div>
 
-<div class="section">
-  <div class="section-content flex flex-wrap items-center align-center justify-center">
-
-    <div class="half">
-      <div class="center hero-white-iphone">
-        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
-          <source src="{{ site.baseurl }}/images/receipts_wt.mp4">
-        </video>
-      </div>
-    </div>
-    <div class="half text-subsection">
-
-      <img class="v-mid hero-icon tc" src="../images/receipts/receipts-icon.png" />
-
-      <h1 class="dark-gray section-headline"><strong>Receipts</strong> for iOS</h1>
-
-      <p class="dark-gray section-description mb3">Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics.</p>
-
-      <p class="dark-gray section-description">Meet Receipts, a concept iOS system app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-
-  <div class="image-subsection">
-    <figure>
-      <img src="../images/receipts/nfc-terminal.png" />
-      <figcaption>User holds phone by the terminal to download their receipt.</figcaption>
-    </figure>
-  </div>
-
-  <div class="text-subsection">
-    <h1 class="subsection-headline">Contactless Convenience</h1>
-    <p>Receipts is intelligent enough to understand different receipt formats and save them in a standard format packed with rich, useful information. Simply hold your iPhone near an NFC-enabled payment terminal that supports digital receipts when you check out.</p>
-  </div>
-
-</div>
-
-
-<!--
-<div class="section">
-  <div class="section-content flex flex-wrap items-center align-center justify-center" style="flex-direction: row-reverse;">
-
-    <div class="half">
-      <div class="center screen-in-white-iphone divider">
-        <img class="w-100" src="../images/receipts/list-view.png" />
-      </div>
-    </div>
-
-    <div class="half text-subsection">
-      <h2 class="subsection-headline">Never lose a receipt.</h2>
-      <p class="subsection-description">Receipts are kept organized and ordered chronologically. Colorful icons on the left-hand side tell you the kind of business a receipt is from. Summary costs on the right-hand side cue you on the significance of receipts.</p>
-    </div>
-
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-content flex flex-wrap items-center align-center justify-center">
-  <div class="half">
-    <div class="center screen-in-white-iphone divider">
-      <img class="w-100" src="../images/receipts/map-view.png" />
-    </div>
-  </div>
-    <div class="half text-subsection">
-      <h2 class="dark-gray subsection-headline">Search Spatially.</h2>
-      <p class="subsection-description">We all forget something from time to time. If you can't remember the name of the store you're trying to return a purchase to, you might remember the general vicinity. All receipts are geotagged and can be viewed in the in-app map.</p>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-content flex flex-wrap items-center align-center justify-center" style="flex-direction: row-reverse;">
-
-  <div class="half">
-    <div class="center screen-in-white-iphone divider">
-      <video class="w-100" preload="auto" muted playsinline autoplay loop>
-        <source src="../images/receipts/wallet.mp4">
+<div class="section flex flex-wrap items-center align-center justify-center">
+  <div class="subsection-half">
+    <div class="center hero-white-iphone">
+      <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
+        <source src="{{ site.baseurl }}/images/receipts_wt.mp4">
       </video>
     </div>
   </div>
+  <div class="subsection-half">
 
-  <div class="half text-subsection">
-    <h2 class="dark-gray subsection-headline">Where's your last receipt? Probably in your wallet.</h2>
-    <p class="subsection-description">For convenient and quick access, your most recent receipts can be found in your Wallet app, much like your paper receipts are in your physical wallet.</p>
-  </div>
+    <img class="v-mid hero-icon tc" src="../images/receipts/receipts-icon.png" />
 
+    <h1 class="section-headline"><strong>Receipts</strong> for iOS</h1>
+
+    <p>Receipts detail our purchases and chronicle our daily journeys. In an increasingly cashless and paperless world, physical receipts are relics.</p>
+
+    <p>Meet Receipts, a concept iOS system app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
   </div>
 </div>
--->
+
 
 <div class="section">
-  <div class="flex">
-    <div class="half text-subsection order-1">
-      <h2 class="subsection-headline">Contents</h2>
-      <ol>
-        <li>Introduction</li>
-        <li>Research
-          <ul>
-            <li><a href="#user-research">User Research</a></li>
-            <li><a href="#business-research">Business Research</a></li>
-          </ul>
-        </li>
-        <li>Design
-          <ul>
-            <li><a href="#defining-the-app">Defining the App</a></li>
-            <li><a href="#designing-a-better-receipt">Designing a Better Receipt</a></li>
-            <li><a href="#iconography">Iconography</a></li>
-            <li><a href="#designing-for-search">Designing for Search</a></li>
-            <li><a href="#designing-the-icon">Designing the Icon</a></li>
-          </ul>
-        </li>
-        <li>Conclusion and Reflection</li>
-      </ol>
-    </div>
-    <div class="half text-subsection order-0">
-      <h2 class="subsection-headline" id="introduction">Introduction</h2>
-      <p>This design project was inspired by my frustration over my disorganized receipts. Many laid in piles or folders. Others hid in my emails or text messages. In an era of smartphones, the balkanized state of receipts seemed overdue for modernization.</p>
+  <div class="subsection-third">
+    <h2 class="section-headline">Download receipts wirelessly</h2>
+  </div>
+  <div class="subsection-two-thirds">
+    <p>How would you like your receipt? Printed, emailed, texted, or sent wirelessly to your phone? Simply hold your iPhone near an NFC-enabled payment terminal that supports digital receipts when you check out.</p>
+  </div>
 
-      <p>The current trend in technology is toward greater integration between the apps, services, and smart objects we already have. Consumers want products that can work together seamlessly. The Receipts app was conceived as a hypothetical first-party iOS app integrated with other iOS apps and services at the system level.</p>
-
-      <p>The research and design project phases were not monolithic and did not happen in perfect sequence. As the sole (and principal by default) investigator and designer, I weaved between these phases and roles as research yielded new answers and design raised new questions.</p>
-
-      <img class="diagram" src="../images/receipts/diagram-rd-process.png" />
-
-      <p>Any realistic solution must inhabit the complex point-of-sale technology ecosystem, while any worthwhile solution must serve the user’s needs. I understood that I, as the investigator, would need to explore and discover the intermediate problem space where I, as the designer, could build a solution.</p>
-    </div>
+  <div class="subsection">
+    <figure>
+      <img src="../images/receipts/nfc-terminal.png" />
+    </figure>
   </div>
 </div>
 
-<div class="section" id="user-research">
-  <div class="text-subsection">
-    <h2 class="subsection-headline">User Research</h2>
 
-    <p class="summary">Through user interviews, I learned that users have unique organizational methods for dealing with receipts.
+<div class="section">
+  <div class="subsection-third">
+    <h2 class="section-headline" id="introduction">The Problem</h2>
+  </div>
+  <div class="subsection-two-thirds">
+    <p>Our receipts exist in a balkanized state: printed receipts lie in piles, folders, or drawers, while electronic receipts hide in emails, text messages, or behind store web portals. Most receipts are inconsequential. We don't think about them until we need them most when the fridge stops working, the TV gets bricked by a bad update, or that new pair of jeans turns out to have a hole in the back. (How embarrassing.)</p>
+    <p class="big-statement">How can we bring receipts into the 21st century?</p>
+  </div>
+</div>
+
+<div class="section flex" id="user-research">
+  <div class="subsection-third">
+    <h2 class="section-headline">User Research</h2>
+  </div>
+  <div class="subsection-two-thirds">
+    <p class="summary">Through user interviews, I learned that users have unique organizational methods for dealing with receipts.</p>
     <ul>
       <li>People develop their own unique ways of organizing receipts.</li>
       <li>Consequently, people have their own unique ways of finding receipts.</li>
@@ -157,9 +74,6 @@ cover-height: 25rem
       <li>People remember few details or features about their receipts.</li>
       <li>Receipts can hold sentimental value when they're associated with a significant memory.</li>
     </ul>
-    </p>
-
-    <p class="summary"></p>
 
     <p class="summary"><a class="expand">Read more...</a></p>
 
@@ -178,7 +92,7 @@ cover-height: 25rem
 
       <p><strong>Receipts can hold sentimental value when they're associated with a significant memory.</strong> Several interviewees reported having kept old receipts from a memorable date night or trip. A few reported having shared funny, outrageous, or otherwise interesting receipts on social media.</p>
 
-      <p>My takeaways:
+      <p>My takeaways:</p>
       <ul>
         <li>Because people develop their own unique ways of organizing receipts, the design solution should provide organizational flexibility to users.</li>
 
@@ -190,7 +104,6 @@ cover-height: 25rem
 
         <li>Because receipts can hold sentimental value when they're associated with a significant memory, the design solution should be mindful about what a receipt can signify and be open-minded about what users want to do with their own receipts.</li>
       </ul>
-      </p>
 
       <p>Here I did not conclude user research but continued it throughout the design process as I investigated the potential efficacy of proposed features through interviews and paper prototypes.</p>
     </div>
@@ -198,17 +111,18 @@ cover-height: 25rem
 </div>
 
 
-<div class="section">
-  <div class="text-subsection">
-    <h2 class="subsection-headline" id="business-research">Business Research</h2>
+<div class="flex section">
+  <div class="subsection-third">
+    <h2 class="section-headline" id="business-research">Business Research</h2>
+  </div>
+  <div class="subsection-two-thirds">
 
-    <p class="summary">The National Retail Federation, a merchant consortium, sponsors an electronic receipt XML schema.
+    <p class="summary">I researched the business and technological landscape to learn about the technical and business feasibility of my ideas.</p>
     <ul>
       <li>The National Retail Federation, a merchant consortium, sponsors an electronic receipt XML schema standard for application-to-application integration, thereby ensuring interoperability between disparate equipment in a point of sale system.</li>
       <li>Though the schema is currently enterprise-facing, it is technically feasible for standardized electronic receipts to be transmitted by near-field communication.</li>
       <li>Electronically receipted return fraud is the fastest growing type of return fraud and is a growing concern for retailers. Mobile operating systems offer robust security and identification capabilities that can be applied toward combating receipt fraud.</li>
     </ul>
-    </p>
 
     <p class="summary"><a class="expand">Read more...</a></p>
 
@@ -234,107 +148,145 @@ cover-height: 25rem
 </div>
 
 <div class="section">
-  <div class="flex">
-    <div class="image-subsection half order-1">
+  <div class="subsection-half order-1">
+    <img class="diagram" src="../images/receipts/diagram-flow.png" />
+  </div>
+  <div class="subsection-half order-0">
+    <h2 class="section-headline" id="defining-the-app">Defining the App</h2>
 
-      <img class="diagram" src="../images/receipts/diagram-flow.png" />
+    <p class="summary">Receipts was conceived as a lightweight utility app to help people keep track of their digital receipts. The app <strong>does not</strong> track expenses, calculate budgets, or provide business reviews, all services which should be left to other apps to handle. </p>
+
+    <ul>
+      <li>App's core purpose and service is to help people receive and store receipts. Other services like expense or budget tracking can be better provided by other apps.</li>
+      <li>App's core purpose tightly circumscribes its architecture.</li>
+      <li>Permeable architecture with multiple app entry and exit points.</li>
+      <li>Architecture was both elaborated upon and pruned as research and design progressed. The flow chart shown here represents the app architecture in its final iteration.</li>
+    </ul>
+
+    <p><a class="expand">Read more...</a></p>
+
+    <div class="collapsible">
+
+      <p>Receipts was conceived as a lightweight utility app to contactlessly exchange and organize receipts.  The app <strong>does not</strong> track spending or calculate budgets, show business reviews, or provide financial advice. These services should be left to other apps to handle. </p>
+
+      <p>The digital receipt is the raison d'être for the app, thus the app must be designed with a tight focus on the receipt. Without functions extraneous to the app's core purpose, the app architecture could be kept shallow with all states separated by no more than three interactions. Each interaction pushes the user toward the receipt they seek.</p>
+
+      <p>The app architecture was made highly permeable with multiple entry points to different depth levels within the app and multiple exits.</p>
     </div>
-    <div class="text-subsection half order-0">
-      <h2 class="subsection-headline" id="defining-the-app">Defining the App</h2>
+  </div>
+</div>
 
-      <p class="summary">Receipts was conceived as a lightweight utility app to help people keep track of their digital receipts. The app <strong>does not</strong> track expenses, calculate budgets, or provide business reviews, all services which should be left to other apps to handle. </p>
 
-      <ul>
-        <li>App's core purpose and service is to help people receive and store receipts. Other services like expense or budget tracking can be better provided by other apps.</li>
-        <li>App's core purpose tightly circumscribes its architecture.</li>
-        <li>Permeable architecture with multiple app entry and exit points.</li>
-        <li>Architecture was both elaborated upon and pruned as research and design progressed. The flow chart shown here represents the app architecture in its final iteration.</li>
+
+<div class="section">
+  <div class="flex">
+    <div class="subsection-third">
+      <h2 class="section-headline">Early Iteration</h2>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>By building a basic but coherent core for an early iteration, I provided myself a project platform for building and adding on more ideas to flesh out the concept.</p>
+    </div>
+  </div>
+  <div class="subsection">
+    <figure>
+      <img class src="../images/receipts/early-iteration.png" />
+    </figure>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="flex">
+    <div class="subsection-third">
+      <h2 class="section-headline">Late Iteration</h2>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>Through continuous research, interviews, and critiques, the app was elaborated upon. Place icons and colors help the user distinguish between receipts. Enhanced search functionality enables the user to rapidly refine their search.</p>
+    </div>
+  </div>
+  <div class="subsection">
+    <figure>
+      <img class src="../images/receipts/late-iteration.png" />
+    </figure>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="section-headline" id="designing-a-better-receipt">A Better Receipt</h2>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>It took me several iterations to design a clean and modern receipt that keeps the most important information front and center, and is easy to find and identify.</p>
+
+      <p>I sifted through <i>hundreds</i> of receipts. At first, I saw few unifying elements. Most elements differed wildly in their placement, inclusion, and language.</p>
+
+      <p class="big-statement">How could I impose order on such chaos?</p>
+    </div>
+  </div>
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Iteration 01</h2>
+      <ul class="rundown">
+        <li>The Rundown</li>
+        <li><span class="tag-design">Design</span> Design starting point</li>
+        <li><span class="tag-design">Design</span> Captures all receipt details as they are</li>
+        <li><span class="tag-feedback">Feedback</span> All the small details can overwhelm</li>
+        <li><span class="tag-insight">Insight</span> Information density without hierarchy impairs readability</li>
       </ul>
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/receipt-iteration-01.png" />
+    </div>
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Design Rationale</h2>
+      <p>Initially, I thought that a receipt should appear on screen as it does on paper in order to capture all information, details, and nuances. Common receipt paper roll widths (2.25 and 3.125 inches) closely match iOS device screen widths (iPhones 6 & 7: 2.30 inches; iPhones 6 & 7 Plus: 2.6 inches) so a receipt <i>would</i> appear on screen closely as it does on paper.</p>
+
+      <h2 class="subsection-headline">Receiving and Reflecting on Feedback</h2>
+
+      <p>User feedback revealed that my presupposition about total information capture was wrong. Information about the cashier's name or the checkout line number, as examples, were unimportant to users. Furthermore, such extraneous information reduced receipt readability, clarity, and flow.</p>
+
+      <p>I realized that the few unifying elements were shared by all receipts precisely because they were important, while other elements weren't shared precisely because they were unimportant to the core purpose of a receipt. From this insight I concluded that the common and thus important elements needed to be more <strong>salient</strong>.</p>
+    </div>
+  </div>
+
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Iteration 02</h2>
+      <ul class="rundown">
+        <li>The Rundown</li>
+        <li><span class="tag-design">Design</span> Pare down to the pertinent details</li>
+        <li><span class="tag-design">Design</span> Construct a logical information hierarchy</li>
+        <li><span class="tag-feedback">Feedback</span> Much more readable</li>
+        <li><span class="tag-feedback">Feedback</span> Still plain-looking</li>
+        <li><span class="tag-insight">Insight</span> There are opportunities to simplify receipt-related actions</li>
+        <li><span class="tag-insight">Insight</span> Distinguishability = visual distinctiveness = structure + style</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/receipt-iteration-02.png" />
+    </div>
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Design Rationale</h2>
+      <p>I organized critical elements in a hierarchal structure that lent predictability to the new receipt design. People first search through receipts not by phone number or address but by business names and transaction dates, so I pared the receipt header down to those search-guiding details.</p>
+
+      <p>I chose to exclude business logos in this iteration because I couldn't find a way to present them in a consistent and high-quality manner. Some businesses had large and detailed logos that would significantly degrade into when shrunk. Conversely, others had logos that would degrade when enlarged.</p>
+
+      <p>The business location and contact details were relocated beneath the list of item names and prices, the core of the receipt. An embedded map supplements the business location details, providing highly salient geospatial information to the user.</p>
+
 
       <p><a class="expand">Read more...</a></p>
 
       <div class="collapsible">
 
-        <p>Receipts was conceived as a lightweight utility app to contactlessly exchange and organize receipts.  The app <strong>does not</strong> track spending or calculate budgets, show business reviews, or provide financial advice. These services should be left to other apps to handle. </p>
-
-        <p>The digital receipt is the raison d'être for the app, thus the app must be designed with a tight focus on the receipt. Without functions extraneous to the app's core purpose, the app architecture could be kept shallow with all states separated by no more than three interactions. Each interaction pushes the user toward the receipt they seek.</p>
-
-        <p>The app architecture was made highly permeable with multiple entry points to different depth levels within the app and multiple exits.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="image-subsection">
-    <figure>
-      <img class src="../images/receipts/early-iteration.png" />
-    </figure>
-  </div>
-  <div class="text-subsection">
-    <h2 class="subsection-headline">Early Iteration</h2>
-
-  </div>
-</div>
-
-<div class="section">
-  <div class="image-subsection">
-    <figure>
-      <img class="image" src="../images/receipts/receipt-iterations.png" />
-      <figcaption>Three receipt design iterations.</figcaption>
-    </figure>
-  </div>
-
-  <div class="flex">
-
-    <div class="half image-subsection order-1">
-      <img class="diagram" src="../images/receipts/screen_diagram_receipt.png" />
-    </div>
-
-    <div class="half text-subsection order-0">
-      <h2 class="subsection-headline" id="designing-a-better-receipt">Designing a Better Receipt</h2>
-
-      <p class="summary">After several iterations with continuous user feedback, I created a visually-distinctive digital receipt. <a class="expand">Read more...</a></p>
-
-      <div class="collapsible">
-        <p>The digital receipt is the keystone piece of the project. It is the primary determinant of the project's attraction and success.</p>
-
-        <p>Looking through hundreds of paper receipts, some my own and others donated by friends, I first saw few unifying elements. Some receipts listed store contact details at the beginning; others listed them at the end. Some stated had return policies; others did not. One had a lengthy store return charter that added ten inches to the receipt length. Another listed each item name in both English and Mandarin Chinese.</p>
-
-        <p>The seemingly infinite variability of receipt semantics and syntaxes made the mission of designing a one-size-fits-all digital receipt appear impossible. Naturally, a difficult problem would take a few iterative attempts.</p>
-
-        <img class="diagram" src="../images/receipts/diagram-receipt-process.png" />
-
-        <h3 class="subsection-subtitle">First Iteration Design</h3>
-        <p>For the <strong>first iteration</strong> (pictured above on the left) of the receipt design, I thought that a receipt should appear on screen as it does on paper in order to capture all information, details, and nuances. Common receipt paper roll widths (2.25 and 3.125 inches) closely match iOS device screen widths (iPhone 6-7: 2.30 inches; iPhone 6-7 Plus: 2.6 inches) so a receipt <i>would</i> appear on screen closely as it does on paper.</p>
-
-        <h3 class="subsection-subtitle">First Iteration Feedback</h3>
-        <p>Initial user feedback revealed that my presupposition about total information capture was wrong. Information about the cashier's name or the checkout line number, as examples, were unimportant to users. Furthermore, such extraneous information reduced receipt readability, clarity, and flow.</p>
-
-        <p>I realized that the few unifying elements were shared by all receipts precisely because they were important, while other elements weren't shared precisely because they were unimportant to the core purpose of a receipt. From this insight I concluded that the common and thus important elements needed to be more <strong>salient</strong>.</p>
-
-        <p>I identified four important elements shared by all receipts:
-        <ul>
-          <li>Business information: name, contact, location</li>
-          <li>Item information: item names, details, prices</li>
-          <li>Transaction information: payment method, transaction date</li>
-          <li>Miscellaneous information: return policy, customer surveys, warranty guarantees</li>
-        </ul>
-        </p>
-
-        <h3 class="subsection-subtitle">Second Iteration Design</h3>
-
-        <p>For the <strong>second iteration</strong> (pictured above in the middle), I organized identified critical elements in a hierarchal structure that lent predictability to the new receipt design. People first search through receipts not by phone number or address but by business names and transaction dates, so I pared the receipt header down to those search-guiding details.</p>
-
-        <p>I chose to exclude business logos in this iteration because I couldn't find a way to present them in a consistent and high-quality manner. Some businesses had large and detailed logos that would significantly degrade into when shrunk. Conversely, others had logos that would degrade when enlarged.</p>
-
-        <p>The business location and contact details were relocated beneath the list of item names and prices, the core of the receipt. An embedded map supplements the business location details, providing highly salient geospatial information to the user.</p>
-
-        <img class="diagram" src="../images/receipts/diagram-salient-spatial-info.png" />
+      <img class="diagram" src="../images/receipts/diagram-salient-spatial-info.png" />
 
         <p>I allocated sections further below the receipt for payment transaction details and miscellaneous information like return policies or customer survey links. All sections were cleanly formatted and presented in an aesthetically-pleasing but neutral style.</p>
 
-        <h3 class="subsection-subtitle">Second Iteration Feedback</h3>
+        <h2 class="subsection-headline">Receiving and Reflecting on Feedback</h2>
 
         <p>User feedback was decidedly more positive. Test users found the second iteration design more readable, clear, and attractive but still "plain" in appearance and lacking in interactivity.</p>
 
@@ -349,26 +301,47 @@ cover-height: 25rem
         <img class="diagram" src="../images/receipts/diagram-structure-style.png" />
 
         <p>The implications of visually indistinct receipts for usability are not immaterial. It is well-established that people can better identify visually distinct objects. Consequently, increasing the visual distinctiveness of receipts will make them easier for users to find and identify.</p>
+      </div>
+    </div>
+  </div>
 
-        <h3 class="subsection-subtitle">Third Iteration Design</h3>
-        <p>For the <strong>third design iteration</strong>, I made business contact details actionable through the addition of iconic buttons that allow users to initiate a phone call or an email message seamlessly from within the app. Normally, a user would copy contact details from a receipt and enter them into their phone or email apps.</p>
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Iteration 03</h2>
+      <ul class="rundown">
+        <li>The Rundown</li>
+        <li><span class="tag-design">Design</span> Business contact details made interactive</li>
+        <li><span class="tag-design">Design</span> Colorful place icons help user quickly tell where receipt is from</li>
+        <li><span class="tag-feedback">Feedback</span> Highly readable</li>
+        <li><span class="tag-feedback">Feedback</span> Very visually distinguishable</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/receipt-iteration-03.png" />
+    </div>
+    <div class="subsection-third">
+      <h2 class="subsection-headline">Design Rationale</h2>
+      <p>Business contact details were made actionable through the addition of iconic buttons that allow users to initiate a phone call or an email message seamlessly from within the app. Normally, a user would copy contact details from a receipt and enter them into their phone or email apps.</p>
 
-        <img class="diagram" src="../images/receipts/diagram-improved-call-interaction.png" />
+      <img class="diagram" src="../images/receipts/diagram-improved-call-interaction.png" />
 
-        <p>To increase the visual distinctiveness and thus distinguishability of receipts, I graphically emphasized what first and foremost has set them apart: the businesses the receipts are from. I imported Apple Maps place marker iconography and colors to color-code receipt headers by the type of businesses they're from with vibrant hues.</p>
+      <p>To increase the visual distinctiveness and thus distinguishability of receipts, I graphically emphasized what first and foremost has set them apart: the businesses the receipts are from. I imported Apple Maps place marker iconography and colors to color-code receipt headers by the type of businesses they're from with vibrant hues.</p>
 
-        <p>I made other visual tweaks. Line-spacing was slightly tightened to compact the receipt while maintaining readability. The background panel behind the business information section was made a translucent diaphanous acrylic sheet that reveals yet obscures the map behind, suggesting a connection while maintaining separation.</p>
+      <p>I made other visual tweaks. Line-spacing was slightly tightened to compact the receipt while maintaining readability. The background panel behind the business information section was made a translucent diaphanous acrylic sheet that reveals yet obscures the map behind, suggesting a connection while maintaining separation.</p>
 
+      <p><a class="expand">Read more...</a></p>
+
+      <div class="collapsible">
         <img class="diagram" src="../images/receipts/diagram-map-panel.png" />
 
-        <h3 class="subsection-subtitle">Third Iteration Feedback</h3>
+        <h2 class="subsection-headline">Receiving and Reflecting on Feedback</h2>
+
         <p>This time, user feedback was overwhelmingly positive. Test users found the receipts highly readable and attractive yet distinct and distinguishable. Test users could very quickly infer the contents of the receipt by a cursory glance at the receipt header. Though the receipts shown to test users were non-interactive prototypes, users gave feedback that they would appreciate the ability to quickly contact or locate businesses from within the receipts.</p>
       </div>
     </div>
-
   </div>
 
-  <div class="image-subsection">
+  <div class="subsection">
     <figure>
       <img src="../images/receipts/receipts-all.png" />
       <figcaption>Example receipts in digital format.</figcaption>
@@ -377,42 +350,50 @@ cover-height: 25rem
 </div>
 
 <div class="section">
-  <div class="image-subsection">
+
+  <div class="subsection-third">
+    <h2 class="section-headline" id="iconography">Places Iconography</h2>
+  </div>
+  <div class="subsection-two-thirds">
+    <p>The Receipts app leverages and in turn reinforces existing user familiarity of the Apple Maps place iconography and colors to help users identify receipts.</p>
+    <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
+
+    <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
+
+    <p>Thinking ecologically, I recognized there's potential for a symbiotic relationship between Receipts and Maps. Receipts could leverage user familiarity with Maps iconography and, in turn, build on it. Over time, the symbiosis will strengthen users' mental associations between place types, place pictograms, and place colors.</p>
+
+    <img class="diagram" src="../images/receipts/diagram-symbiosis-maps-receipts.png" />
+
+    <p>A place icon can graphically imbue a digital receipt with a sense of where it's from. Users can search receipts not only by business name and location but also by place icon and color. As users' mental models strengthen through repeated use of Receipts and Maps, users will identify place icons and colors more quickly and reliably in both apps, thereby becoming becoming more effective at using the apps.</p>
+  </div>
+
+  <div class="subsection">
     <figure>
       <img src="../images/receipts/category-icons.png" />
       <figcaption>Apple Maps place icons.</figcaption>
     </figure>
   </div>
-
-  <div class="text-subsection">
-    <h2 class="subsection-headline" id="iconography">Iconography</h2>
-
-    <p class="summary">The Receipts app leverages and in turn reinforces existing user familiarity of the Apple Maps place iconography and colors to help users identify receipts. <a class="expand">Read more...</a></p>
-
-    <div class="collapsible">
-      <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
-
-      <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
-
-      <p>Thinking ecologically, I recognized there's potential for a symbiotic relationship between Receipts and Maps. Receipts could leverage user familiarity with Maps iconography and, in turn, build on it. Over time, the symbiosis will strengthen users' mental associations between place types, place pictograms, and place colors.</p>
-
-      <img class="diagram" src="../images/receipts/diagram-symbiosis-maps-receipts.png" />
-
-      <p>A place icon can graphically imbue a digital receipt with a sense of where it's from. Users can search receipts not only by business name and location but also by place icon and color. As users' mental models strengthen through repeated use of Receipts and Maps, users will identify place icons and colors more quickly and reliably in both apps, thereby becoming becoming more effective at using the apps.</p>
-    </div>
-  </div>
 </div>
 
+
+
 <div class="section">
-  <div class="image-subsection">
+  <div class="subsection-third">
+    <h2 class="section-headline" id="designing-for-search">Designing for Search</h2>
+  </div>
+
+  <div class="subsection-two-thirds">
+    <p></p>
+  </div>
+
+  <div class="subsection">
     <figure>
       <img class="image" src="../images/receipts/list-iterations.png" />
       <figcaption>Several of the many iterations for the list view design.</figcaption>
     </figure>
   </div>
 
-  <div class="text-subsection">
-    <h2 class="subsection-headline" id="designing-for-search">Designing for Search</h2>
+  <div class="subsection-half">
 
     <p class="summary">User research revealed that people remember only the most salient parts from receipts. <a class="expand">Read more...</a></p>
 
@@ -445,9 +426,10 @@ cover-height: 25rem
 </div>
 
 <div class="section">
-
-  <div class="text-subsection">
-    <h2 class="subsection-headline" id="designing-the-icon">Designing the Icon</h2>
+  <div class="subsection-third">
+    <h2 class="section-headline" id="designing-the-icon">Designing the Icon</h2>
+  </div>
+  <div class="subsection-two-thirds">
 
     <p>An iOS app icon is a super-elliptical square, or “squircle”. A receipt is a long and narrow rectangle. The representation of a full receipt within the app icon results in an unevenly balanced composition:</p>
 
@@ -476,9 +458,13 @@ cover-height: 25rem
     <img class="diagram" src="../images/receipts/diagram-final-icons.png" />
 
   </div>
+</div>
 
-  <div class="text-subsection">
-    <h2 class="subsection-subheadline" id="conclusion-and-reflections">Conclusion and Reflections</h2>
+<div class="section">
+  <div class="subsection-third">
+    <h2 class="section-headline" id="conclusion-and-reflections">Conclusion and Reflections</h2>
+  </div>
+  <div class="subsection-two-thirds">
 
     <p>First, I thank you, dear reader, for taking the time to read my project which I worked hard on for over a month.</p>
 

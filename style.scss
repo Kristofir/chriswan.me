@@ -3,15 +3,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:100,300,400,500,700');
 
+@import "fonts";
 @import "reset";
 @import "tachyons";
 @import "gallery";
 
 
-$base: 16px;
+$base: 20px;
+$base-height: $base * 1.5;
+
 
 body {
-  font-family: 'Roboto Slab', serif;
 }
 
 .dark-theme {
@@ -100,18 +102,17 @@ header {
   width: 100%;
   height: 5vw;
 
-  font-family: "Roboto",sans-serif;
-  letter-spacing: 0;
-  font-size: 20px;
+  @extend .sans-serif;
+  letter-spacing: -1px;
+  font-size: $base;
 
   .name {
     float: left;
     font-weight: 700;
     text-transform: uppercase;
-    font-weight: 700;
     line-height: 1;
 
-    height: 20px;
+    height: $base;
     overflow: hidden;
 
     a {
@@ -131,7 +132,7 @@ header {
   }
 
   .name:hover .first {
-    margin-top: -20px;
+    margin-top: -$base;
   }
 
   .navigation {
@@ -157,17 +158,16 @@ header {
   }
 }
 
-
-
 .expand {
-  text-decoration: none;
+  @extend .sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  font-size: $base * 0.75;
+  text-transform: uppercase;
 }
 
 .expand:hover {
     cursor: pointer;
-}
-
-.collapsible {
 }
 
 @import "frontpage";
@@ -181,106 +181,176 @@ header {
   height: 774px;
 }
 
-.screen-in-white-iphone {
-  background: url("../images/receipts/iphone.png") top center no-repeat;
-  background-size: 352px 688px;
-  padding: 107px 43px 0px 43px;
-  width: 352px;
-  height: 583px;
-}
-
-.divider {
-  border-bottom: 1px solid #d6d6d6;
-}
 
 .section {
   width: 100%;
-  .image-subsection {
-    margin: ($base * 3) 0;
-    width: auto;
-    max-width: 1248px;
-    figure {
-      margin: 0;
-      image {
-        padding: 0;
-        margin: 0;
-      }
-      figcaption {
-        font-size: $base;
-        line-height: calc($base * 1.5);
-        font-weight: 500;
+  padding: $base * 1.5 0;
+  @extend .flex;
+  @extend .flex-wrap;
+  border-bottom: 2px solid #EEE;
+}
 
-        margin: 0;
-        margin-top: -3px;
-        padding: 4px;
-        color: #999;
-        background-color: #F9F9F9;
-      }
-    }
-  }
+.subsection-base {
+  margin: $base * 0.75 0;
+}
 
-  .text-subsection {
-    max-width: 624px;
-    margin: ($base * 3) 0;
-    padding: 0px 8px;
+.subsection-row {
+  width: 100%;
+  @extend .flex;
+  @extend .flex-wrap;
+}
 
-    .subsection-headline {
-      color: #999;
-      font-family: "Roboto", sans-serif ;
-      font-weight: 300;
+.subsection {
+  @extend .subsection-base;
+  flex: 0 0 100%;
+}
 
-      font-size: $base * 1.5;
-      line-height: $base * 1.5;
+.subsection-two-thirds {
+  @extend .subsection-base;
+  flex: 2 2 416px;
+}
+.subsection-third {
+  @extend .subsection-base;
+  flex: 1 1 208px;
+}
+.subsection-quarter {
+  @extend .subsection-base;
+  flex: 1 1 156px;
+}
+.subsection-half {
+  @extend .subsection-base;
+  flex: 1 1 312px;
+}
 
-      margin-bottom: $base * 1.5;
-    }
-  }
+.section-headline {
+  color: #000;
+  @extend .sans-serif;
+  font-weight: 700;
 
-  p {
-    color: #000;
+  font-size: $base * 1.5;
+  line-height: $base * 1.5;
+  letter-spacing: -1px;
 
+  margin-bottom: $base * 1.5;
+}
+
+.subsection-headline {
+  color: #000;
+  @extend .sans-serif;
+  font-weight: 400;
+
+  font-size: $base * 1.5;
+  line-height: $base-height;
+  letter-spacing: 1px;
+}
+
+p + .subsection-headline {
+  margin-top: $base * 1.5;
+  padding-top: $base * 1.5;
+  border-top: 1px solid #EEE;
+}
+
+p {
+  color: #000;
+
+
+  font-size: $base;
+  font-weight: 400;
+
+  line-height: $base-height;
+  padding-top: $base-height;
+}
+p:first-child {
+  padding-top: 0;
+}
+ul, ol {
+  margin-top: $base-height;
+  li {
     font-size: $base;
-    line-height: $base * 1.5;
+    line-height: $base-height;
     font-weight: 400;
+    margin-left: $base * 2;
+    padding-top: $base-height;
     width: auto;
-
-    margin-bottom: $base * 1.5;
-  }
-  p.summary {
-    font-size: $base;
-    line-height: $base * 1.5;
-    font-weight: 400;
   }
   ul, ol {
-    margin-bottom: $base * 1.5;
-    li {
-      font-size: $base;
-      line-height: 1.5;
-      font-weight: 400;
-      margin-left: $base * 2;
-      width: auto;
-    }
-    ul, ol {
-      margin-bottom: 0;
-    }
+    margin-top: 0;
   }
-  ul {
-    list-style: circle;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal-leading-zero;
+}
+
+ul.rundown {
+  list-style: none;
+  margin-top: 0;
+  li {
+    @extend .black;
+
+    @extend .sans-serif;
+    font-size: $base;
+    line-height: $base-height;
+    font-weight: 400;
+
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: $base-height / 2;
+    padding-bottom: $base-height / 2;
+    border-top: 2px solid #EEE;
   }
-  ol {
-    list-style: decimal-leading-zero;
+  li:first-child {
+    background-image: linear-gradient(to bottom, #43e97b 0%, #38f9d7 100%);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: $base-height;
+
+    border-top: none;
   }
-  a {
-    @extend .link;
-    @extend .red;
-    @extend .hover-dark-red;
+  li span {
+    border-radius: $base / 8;
+    font-size: $base * 0.666;
+    padding: 4px 6px;
+    @extend .white;
+    font-weight: 700;
+    letter-spacing: -1px;
+    vertical-align: top;
+  }
+  li span.tag-design {
+    background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  }
+  li span.tag-feedback {
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  }
+  li span.tag-insight {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
   }
 }
 
-.section-content {
-  width: 100%;
-  @extend .mh0;
-  @extend .pb4;
+a {
+  @extend .link;
+  @extend .red;
+  @extend .hover-dark-red;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+
+.big-statement {
+  @extend .sans-serif;
+  font-size: $base * 1.5;
+  line-height: $base * 1.5;
+  letter-spacing: -1px;
+  font-weight: 700;
 }
 
 .hero-icon {
@@ -288,41 +358,9 @@ header {
   height: 85px;
 }
 
-.section-headline {
-  font-family: "Roboto", sans-serif ;
-  font-size: $base;
-  font-weight: 300;
-  line-height: $base * 1.5;
-}
-
-.section-subheadline {
-  font-family: "Roboto", sans-serif;
-  font-size: $base;
-  font-weight: 300;
-  line-height: $base * 1.5;
-}
-
-.subsection {
-  margin: 20px 0;
-}
-
-.subsection-subtitle {
-  color: #666;
-  font-family: "Roboto", sans-serif;
-  font-size: $base;
-  line-height: $base * 1.5;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
 .diagram {
   margin-bottom: 20px;
   width: 100%;
-}
-
-.image {
-  width: 1268px;
 }
 
 .half {
