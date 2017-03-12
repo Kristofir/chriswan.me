@@ -12,7 +12,6 @@
 $base: 20px;
 $base-height: $base * 1.5;
 
-
 body {
 }
 
@@ -36,7 +35,7 @@ body {
 .body-container {
   max-width: 1268px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .page-info {
@@ -160,10 +159,12 @@ header {
 
 .expand {
   @extend .sans-serif;
-  font-size: inherit;
+  font-size: $base * 2 / 3;
+  line-height: $base-height;
   font-weight: 700;
-  font-size: $base * 0.75;
   text-transform: uppercase;
+  letter-spacing: 0px;
+  font-kerning: none;
 }
 
 .expand:hover {
@@ -174,24 +175,25 @@ header {
 
 .hero-white-iphone {
   background: url("../images/receipts/iphone.png") center no-repeat;
-  background-size: 396px 774px;
+  background-size: 356px 697px;
 
-  padding: 120px 48px 120px 48px;
-  width: 396px;
-  height: 774px;
+  padding: 108px 43px 108px 43px;
+  width: 356px;
+  height: 697px;
 }
 
 .section {
   width: 100%;
-  padding: $base * 1.5 0;
+  padding: $base-height 10px;
   @extend .flex;
   @extend .flex-wrap;
   border-bottom: 2px solid #EEE;
+  margin-bottom: -2px;
 }
 
 .flexless-section {
   width: 100%;
-  padding: $base * 1.5 0;
+  padding: $base-height 10px;
   border-bottom: 2px solid #EEE;
 }
 
@@ -228,6 +230,8 @@ header {
 }
 
 .section-headline {
+  display: inline-block;
+
   color: #000;
   @extend .sans-serif;
   font-weight: 700;
@@ -235,30 +239,33 @@ header {
   font-size: $base * 1.5;
   line-height: $base * 1.5;
   letter-spacing: -1px;
+}
 
-  margin-bottom: $base * 1.5;
+.exp:before {
+    height: 4px;
+    display: inline-block;
+    width: 100%;
+    background: #000000;
+    content: '';
 }
 
 .subsection-headline {
-  color: #000;
   @extend .sans-serif;
-  font-weight: 400;
-
-  font-size: $base * 1.5;
+  font-size: $base * 2 / 3;
   line-height: $base-height;
-  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-kerning: none;
 }
 
 p + .subsection-headline {
-  margin-top: $base * 1.5;
-  padding-top: $base * 1.5;
+  margin-top: $base-height;
+  padding-top: $base-height;
   border-top: 1px solid #EEE;
 }
 
 p {
-  color: #000;
-
-
   font-size: $base;
   font-weight: 400;
 
@@ -274,8 +281,7 @@ ul, ol {
     font-size: $base;
     line-height: $base-height;
     font-weight: 400;
-    margin-left: $base * 2;
-    padding-top: $base-height;
+    margin-left: $base;
     width: auto;
   }
   ul, ol {
@@ -303,20 +309,22 @@ ul.rundown {
     margin-left: 0;
     padding-left: 5px;
     padding-right: 5px;
+
     padding-top: $base-height / 2;
     padding-bottom: $base-height / 2;
-    border-top: 2px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: -1px;
   }
   li:first-child {
-    background-image: linear-gradient(to bottom, #43e97b 0%, #38f9d7 100%);
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: 400;
+    @extend .sans-serif;
+    font-size: $base * 2 / 3;
+    line-height: $base-height;
+    font-weight: 700;
     text-transform: uppercase;
-    padding-top: $base-height;
+    letter-spacing: 0px;
+    font-kerning: none;
 
-    border-top: none;
+    padding-top: 0;
   }
   li span {
     border-radius: $base / 8;
@@ -326,6 +334,8 @@ ul.rundown {
     font-weight: 700;
     letter-spacing: -1px;
     vertical-align: top;
+
+    margin-right: 4px;
   }
   li span.tag-design {
     background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
@@ -349,13 +359,23 @@ figure {
   margin: 0;
 }
 
-
 .big-statement {
+  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+  background-size: 100% 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
   @extend .sans-serif;
-  font-size: $base * 1.5;
-  line-height: $base * 1.5;
-  letter-spacing: -1px;
-  font-weight: 700;
+  font-size: $base * 3;
+  line-height: $base-height * 2;
+  font-weight: 100;
+  text-transform:full-width;
+  letter-spacing: 1px;
+  font-kerning: none;
 }
 
 .hero-icon {
@@ -363,8 +383,8 @@ figure {
   height: 85px;
 }
 
-.diagram {
-  margin-bottom: 20px;
+p + .diagram {
+  padding-top: $base-height;
   width: 100%;
 }
 

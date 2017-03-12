@@ -217,21 +217,23 @@ cover-height: 25rem
 <div class="section">
   <div class="subsection-row">
     <div class="subsection-third">
-      <h2 class="section-headline" id="designing-a-better-receipt">A Better Receipt</h2>
+      <h2 class="section-headline" id="designing-a-better-receipt">Imagining A Better Receipt</h2>
     </div>
     <div class="subsection-two-thirds">
       <p>It took me several iterations to design a clean and modern receipt that keeps the most important information front and center, and is easy to find and identify.</p>
 
       <p>I sifted through <i>hundreds</i> of receipts. At first, I saw few unifying elements. Most elements differed wildly in their placement, inclusion, and language.</p>
 
-      <p class="big-statement">How could I impose order on such chaos?</p>
+      <p class="big-statement">How can we bring order to such chaos?</p>
     </div>
   </div>
-  <div class="subsection-row">
+  <div class="subsection-row page-receipts">
+    <div class="subsection">
+      <h2 class="section-headline">Iteration 01</h2>
+    </div>
     <div class="subsection-third">
-      <h2 class="subsection-headline">Iteration 01</h2>
       <ul class="rundown">
-        <li>The Rundown</li>
+        <li>Summary</li>
         <li><span class="tag-design">Design</span> Design starting point</li>
         <li><span class="tag-design">Design</span> Captures all receipt details as they are</li>
         <li><span class="tag-feedback">Feedback</span> All the small details can overwhelm</li>
@@ -254,10 +256,12 @@ cover-height: 25rem
   </div>
 
   <div class="subsection-row">
+    <div class="subsection">
+      <h2 class="section-headline">Iteration 02</h2>
+    </div>
     <div class="subsection-third">
-      <h2 class="subsection-headline">Iteration 02</h2>
       <ul class="rundown">
-        <li>The Rundown</li>
+        <li>Summary</li>
         <li><span class="tag-design">Design</span> Pare down to the pertinent details</li>
         <li><span class="tag-design">Design</span> Construct a logical information hierarchy</li>
         <li><span class="tag-feedback">Feedback</span> Much more readable</li>
@@ -306,10 +310,12 @@ cover-height: 25rem
   </div>
 
   <div class="subsection-row">
+    <div class="subsection">
+      <h2 class="section-headline">Iteration 03</h2>
+    </div>
     <div class="subsection-third">
-      <h2 class="subsection-headline">Iteration 03</h2>
       <ul class="rundown">
-        <li>The Rundown</li>
+        <li>Summary</li>
         <li><span class="tag-design">Design</span> Business contact details made interactive</li>
         <li><span class="tag-design">Design</span> Colorful place icons help user quickly tell where receipt is from</li>
         <li><span class="tag-feedback">Feedback</span> Highly readable</li>
@@ -340,13 +346,6 @@ cover-height: 25rem
       </div>
     </div>
   </div>
-
-  <div class="subsection">
-    <figure>
-      <img src="../images/receipts/receipts-all.png" />
-      <figcaption>Example receipts in digital format.</figcaption>
-    </figure>
-  </div>
 </div>
 
 <div class="section">
@@ -355,7 +354,6 @@ cover-height: 25rem
     <h2 class="section-headline" id="iconography">Places Iconography</h2>
   </div>
   <div class="subsection-two-thirds">
-    <p>The Receipts app leverages and in turn reinforces existing user familiarity of the Apple Maps place iconography and colors to help users identify receipts.</p>
     <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
 
     <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
@@ -383,26 +381,15 @@ cover-height: 25rem
   </div>
 
   <div class="subsection-two-thirds">
-    <p></p>
-  </div>
+    <p>So far, we looked at one important half of the app equation: receiving receipts. What about the other half: retrieving receipts? Rarely do we ever look at or search for a receipt. We look at a receipt for the first and often final time when we are handed it, and for a second time when the purchase breaks.</p>
 
-  <div class="subsection">
-    <figure>
-      <img class="image" src="../images/receipts/list-iterations.png" />
-      <figcaption>Several of the many iterations for the list view design.</figcaption>
-    </figure>
-  </div>
+    <p>As mundane by-products of our busy everyday lives, receipts aren't memorable. Although the small details of our receipts often escape us, their stories don't quite so easily—and stories are about context.</p>
 
-  <div class="subsection-half">
+    <p>Users interviews reveal that people often remember the circumstances surrounding their purchases. Purchase memories are often entangled with other memories, like those of business trips or date nights.</p>
 
     <p class="summary">User research revealed that people remember only the most salient parts from receipts. <a class="expand">Read more...</a></p>
 
     <div class="collapsible">
-      <p>Receipts are often some of the least important things in our lives. As mundane by-products of our daily lives, receipts are rarely remembered or thought about. The small details of receipts—the business address or the checkout line number may escape us, but stories around their purchase don't quite so easily.</p>
-
-      <p>And stories are about context. Users interviews reveal that people often remember the circumstances surrounding their purchases. Furthermore, memories about purchases are often entangled with other memories, like those of hiking trips, dinner preparations, and office parties.</p>
-
-      <img class="diagram" src="../images/receipts/diagram-incomplete-information.png" />
 
       <p>For this phase of the project, I set out to design not obligatory screen views but tools to support users in searching for and organizing their receipts. From interviews, the most salient receipt details recalled by people came in three flavors: objective (what was bought?), temporal and chronological (when was it bought?), and spatial (where was it bought?).</p>
 
