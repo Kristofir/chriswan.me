@@ -11,16 +11,18 @@
 
 $base: 20px;
 $base-height: $base * 1.5;
+$header-opacity: 0.85;
 
-body {
-}
 
 .dark-theme {
   background-color: #111;
   color: #FFF;
-  .name .first, .name .last, .navigation a {
-    @extend .white;
-    @extend .hover-red;
+  header {
+    background-color: rgba(17, 17, 17, $header-opacity);
+    .name .first, .name .last, .navigation a {
+      @extend .white;
+      @extend .hover-red;
+    }
   }
 }
 
@@ -105,9 +107,14 @@ header {
   position: fixed;
   z-index: 100000;
   border-bottom: 1px solid #CCC;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, $header-opacity);
+  @supports (backdrop-filter: blur(8px)) {
+    backdrop-filter: blur(8px);
+  }
+  @supports (-webkit-backdrop-filter: blur(8px)) {
+    -webkit-backdrop-filter: blur(8px);
+  }
+
 
   @extend .sans-serif;
   letter-spacing: -1px;
@@ -186,13 +193,31 @@ main {
 
 @import "frontpage";
 
-.hero-white-iphone {
+.hero-silver-iphone {
   background: url("../images/receipts/iphone.png") center no-repeat;
-  background-size: 356px 697px;
+  background-size: 100%;
+  background-position: top;
 
-  padding: 108px 43px 108px 43px;
-  width: 356px;
-  height: 697px;
+  padding: 30.34% 12%;
+  width: 100%;
+}
+
+.hero-matte-black-iphone {
+  background: url("../images/receipts/iphone-matte-black.png") center no-repeat;
+  background-size: 100%;
+  background-position: top;
+
+  padding: 30.34% 12%;
+  width: 100%;
+}
+
+.hero-gold-iphone {
+  background: url("../images/receipts/iphone-gold.png") center no-repeat;
+  background-size: 100%;
+  background-position: top;
+
+  padding: 30.34% 12%;
+  width: 100%;
 }
 
 .section {
@@ -243,7 +268,6 @@ main {
 }
 
 .section-headline {
-  display: inline-block;
 
   color: #000;
   @extend .sans-serif;
@@ -252,14 +276,6 @@ main {
   font-size: $base * 1.5;
   line-height: $base * 1.5;
   letter-spacing: -1px;
-}
-
-.exp:before {
-    height: 4px;
-    display: inline-block;
-    width: 100%;
-    background: #000000;
-    content: '';
 }
 
 .subsection-headline {
@@ -361,6 +377,10 @@ ul.rundown {
   }
 }
 
+.section-headline + ul.rundown {
+  margin-top: $base-height;
+}
+
 a {
   @extend .link;
   @extend .red;
@@ -373,14 +393,19 @@ figure {
 }
 
 .big-statement {
-  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
-  background-size: 100% 100%;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-size: 100% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  @supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+    color: red;
+  }
 
   @extend .sans-serif;
   font-size: $base * 3;
@@ -394,11 +419,12 @@ figure {
 .hero-icon {
   width: 85px;
   height: 85px;
+  margin-bottom: $base-height;
 }
 
 p + .diagram {
   padding-top: $base-height;
-  width: 100%;
+  width: auto;
 }
 
 .half {

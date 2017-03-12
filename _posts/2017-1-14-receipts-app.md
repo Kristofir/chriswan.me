@@ -15,14 +15,14 @@ cover-height: 25rem
 </div>
 
 <div class="section flex-wrap items-center align-center justify-center">
-  <div class="subsection-half">
-    <div class="center hero-white-iphone">
+  <div class="subsection-third">
+    <div class="center hero-silver-iphone">
       <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
         <source src="{{ site.baseurl }}/images/receipts_wt.mp4">
       </video>
     </div>
   </div>
-  <div class="subsection-half">
+  <div class="subsection-two-thirds">
 
     <img class="v-mid hero-icon tc" src="../images/receipts/receipts-icon.png" />
 
@@ -353,6 +353,12 @@ cover-height: 25rem
 
   <div class="subsection-third">
     <h2 class="section-headline" id="iconography">Places Iconography</h2>
+    <ul class="rundown">
+      <li>Summary</li>
+      <li><span class="tag-insight">Insight</span> Apple Maps the most popular iOS map app by far</li>
+      <li><span class="tag-design">Design</span> Leverage users' basic familiarity with Apple Maps place icons and colors</li>
+      <li><span class="tag-design">Design</span> In turn, reinforce users' basic familiarity with Apple Maps place icons and colors</li>
+    </ul>
   </div>
   <div class="subsection-two-thirds">
     <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
@@ -360,8 +366,6 @@ cover-height: 25rem
     <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
 
     <p>Thinking ecologically, I recognized there's potential for a symbiotic relationship between Receipts and Maps. Receipts could leverage user familiarity with Maps iconography and, in turn, build on it. Over time, the symbiosis will strengthen users' mental associations between place types, place pictograms, and place colors.</p>
-
-    <img class="diagram" src="../images/receipts/diagram-symbiosis-maps-receipts.png" />
 
     <p>A place icon can graphically imbue a digital receipt with a sense of where it's from. Users can search receipts not only by business name and location but also by place icon and color. As users' mental models strengthen through repeated use of Receipts and Maps, users will identify place icons and colors more quickly and reliably in both apps, thereby becoming becoming more effective at using the apps.</p>
   </div>
@@ -444,17 +448,62 @@ cover-height: 25rem
     <div class="subsection-third">
       <ul class="rundown">
         <li>Summary</li>
+        <li><span class="tag-insight">Insight</span> People have strong spatial memory</li>
         <li><span class="tag-design">Design</span> Seamless switching and coordination between list and map views</li>
         <li><span class="tag-design">Design</span> Red dots represent geotagged receipts</li>
         <li><span class="tag-design">Design</span> Receipt results for a location are displayed in bottom panel</li>
       </ul>
     </div>
     <div class="subsection-third">
-      <img src="../images/receipts/app-screen-map.png" />
+      <div class="center hero-matte-black-iphone">
+        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
+          <source src="{{ site.baseurl }}/images/receipts/demo-screen-map.mp4">
+        </video>
+      </div>
     </div>
     <div class="subsection-third">
-      <p>In the spatial search view, geotagged receipts are displayed as red dots that contrast highly with the map background. Depending on the map zoom level, adjacent red receipt dots will merge as larger circles with item counts.</p>
+      <p>In the spatial search view, geotagged receipts are displayed as dots, which are colored red in order to contrast highly with the map background. Depending on the map zoom level, adjacent red receipt dots will merge as larger circles with item counts.</p>
+
+      <p>The map behaves very much like Apple Maps. Selecting a valid location will display, if there is only one  business there, a marker with the business name and place icon. If there are multiple businesses, then the marker will cycle through their names and icons.</p>
+
+      <p>Receipts tagged at a location will appear in the bottom panel and replace the search and filter options. Selecting a receipt will pull it up in the same manner as in the list view.</p>
+
+      <p>Too many locations on-screen? Zoom in or narrow down the selection by filtering out old receipts.</p>
     </div>
+  </div>
+
+  <div class="subsection-row">
+    <div class="subsection">
+      <h2 class="section-headline">Wallet as Metaphor</h2>
+    </div>
+    <div class="subsection-third">
+      <ul class="rundown">
+        <li>Summary</li>
+        <li><span class="tag-insight">Insight</span> After checkout, the cashier hands you the receipt. Where do you put it? In your wallet.</li>
+        <li><span class="tag-design">Design</span> Find recent recent receipts in Wallet</li>
+        <li><span class="tag-design">Design</span> App prioritizes loading selected receipt before loading the rest of the app</li>
+        <li><span class="tag-design">Design</span> As app loads, interface accordingly provides graphical signifiers</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+      <div class="center hero-gold-iphone">
+        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
+          <source src="{{ site.baseurl }}/images/receipts/demo-screen-wallet.mp4">
+        </video>
+      </div>
+    </div>
+    <div class="subsection-third">
+      <p>I initially chose to pursue this project as a concept for a <i>first-party iOS system</i> app because the premise permitted me to explore access to the iPhone NFC reader chip and integration with system utility apps like Wallet.</p>
+
+      <p>Wallet is an iOS system app can hold the user's credit and debit cards, reward cards, boarding passes, and more for wireless use by near-field communication (NFC). Currently, users can see the last few charges made to their cards but cannot view detailed info about any transaction.</p>
+
+      <p>I observed that in the physical world, after getting their receipts from the cashier, people often put them in their physical wallets. Consequently, most people can find their latest receipts in their wallets. I thought that this relationship could be imported into the digital world and feel natural to users.</p>
+
+      <p>Here in the digital wallet, a user can find their last few receipts like how they would in their physical wallet. Receipt details are shown similar to how they are presented within the app itself. Selecting a receipt will launch or resume the Receipts app.</p>
+
+      <p>I had put a great deal of thought into designing a graceful app loading process. A blank receipt slip is first displayed to reassure the user that the right app was launched. The receipt header is loaded next to reassure the right receipt is loading, followed by the receipt's nitty gritty details. Finally, when, the rest of the app is loaded, a window tab appears behind the receipt and a pull handlebar appears at the top of the receipt to signify the receipt's pull affordance.</p>
+    </div>
+  </div>
 </div>
 
 <div class="section">
@@ -498,7 +547,7 @@ cover-height: 25rem
   </div>
   <div class="subsection-two-thirds">
 
-    <p>First, I thank you, dear reader, for taking the time to read my project which I worked hard on for over a month.</p>
+    <p>Thanks for checking out my work. I had worked hard on this project for over a month.</p>
 
     <p>The majority of the time I spent on the project was spent on research and debate. Whenever I discovered new insights, I debated their validity and applicability with both myself and my friends in design and software engineering. Similarly, I offered up my design decisions for critique. Had I chosen not to have my work challenged, the project could have been completed in less than week but would have suffered from insufficient criticism.</p>
 
