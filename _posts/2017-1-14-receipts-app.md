@@ -14,7 +14,7 @@ cover-height: 25rem
   <div class="embed-container flex-auto"><iframe src="https://player.vimeo.com/video/206012454" width="640" height="359" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
 </div>
 
-<div class="section flex flex-wrap items-center align-center justify-center">
+<div class="section flex-wrap items-center align-center justify-center">
   <div class="subsection-half">
     <div class="center hero-white-iphone">
       <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
@@ -53,7 +53,7 @@ cover-height: 25rem
 
 <div class="section">
   <div class="subsection-third">
-    <h2 class="section-headline" id="introduction">The Problem</h2>
+    <h2 class="section-headline">The Problem</h2>
   </div>
   <div class="subsection-two-thirds">
     <p>Our receipts exist in a balkanized state: printed receipts lie in piles, folders, or drawers, while electronic receipts hide in emails, text messages, or behind store web portals. Most receipts are inconsequential. We don't think about them until we need them most when the fridge stops working, the TV gets bricked by a bad update, or that new pair of jeans turns out to have a hole in the back. (How embarrassing.)</p>
@@ -179,7 +179,7 @@ cover-height: 25rem
 
 
 <div class="section">
-  <div class="flex">
+  <div class="subsection-row">
     <div class="subsection-third">
       <h2 class="section-headline">Early Iteration</h2>
     </div>
@@ -197,7 +197,7 @@ cover-height: 25rem
 
 
 <div class="section">
-  <div class="flex">
+  <div class="subsection-row">
     <div class="subsection-third">
       <h2 class="section-headline">Late Iteration</h2>
     </div>
