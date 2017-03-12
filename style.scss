@@ -98,12 +98,21 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  padding: 0 10px;
   width: 100%;
-  height: 5vw;
+  max-width: 1268px;
+  height: $base * 3;
+  position: fixed;
+  z-index: 100000;
+  border-bottom: 1px solid #CCC;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 
   @extend .sans-serif;
   letter-spacing: -1px;
   font-size: $base;
+  line-height: $base;
 
   .name {
     float: left;
@@ -144,6 +153,10 @@ header {
       @extend .black;
     }
   }
+}
+
+main {
+  padding-top: $base * 3;
 }
 
 .grid {

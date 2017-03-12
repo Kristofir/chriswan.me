@@ -8,7 +8,7 @@ cover-color: rgb(255, 255, 255)
 cover-height: 25rem
 ---
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; z-index: 0; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
 <div class="flexless-section">
   <div class="embed-container flex-auto"><iframe src="https://player.vimeo.com/video/206012454" width="640" height="359" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
@@ -316,7 +316,8 @@ cover-height: 25rem
     <div class="subsection-third">
       <ul class="rundown">
         <li>Summary</li>
-        <li><span class="tag-design">Design</span> Business contact details made interactive</li>
+        <li><span class="tag-design">Design</span> Interactive business contact details simplify common receipt-related actions</li>
+        <li><span class="tag-design">Design</span> Business details panel made translucent to suggest connection to yet separation from map beneath</li>
         <li><span class="tag-design">Design</span> Colorful place icons help user quickly tell where receipt is from</li>
         <li><span class="tag-feedback">Feedback</span> Highly readable</li>
         <li><span class="tag-feedback">Feedback</span> Very visually distinguishable</li>
@@ -387,10 +388,9 @@ cover-height: 25rem
 
     <p>Users interviews reveal that people often remember the circumstances surrounding their purchases. Purchase memories are often entangled with other memories, like those of business trips or date nights.</p>
 
-    <p class="summary">User research revealed that people remember only the most salient parts from receipts. <a class="expand">Read more...</a></p>
+    <p class="big-statement">How can we search for receipts in the way our minds search for memories?</p>
 
-    <div class="collapsible">
-
+    <div class="dn">
       <p>For this phase of the project, I set out to design not obligatory screen views but tools to support users in searching for and organizing their receipts. From interviews, the most salient receipt details recalled by people came in three flavors: objective (what was bought?), temporal and chronological (when was it bought?), and spatial (where was it bought?).</p>
 
       <img class="diagram" src="../images/receipts/diagram-two-views.png" />
@@ -401,15 +401,60 @@ cover-height: 25rem
 
       <img class="diagram" src="../images/receipts/diagram-chronological-views.png" />
 
-      <p>In the chronological search view, receipts are displayed as list items in a manner similar to their receipt headers. As mentioned before, the format was designed to help users quickly identify a desired receipt.</p>
-
-      <p>Unlike the receipt headers, the list items show summary transaction costs, giving the user a clue about whether or not a receipt is associated with a big ticket purchase. </p>
-
       <img class="diagram" src="../images/receipts/diagram-map-expanded-location.png" />
 
-      <p>In the spatial search view, receipts are displayed as red dots that contrast highly with the map background. Depending on the map zoom level, adjacent red receipt dots will merge as larger circles with item counts.</p>
+
     </div>
   </div>
+
+  <div class="subsection-row">
+    <div class="subsection">
+      <h2 class="section-headline">Search by Time</h2>
+    </div>
+    <div class="subsection-third">
+      <ul class="rundown">
+        <li>Summary</li>
+        <li><span class="tag-insight">Insight</span> Don't fight against seasoned user mental models of operating system interfaces</li>
+        <li><span class="tag-design">Design</span> Swipe interaction conforms to user expectations for a list interface</li>
+        <li><span class="tag-design">Design</span> Place icons and colors help identify kinds of businesses receipts are from</li>
+        <li><span class="tag-design">Design</span> Summary costs signal significance of receipt contents</li>
+        <li><span class="tag-design">Design</span> Search and filter panels help the user quickly whittle down results</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/app-screen-list.png" />
+    </div>
+    <div class="subsection-third">
+      <p>In this view, receipts are displayed as list items in a layout similar to their receipt header. As mentioned, this layout was designed, with the theory that our minds "read" colors and shapes before words and phrases, to help users identify receipts fast.</p>
+
+      <p>In addition to the receipt header details, the list items also show summary transaction costs which signal the significance of receipt contents to the user and cues them on the probability of a receipt having a big-ticket purchase.</p>
+
+      <p>For example, if you were looking for the receipt for your new 4K UHD TV, you wouldn't expect it to be a receipt from a gas station or to have a summary cost under $1,000.</p>
+
+      <p>Speaking of expectations, we all carry—from one app or operating system to another—expectations for how interfaces should behave. Swiping on an individual item to reveal item management options is no longer  <a href="https://en.wikipedia.org/wiki/Mystery_meat_navigation" target="\_blank">"mystery meat navigation"</a> but is instead a near-ubiquitous interaction for item list views (at least in iOS).</p>
+
+      <p>Swiping to delete or move an item can get tedious for large groups. The good old Edit button allows the user to select multiple receipts for batch processing.</p>
+    </div>
+  </div>
+
+  <div class="subsection-row">
+    <div class="subsection">
+      <h2 class="section-headline">Search by Place</h2>
+    </div>
+    <div class="subsection-third">
+      <ul class="rundown">
+        <li>Summary</li>
+        <li><span class="tag-design">Design</span> Seamless switching and coordination between list and map views</li>
+        <li><span class="tag-design">Design</span> Red dots represent geotagged receipts</li>
+        <li><span class="tag-design">Design</span> Receipt results for a location are displayed in bottom panel</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/app-screen-map.png" />
+    </div>
+    <div class="subsection-third">
+      <p>In the spatial search view, geotagged receipts are displayed as red dots that contrast highly with the map background. Depending on the map zoom level, adjacent red receipt dots will merge as larger circles with item counts.</p>
+    </div>
 </div>
 
 <div class="section">
