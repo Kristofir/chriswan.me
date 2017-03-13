@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:100,300,400,500,700');
 
+@import "mixins";
 @import "fonts";
 @import "reset";
 @import "tachyons";
@@ -28,9 +29,12 @@ $header-opacity: 0.85;
 
 .light-theme {
   color: #333;
-  .name .first, .name .last, .navigation a {
-    @extend .black;
-    @extend .hover-red;
+  header {
+    background-color: rgba(255, 255, 255, $header-opacity);
+    .name .first, .name .last, .navigation a {
+      @extend .black;
+      @extend .hover-red;
+    }
   }
 }
 
@@ -87,6 +91,20 @@ $header-opacity: 0.85;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.floating-header {
+  header {
+    position: fixed;
+    z-index: 10;
+    @supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
+      backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+  }
+  main {
+    padding-top: $base * 3;
+  }
+}
+
 header {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -104,16 +122,7 @@ header {
   width: 100%;
   max-width: 1268px;
   height: $base * 3;
-  position: fixed;
-  z-index: 100000;
   border-bottom: 1px solid #CCC;
-  background-color: rgba(255, 255, 255, $header-opacity);
-  @supports (backdrop-filter: blur(8px)) {
-    backdrop-filter: blur(8px);
-  }
-  @supports (-webkit-backdrop-filter: blur(8px)) {
-    -webkit-backdrop-filter: blur(8px);
-  }
 
 
   @extend .sans-serif;
@@ -129,6 +138,8 @@ header {
 
     height: $base;
     overflow: hidden;
+
+    @include user-select(none);
 
     a {
       display: inline;
@@ -163,7 +174,6 @@ header {
 }
 
 main {
-  padding-top: $base * 3;
 }
 
 .grid {
@@ -171,9 +181,19 @@ main {
 	padding: 0;
 	width: 100%;
   .grid-item {
+    box-shadow: 0 0 0 0 RGBA(0,0,0,0.0), 0 0 0 0 RGBA(0,0,0,0.0);
   	display: inline;
   	float: left;
     overflow: hidden;
+    z-index: 0;
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+  }
+  .grid-item:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+    z-index: 1;
+    -webkit-transition: box-shadow 0.62;
+    transition: box-shadow 0.2s;
   }
 }
 
@@ -230,7 +250,6 @@ main {
 }
 
 .flexless-section {
-  background-color: #222;
   width: 100%;
   padding: $base-height 10px;
   border-bottom: 2px solid #EEE;
@@ -397,7 +416,10 @@ ul.rundown {
 a {
   @extend .link;
   @extend .red;
-  @extend .hover-dark-red;
+}
+
+a:hover {
+  @extend .blue;
 }
 
 figure {

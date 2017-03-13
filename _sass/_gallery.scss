@@ -33,11 +33,11 @@
 }
 
 .dfa-kris {
-  background-image: url("../images/gallery/dfa-kris.png");
+  background-image: url("../images/dfa/dfa-team.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  @extend .dark-labels;
+  background-size: cover;
+  @extend .light-labels;
 }
 
 .program-diagram {
@@ -49,25 +49,11 @@
   @extend .dark-labels;
 }
 
-.receipts-design {
-  @extend .bg-blue;
-  @extend .light-labels;
-}
-
-.receipts-icon {
-  background-image: url("../images/gallery/receipts-icon.png");
+.receipts-app {
+  background-image: url("../images/gallery/receipts-app.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 33%;
-  background-color: #000;
+  background-size: cover;
+  @extend .bg-pink;
   @extend .light-labels;
-}
-
-.receipts-app {
-  background-image: url("../images/gallery/receipts-app2.png");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: auto 85%;
-  @extend .bg-washed-red;
-  @extend .dark-labels;
 }

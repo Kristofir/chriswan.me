@@ -20,7 +20,7 @@
   </head>
 
   <body class="{% if page.theme %}{{ page.theme }}{% else %}light-theme{% endif %}" >
-    <div class="body-container animated fadeIn">
+    <div class="body-container animated fadeIn{% if page.layout == "project" %} floating-header{% endif %}">
 
     <header>
       <div class="name">

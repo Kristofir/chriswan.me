@@ -152,7 +152,7 @@ cover-height: 25rem
 
       <p>The National Retail Federation, or NRF, a merchant consortium, established as a division the Association for Retail Technology Standards, or ARTS. The ARTS established in the late 1990s manufacturer-neutral APIs and XML schemas that enable POS peripherals by different manufacturers to work together as a coherent system. IXRetail, established by the ARTS in the early 2000s, provides an XML schema for electronic receipts.</p>
 
-      <p>At the end of 2015, the NRF reported in its <a href="https://nrf.com/sites/default/files/Images/Media%20Center/NRF%20Retail%20Return%20Fraud%20Final_0.pdf" target="blank">2015 Return Fraud Survey</a> that "fraudulent e-receipted returns" had increased by 86% over the last year, representing the top growth area for return fraud. The shortfalls of current electronic receipts are non-exhaustively enumerated in <a href="https://nrf.com/news/the-dark-side-of-e-receipts" target="blank">an NRF publication</a>: they "are easy to transmit, easy to alter, susceptible to cloning and forgery and hard to permanently delete once saved to storage media."</p>
+      <p>At the end of 2015, the NRF reported in its <a class="external-link" href="https://nrf.com/sites/default/files/Images/Media%20Center/NRF%20Retail%20Return%20Fraud%20Final_0.pdf" target="\_blank">2015 Return Fraud Survey</a> that "fraudulent e-receipted returns" had increased by 86% over the last year, representing the top growth area for return fraud. The shortfalls of current electronic receipts are non-exhaustively enumerated in <a class="external-link" href="https://nrf.com/news/the-dark-side-of-e-receipts" target="\_blank">an NRF publication</a>: they "are easy to transmit, easy to alter, susceptible to cloning and forgery and hard to permanently delete once saved to storage media."</p>
 
       <p>My takeaways:
       <ul>
@@ -407,7 +407,7 @@ cover-height: 25rem
       </ul>
     </div>
     <div class="subsection-two-thirds">
-      <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
+      <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a class="external-link" href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="\_blank">having far surpassed Google Maps in 2015</a>.</p>
 
       <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
 
@@ -482,7 +482,7 @@ cover-height: 25rem
 
       <p>For example, if you were looking for the receipt for your new 4K UHD TV, you wouldn't expect it to be a receipt from a gas station or to have a summary cost under $1,000.</p>
 
-      <p>Speaking of expectations, we all carry—from one app or operating system to another—expectations for how interfaces should behave. Swiping on an individual item to reveal item management options is no longer  <a href="https://en.wikipedia.org/wiki/Mystery_meat_navigation" target="\_blank">"mystery meat navigation"</a> but is instead a near-ubiquitous interaction for item list views (at least in iOS).</p>
+      <p>Speaking of expectations, we all carry—from one app or operating system to another—expectations for how interfaces should behave. Swiping on an individual item to reveal item management options is no longer  <a class="external-link" href="https://en.wikipedia.org/wiki/Mystery_meat_navigation" target="\_blank">"mystery meat navigation"</a> but is instead a near-ubiquitous interaction for item list views (at least in iOS).</p>
 
       <p>Swiping to delete or move an item can get tedious for large groups. The good old Edit button allows the user to select multiple receipts for batch processing.</p>
     </div>
