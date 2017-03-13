@@ -10,10 +10,26 @@ cover-height: 25rem
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; z-index: 0; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
-<div class="flexless-section">
+<div class="flexless-section white">
+  <!--
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h1 class="section-headline">Receipts for iOS</h1>
+    </div>
+    <div class="subsection-third">
+      <ul class="rundown">
+        <li>Project Info</li>
+        <li>Role: Designer, Investigator</li>
+        <li>Areas: User Interface Design, User Experience Design, Interaction Design, Motion Design</li>
+      </ul>
+    </div>
+    <div class="subsection-third">
+    </div>
+  </div>
+  -->
   <div class="embed-container flex-auto"><iframe src="https://player.vimeo.com/video/206012454" width="640" height="359" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
 </div>
-
+<!--
 <div class="section flex-wrap items-center align-center justify-center">
   <div class="subsection-third">
     <div class="center hero-silver-iphone">
@@ -33,6 +49,7 @@ cover-height: 25rem
     <p>Meet Receipts, a concept iOS system app for contactlessly receiving, securely storing, and finding your digital receipts.</p>
   </div>
 </div>
+-->
 
 
 <div class="section">
@@ -149,7 +166,7 @@ cover-height: 25rem
 
 <div class="section">
   <div class="subsection-half order-1">
-    <img class="diagram" src="../images/receipts/diagram-flow.png" />
+    <img src="../images/receipts/diagram-flow.png" />
   </div>
   <div class="subsection-half order-0">
     <h2 class="section-headline" id="defining-the-app">Defining the App</h2>
@@ -173,6 +190,35 @@ cover-height: 25rem
 
       <p>The app architecture was made highly permeable with multiple entry points to different depth levels within the app and multiple exits.</p>
     </div>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="section-headline">Sketches and Scribbles</h2>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>Before I touched the mouse, I reached for pen and paper to feel out the problem space, brainstorm ideas to explore, work out requirements, and plan very rough, low-fidelity screens.</p>
+    </div>
+  </div>
+  <!--
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <img src="../images/receipts/sketch-1.png" />
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/sketch-2.png" />
+    </div>
+    <div class="subsection-third">
+      <img src="../images/receipts/sketch-3.png" />
+    </div>
+  </div>
+  -->
+  <div class="subsection">
+    <img src="../images/receipts/sketches.png" />
   </div>
 </div>
 
@@ -350,24 +396,25 @@ cover-height: 25rem
 </div>
 
 <div class="section">
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="section-headline" id="iconography">Places Iconography</h2>
+      <ul class="rundown">
+        <li>Summary</li>
+        <li><span class="tag-insight">Insight</span> Apple Maps the most popular iOS map app by far</li>
+        <li><span class="tag-design">Design</span> Leverage users' basic familiarity with Apple Maps place icons and colors</li>
+        <li><span class="tag-design">Design</span> In turn, reinforce users' basic familiarity with Apple Maps place icons and colors</li>
+      </ul>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
 
-  <div class="subsection-third">
-    <h2 class="section-headline" id="iconography">Places Iconography</h2>
-    <ul class="rundown">
-      <li>Summary</li>
-      <li><span class="tag-insight">Insight</span> Apple Maps the most popular iOS map app by far</li>
-      <li><span class="tag-design">Design</span> Leverage users' basic familiarity with Apple Maps place icons and colors</li>
-      <li><span class="tag-design">Design</span> In turn, reinforce users' basic familiarity with Apple Maps place icons and colors</li>
-    </ul>
-  </div>
-  <div class="subsection-two-thirds">
-    <p>Everyday, millions of people use Apple Maps to get directions and find destinations. It's the most popular map app on iOS, <a href="http://fortune.com/2015/06/16/apple-google-maps-ios/" target="blank">having far surpassed Google Maps in 2015</a>.</p>
+      <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
 
-    <p>Apple Maps has its own bold and colorful language of place markers that identify types of businesses and attractions. I reasoned that, given Apple Maps' popularity, many iOS users have developed a basic familiarity of Apple Maps iconography: such basic familiarity is a user mental model resource.</p>
+      <p>Thinking ecologically, I recognized there's potential for a symbiotic relationship between Receipts and Maps. Receipts could leverage user familiarity with Maps iconography and, in turn, build on it. Over time, the symbiosis will strengthen users' mental associations between place types, place pictograms, and place colors.</p>
 
-    <p>Thinking ecologically, I recognized there's potential for a symbiotic relationship between Receipts and Maps. Receipts could leverage user familiarity with Maps iconography and, in turn, build on it. Over time, the symbiosis will strengthen users' mental associations between place types, place pictograms, and place colors.</p>
-
-    <p>A place icon can graphically imbue a digital receipt with a sense of where it's from. Users can search receipts not only by business name and location but also by place icon and color. As users' mental models strengthen through repeated use of Receipts and Maps, users will identify place icons and colors more quickly and reliably in both apps, thereby becoming becoming more effective at using the apps.</p>
+      <p>A place icon can graphically imbue a digital receipt with a sense of where it's from. Users can search receipts not only by business name and location but also by place icon and color. As users' mental models strengthen through repeated use of Receipts and Maps, users will identify place icons and colors more quickly and reliably in both apps, thereby becoming becoming more effective at using the apps.</p>
+    </div>
   </div>
 
   <div class="subsection">
@@ -456,7 +503,7 @@ cover-height: 25rem
     </div>
     <div class="subsection-third">
       <div class="center hero-matte-black-iphone">
-        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts_poster.png">
+        <video class="w-100" preload="auto" muted playsinline autoplay loop poster="{{ site.baseurl }}/images/receipts/map-view.png">
           <source src="{{ site.baseurl }}/images/receipts/demo-screen-map.mp4">
         </video>
       </div>
@@ -547,9 +594,9 @@ cover-height: 25rem
   </div>
   <div class="subsection-two-thirds">
 
-    <p>Thanks for checking out my work. I had worked hard on this project for over a month.</p>
+    <p>Thanks for checking out my work. I had worked hard on this project for over a month. </p>
 
-    <p>The majority of the time I spent on the project was spent on research and debate. Whenever I discovered new insights, I debated their validity and applicability with both myself and my friends in design and software engineering. Similarly, I offered up my design decisions for critique. Had I chosen not to have my work challenged, the project could have been completed in less than week but would have suffered from insufficient criticism.</p>
+    <p>I spent most of my project time on research and debate. Whenever I discovered new insights, I debated their validity and applicability with myself and my friends who work in design and software engineering. I also offered up my design decisions for critique. Had I chosen not to have my work challenged, the project could have been completed in less than week but would have suffered from insufficient criticism.</p>
 
     <p>The Receipts app was imagined and conceived as a first-party iOS system app, but there are no plans to implement it. It was a productive design exercise. I hope to someday to be in a position where I can work on a product that's part of a complex product and user ecosystem.</p>
 
