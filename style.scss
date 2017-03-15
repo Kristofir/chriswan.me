@@ -273,6 +273,9 @@ main {
   flex: 0 0 100%;
   @extend .flex;
   @extend .flex-wrap;
+  img {
+    align-self: baseline;
+  }
 }
 
 .subsection-two-thirds {
