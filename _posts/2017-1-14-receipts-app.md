@@ -62,7 +62,7 @@ cover-height: 25rem
 
   <div class="subsection">
     <figure>
-      <img src="../images/receipts/nfc-terminal.png" />
+      <img src="../images/receipts/nfc-terminal.jpg" />
     </figure>
   </div>
 </div>
