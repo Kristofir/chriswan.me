@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <!--
+    Thanks for checking my code out. I wrote much of it myself. However, I need to give credit where it's due:
+    - Jekyll is the site generator that allows me to modularize.
+    - Isotope is the grid layout engine.
+    - Tachyons served as initial style scaffolding, but it's been entirely replaced now.
+  -->
+
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
@@ -12,8 +19,9 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
-
+    <!-- Load hosted JQuery library from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Load serif font from Adobe Typekit -->
     <script src="https://use.typekit.net/cft7hri.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -30,7 +38,7 @@
         </a>
       </div>
       <div class="navigation">
-        <a title="人物の略歴" href="{{ site.baseurl }}/about">About</a>
+        <a href="{{ site.baseurl }}/about">About</a>
       </div>
     </header>
 
@@ -38,6 +46,14 @@
     <main>
         {{ content }}
     </main>
+
+    <footer>
+      <div class="section">
+
+        <p><span class="mini-headline">Colophon</span>
+          Made by Chris Wan. Designed in Sketch, Illustrator, and Photoshop. Handcoded using HTML, Sass-extended CSS, and JavaScript in Atom. Parsed by Jekyll. Hosted by GitHub Pages. Akzidenz Grotesk and Adobe Garamond used for type. Responsive layout has a fluid 1248px-wide tripartite grid divisible into two 624px-wide columns, three 416px-wide columns, four 312px-wide columns, six 208px-wide columns, and so on, with vertical rhythm of 30px. Designed and coded to be readable on desktop, tablet, and mobile.</p>
+      </div>
+    </footer>
 
     {% include analytics.html %}
     <script src="{{ site.baseurl }}/scripts/box.js"></script>

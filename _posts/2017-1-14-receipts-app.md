@@ -3,9 +3,6 @@ layout: project
 title: Receipts App for iOS
 published: true
 description: A concept system app to contactlessly receive and manage receipts in an increasingly wireless, paperless world
-cover-image:
-cover-color: rgb(255, 255, 255)
-cover-height: 25rem
 ---
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; z-index: 0; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>

@@ -11,6 +11,36 @@ $base: 20px;
 $base-height: $base * 1.5;
 $header-opacity: 0.85;
 
+.about-me {
+  font-size: $base * 2;
+  line-height: $base-height * 2;
+  font-weight: 100;
+  @extend .sans-serif;
+}
+
+.contact-me {
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: $base * 0.66666;
+    line-height: $base-height;
+    font-weight: 700;
+    @extend .sans-serif;
+  }
+  a {
+    font-size: $base * 2;
+    line-height: $base-height;
+    font-weight: 100;
+    @extend .sans-serif;
+    @media screen and (max-width: 832px) {
+    font-size: $base * 1.5;
+    }
+  }
+  .subsection-half:first-child {
+    padding-right: 1.34%;
+    border-right: 1px solid #333;
+  }
+}
 
 .dark-theme {
   background-color: #111;
@@ -19,6 +49,17 @@ $header-opacity: 0.85;
     background-color: rgba(17, 17, 17, $header-opacity);
     .name .first, .name .last, .navigation a {
       @extend .white;
+      @extend .hover-red;
+    }
+  }
+}
+
+.light-theme {
+  color: #333;
+  header {
+    background-color: rgba(255, 255, 255, $header-opacity);
+    .name .first, .name .last, .navigation a {
+      @extend .black;
       @extend .hover-red;
     }
   }
@@ -254,6 +295,7 @@ main {
 
 .subsection-base {
   margin: $base * 0.75 0;
+  align-content: baseline;
 }
 
 .subsection-row {
@@ -261,10 +303,13 @@ main {
   @extend .flex;
   @extend .flex-wrap;
   .subsection-third + .subsection-third {
-    margin-left: 1.34%;
+    margin-left: 15px;
   }
   .subsection-third + .subsection-two-thirds {
-    margin-left: 1.34%;
+    margin-left: 15px;
+  }
+  .subsection-half + .subsection-half {
+    margin-left: 15px;
   }
 }
 
@@ -354,6 +399,26 @@ ul {
 }
 ol {
   list-style: decimal-leading-zero;
+}
+
+ul.skills {
+  list-style: none;
+  li {
+    @extend .sans-serif;
+    font-size: $base * 2 / 3;
+    line-height: $base-height;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-kerning: none;
+
+    display: inline;
+    margin: 2px;
+    padding: 4px;
+    @extend .white;
+    @extend .bg-blue;
+    border-radius: 4px;
+  }
 }
 
 ul.rundown {
@@ -466,4 +531,33 @@ figure {
 .half {
   flex: 1 1 calc(624px - 16px);
   padding: 8px;
+}
+
+footer {
+  .section {
+    border-bottom: none;
+    .mini-headline {
+      vertical-align: baseline;
+      display: inline;
+      color: #333;
+      font-size: $base * 2 / 3;
+      font-weight: 700;
+      line-height: $base;
+      margin: 0;
+    }
+    .mini-headline:after {
+    color: #333;
+      padding: 0 8px;
+      content: '—';
+    }
+    p {
+      @extend .sans-serif;
+      display: inline;
+      color: #333;
+      font-size: $base * 2 / 3;
+      line-height: $base;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
