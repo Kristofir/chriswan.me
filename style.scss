@@ -11,6 +11,89 @@ $base: 20px;
 $base-height: $base * 1.5;
 $header-opacity: 0.85;
 
+.page_healthcare_subsection-record {
+  .page_healthcare-record {
+    @import url('https://fonts.googleapis.com/css?family=VT323');
+    font-family: 'VT323', monospace;
+
+    box-shadow: 0 2px 5px 1px RGBA(0,0,0,0.24);
+    padding: $base;
+    width: 66.6667%;
+    min-width: 300px;
+    margin: 0 auto;
+
+    p {
+    font-size: $base*2/3;
+    line-height: $base*2/3;
+    padding-top: $base*2/3;
+    }
+  }
+}
+
+.page_healthcare-blue-button-problem {
+  width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+
+  text-align: center;
+  h2 {
+    color: inherit;
+    @extend .sans-serif;
+    font-weight: 700;
+
+    font-size: $base * 2;
+    line-height: $base-height * 1.5;
+    letter-spacing: -1px;
+    margin: 0 auto;
+  }
+  p {
+    @extend .sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+  }
+}
+
+.page_healthcare_subsection-design-objectives {
+  .subsection-quarter {
+    flex: 1 1 208px;
+
+    padding-right: 20px;
+    border-right: 2px solid #EEE;
+    margin-right: 20px;
+    p {
+      @extend .sans-serif;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      font-size: $base;
+      line-height: $base-height;
+    }
+  }
+  .subsection-quarter:last-child {
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 624px) {
+    .subsection-quarter:nth-child(even) {
+      padding-right: 0;
+      border-right: none;
+      margin-right: 0;
+    }
+    .subsection-quarter:nth-child(odd) {
+      padding-right: 20px;
+      border-right: 2px solid #EEE;
+      margin-right: 20px;
+    }
+  }
+}
+
+.page_healthcare_subsection-design-requirements {
+  p {
+    @extend .sans-serif;
+  }
+}
+
 .about-me {
   font-size: $base * 2;
   line-height: $base-height * 2;
@@ -23,6 +106,7 @@ $header-opacity: 0.85;
     display: block;
     text-transform: uppercase;
     font-size: $base * 0.66666;
+    padding-bottom: $base * 0.66666;
     line-height: $base-height;
     font-weight: 700;
     @extend .sans-serif;
@@ -285,6 +369,11 @@ main {
   @extend .flex-wrap;
   border-bottom: 2px solid #EEE;
   margin-bottom: -2px;
+}
+
+.section:last-of-type {
+border-bottom: 2px solid #333;
+margin-bottom: -2px;
 }
 
 .flexless-section {
