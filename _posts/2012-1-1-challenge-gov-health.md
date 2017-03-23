@@ -6,8 +6,14 @@ description: A friendlier, more readable patient health record
 ---
 
 <div class="section">
+  <div class="subsection page_healthcare_subsection-introduction">
+    <h1>The government challenged designers around the nation to design a better patient health record for veterans and their families. My team and I answered the call with a health narrative design that won as a <a href="http://healthdesignchallenge.com/#narrative" target="\_blank">national finalist</a>.</h1>
+  </div>
+</div>
+
+<div class="section">
   <div class="subsection">
-    <div class="page_healthcare-blue-button-problem">
+    <div class="page_healthcare-blue-button-big-statement">
       <h2 class="section-headline">This was Blue Button</h2>
       <p>Millions of veterans and their families used it to access their VA health records that looked just like this one...</p>
     </div>
@@ -159,7 +165,7 @@ description: A friendlier, more readable patient health record
     </div>
   </div>
   <div class="subsection">
-    <div class="page_healthcare-blue-button-problem">
+    <div class="page_healthcare-blue-button-big-statement">
       <h2 class="section-headline">Hard to read?</h2>
       <p>The Office of the National Coordinator for Health Information Technology and the Department of Veteran Affairs thought so too.</p>
     </div>
@@ -168,7 +174,7 @@ description: A friendlier, more readable patient health record
 
 <div class="section">
   <div class="subsection">
-    <div class="page_healthcare-blue-button-problem">
+    <div class="page_healthcare-blue-button-big-statement">
       <h2 class="section-headline">The Challenge</h2>
       <p>The Office of the National Coordinator challenged designers around the nation to redesign the Blue Button patient health record to address these design objectives.</p>
     </div>
@@ -228,24 +234,55 @@ description: A friendlier, more readable patient health record
 </div>
 
 <div class="section">
+
+  <div class="subsection-row">
+    <div class="subsection-third">
+      <h2 class="section-headline">Rising to the Challenge</h2>
+    </div>
+    <div class="subsection-two-thirds">
+      <p>In a two day sprint, our team designed a winning entry that approached healthcare history as a narrative.</p>
+
+      <p>After pouring through the sample data of the challenge, we quickly realized the lack of clarity with current text-only medical records, Although inaccessible and nearly illegible, the real problem was the layout. Our sample patient's medical history was full of past events that affected her future; a fall on the ice three winters ago led to chronic ankle pain that she experienced to the present.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="subsection">
+    <div class="page_healthcare-blue-button-big-statement">
+      <h2 class="section-headline">This is Blue Button Narrative</h2>
+      <p>Our health is the story of our lives, so we thought our health records should reflect them as narratives.</p>
+    </div>
+  </div>
+
   <div class="subsection">
     <figure>
       <img src="../images/health-cover.jpg" />
     </figure>
   </div>
+  <div class="subsection">
+    <figure>
+      <img src="../images/health-4.jpg" />
+    </figure>
+  </div>
 
-  <div class="subsection-half">
-    <p>Challenge.gov's Healthcare Record Design Challenged charged us with reconsidering the following: How might we design a more accessible healthcare record? In a two day sprint, our team designed a winning entry that approached healthcare history as a narrative.</p>
+</div>
 
-    <p>After pouring through the sample data of the challenge, we quickly realized the lack of clarity with current text-only medical records, Although inaccessible and nearly illegible, the real problem was the layout. Our sample patient's medical history was full of past events that affected her future; a fall on the ice three winters ago led to chronic ankle pain that she experienced to the present.</p>
+<div class="section">
+
+  <div class="subsection-third">
+    <h2 class="section-headline">Health as Narrative</h2>
+    <h3 class="subsection-headline">There's no story more personal</h3>
+  </div>
+
+  <div class="subsection-two-thirds">
+    <p>The old patient health record treated health histories as item inventories. We realized that our health histories are our most personal stories, complete with ups, downs, and plot twists. Illnesses, symptoms, conditions, and allergies aren't isolated items to be simply inventoried but are connected story events.</p>
 
     <p>Our final prototype emphasized the cause and effect that healthcare has on our daily lives. Details with an impact include color-coding visits (planned checkups versus unexpected emergencies), plain language explanations, and a dead simple medication section that <strong>nabbed us a 3rd place medal</strong>. You can see our entry (titled Blue Button Narrative), and others, at the <a href="http://healthdesignchallenge.com" target="\_blank">d.collab website</a>.</p>
   </div>
+</div>
 
-  <div class="subsection-half">
-    <p class="big-statement">Our design was one of a dozen national finalists.</p>
-  </div>
-
+<div class="section">
   <div class="subsection">
     <figure>
       <img src="../images/health-1.jpg" />
@@ -261,12 +298,6 @@ description: A friendlier, more readable patient health record
   <div class="subsection">
     <figure>
       <img src="../images/health-3.jpg" />
-    </figure>
-  </div>
-
-  <div class="subsection">
-    <figure>
-      <img src="../images/health-4.jpg" />
     </figure>
   </div>
 </div>
